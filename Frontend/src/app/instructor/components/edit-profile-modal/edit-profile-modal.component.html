@@ -1,0 +1,72 @@
+<div class="modal-overlay"> 
+    <div class="modal-content">
+        <button class="close-btn" (click)="handleClose()">&times;</button>
+        <h2>Edit Profile</h2>
+        
+        <div class="input-row">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name"  [(ngModel)]="profileData.fullName" placeholder="Enter your name">
+            </div>
+            <div class="input-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" [(ngModel)]="profileData.teachingDomain" placeholder="Enter your title">
+            </div>
+            <div class="input-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" [(ngModel)]="profileData.location" placeholder="Enter your location">
+            </div>
+        </div>
+
+        <div class="input-row">
+            <div class="input-group">
+                <label for="about">About:</label>
+                <textarea id="about" [(ngModel)]="profileData.about" placeholder="Write about yourself"></textarea>
+            </div>
+        </div>
+
+        
+        <div class="stats-section">
+            
+            <div class="stat-box">
+                <label for="experience">Experience</label>
+                <input type="number" id="experience" [(ngModel)]="profileData.experience" placeholder="Enter years of experience" min="0">
+            </div>
+   
+            <div class="stat-box">
+                <label for="graduated">Graduated</label>
+                <select id="graduated" [(ngModel)]="profileData.Graduated">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="stat-box">
+                <label for="languages">Languages</label>
+                <input type="text" id="languages" [(ngModel)]="profileData.languages" placeholder="Enter languages">
+            </div>
+            <div class="stat-box">
+                <label for="gmail">Gmail</label>
+                <input type="email" id="gmail" [(ngModel)]="profileData.email" placeholder="Enter Gmail link">
+            </div>
+            <div class="stat-box">
+                <label for="linkedin">LinkedIn</label>
+                <input type="text" id="linkedin" [(ngModel)]="profileData.linkedin" placeholder="Enter LinkedIn link">
+            </div>
+        </div>
+
+        <div class="input-row ">
+            <ngx-dropzone  class="upload_photo" (change)="onSelect($event)" >
+                <ngx-dropzone-label> upload photo</ngx-dropzone-label>
+                @for(file of files; track $index){
+                  <ngx-dropzone-preview [file]="file" [removable]="true" >
+                    <ngx-dropzone-label > {{file.name}} {{file.type}}</ngx-dropzone-label>
+                  </ngx-dropzone-preview>
+                } 
+              </ngx-dropzone>
+        </div>
+        <div class="button-group">
+            <button class="save-btn" (click)="handleSave()">Save</button>
+            <button class="cancel-btn" (click)="handleClose()">Cancel</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="view-all-courses">
+  <h2>All Courses</h2>
+  <div class="categories-scroll">
+    <button *ngFor="let category of categories" [class.active]="category === selectedCategory" (click)="filterByCategory(category)">
+      {{ category }}
+    </button>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Search courses..." (input)="search()" />
+  </div>
+
+  <main *ngIf="courses.length" class="courses">
+    <div class="course-card" *ngFor="let course of filteredCourses">
+      <img [src]="course.thumbnail" [alt]="course.title" />
+      <h3>{{ course.name.length > 30 ? (course.name | slice : 0 : 27) + "..." : course.name }}</h3>
+      <div class="rating">
+        <strong>Rating: </strong>
+        <span *ngIf="course.avgRating > 0"> {{ course.avgRating | number : "1.1-1" }} ⭐ </span>
+        <span *ngIf="course.avgRating === 0">No ratings yet</span>
+      </div>
+      <p><strong>Instructor:</strong> {{ course.instructor || "Not assigned" }}</p>
+    </div>
+  </main>
+</div>

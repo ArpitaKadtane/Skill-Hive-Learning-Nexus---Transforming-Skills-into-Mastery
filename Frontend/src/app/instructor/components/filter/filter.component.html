@@ -1,0 +1,43 @@
+<div class="search-container">
+    <span class="search-icon">🔍</span>
+    <input type="text" class="search-input" placeholder="Search by name...." [(ngModel)]="searchQuery" (input)="onSearchChange()" />
+  
+    <button class="dropdown-btn" (click)="toggleDropdown($event)">&#9662;</button>
+  
+    <div class="dropdown" [class.show]="dropdownVisible" id="dropdownMenu">
+      <div class="dropdown-section">
+        <label>Ratings</label>
+        <div class="dropdown-item">
+          <label for="4-stars">
+            <input
+              type="checkbox"
+              id="4-stars"
+              name="filter"
+              value="4"
+              (change)="onFilterChange('ratings', '4', $event)"
+            />
+            4 ★ & above
+          </label>
+        </div>
+        <div class="dropdown-item">
+          <label for="3">
+            <input type="checkbox" id="3-stars" name="filter" value="3-stars" (change)="onFilterChange('ratings', '3', $event)">
+            3 ★ & above
+          </label>
+        </div>
+      </div>
+  
+      <div class="dropdown-section">
+        <label>Subject Taught</label>
+        @for(subject of subjects; track $index){
+            <div class="dropdown-item" >
+              <input type="checkbox" [value]="subject" (change)="onFilterChange('subjects', subject, $event)"
+            /><label style="margin: 0;">{{ subject }}</label>
+            </div>
+        }
+      </div>
+  
+      <button class="apply-btn" (click)="applyFilters()">Apply</button>
+    </div>
+  </div>
+  

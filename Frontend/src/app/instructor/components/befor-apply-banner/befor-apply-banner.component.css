@@ -1,0 +1,185 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background-color: #ffff;
+}
+
+/* Navbar */
+.navbar_1 {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left part */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*logo*/
+
+#logo {
+  margin-top: 5px;
+}
+
+/* logo txt */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #ff6652;
+  margin-left: -1.3rem;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6652;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #ff6652;
+}
+
+/* Right part */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Profile */
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ff6652;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/*head_Box1*/
+.head_box1 {
+  background-color: #ffe5e1;
+  margin: 2rem;
+  font-family: "Alef", serif;
+  padding-bottom: rem;
+  border-radius: 20px;
+}
+
+#specialtxt {
+  color: #8717d2;
+}
+
+.nav-links2 {
+  list-style: none;
+  display: flex;
+  gap: 0.3rem;
+  margin: 0 0 0 2.2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.nav-links2 a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+
+.nav-links2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-links2 a:hover::after {
+  width: 100%;
+}
+
+.head_content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10rem;
+  margin-top: 1.3rem;
+  gap: 20rem;
+  font-family: "Lato", serif;
+}
+
+.head_txt {
+  font-size: 36px;
+  font-weight: 400;
+
+  p {
+    line-height: 45px;
+  }
+}
+
+.Pattern {
+  padding-left: 25rem;
+  margin-top: -4rem;
+}
+
+#specialtxt2 {
+  color: #ff6652;
+}

@@ -1,0 +1,37 @@
+<div class="feedback-container">
+  <h2>Provide Feedback</h2>
+
+  <div class="feedback-section">
+    <label for="course-rating">Course Rating</label>
+    <div class="star-rating" id="course-rating">
+      <span *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+            (click)="setCourseRating(i + 1)"
+            [ngClass]="{'filled': i < courseRating}">
+        &#9733;
+      </span>
+    </div>
+  </div>
+
+  <div class="feedback-section">
+    <label for="instructor-rating">Instructor Rating</label>
+    <div class="star-rating" id="instructor-rating">
+      <span *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+            (click)="setInstructorRating(i + 1)"
+            [ngClass]="{'filled': i < instructorRating}">
+        &#9733;
+      </span>
+    </div>
+  </div>
+
+  <div class="feedback-section">
+    <label for="suggestions">Suggestions (optional)</label>
+    <textarea [(ngModel)]="suggestions" placeholder="Any suggestions?"></textarea>
+  </div>
+
+  <button class="submit-btn" (click)="submitFeedback()">Submit Feedback</button>
+
+  <!-- Certificate Link Popup -->
+  <!-- <div *ngIf="certificateGenerated" class="certificate-popup">
+    <p>Certificate generated successfully! <a [routerLink]="['/certificate', courseId]" class="certificate-link">Click here to view and download</a></p>
+  </div> -->
+</div>

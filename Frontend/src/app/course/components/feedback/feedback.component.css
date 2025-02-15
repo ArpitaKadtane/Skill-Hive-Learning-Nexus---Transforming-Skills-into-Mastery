@@ -1,0 +1,138 @@
+/* .feedback-container {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+} */
+
+.feedback-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feedback-container h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feedback-section {
+  margin: 15px 0;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+.star-rating {
+  display: flex;
+  gap: 8px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.star-rating span {
+  color: lightgray;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.star-rating span.filled {
+  color: #f4b400;
+  transform: scale(1.1);
+}
+
+.star-rating span:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.submit-btn {
+  background-color: #9c4df4;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #9437ff;
+  transform: scale(1.05);
+}
+
+.feedback-section {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star-rating span {
+  color: gray;
+  transition: color 0.3s;
+}
+
+.star-rating span.filled {
+  color: gold;
+}
+
+.submit-btn {
+  background-color: #9c4df4;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #9437ff;
+}
+
+.certificate-message {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.certificate-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.certificate-link:hover {
+  background-color: #45a049;
+}

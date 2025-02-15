@@ -1,0 +1,69 @@
+<mat-card class="loginCard" appearance="outlined">
+  <mat-card-header class="formHeader">
+    <mat-card-title class="formTitle">Welcome Back</mat-card-title>
+    <div><h5 class="formSubTitle">Sign in into your account</h5></div>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="loginForm" [formGroup]="loginForm" (ngSubmit)="OnFormSubmit()">
+      <mat-form-field>
+        <mat-label>User</mat-label>
+        <mat-select formControlName="user">
+          <mat-option value="admins">Admin</mat-option>
+          <mat-option value="users">Candidate</mat-option>
+          <mat-option value="instructors">Instructor</mat-option>
+        </mat-select>
+        @if (loginForm.get('user').hasError('required')) {
+        <mat-error>User type is required</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          formControlName="email"
+          placeholder="Ex. abc@email.com"
+        />
+        @if (loginForm.get('email').hasError('email') &&
+        !loginForm.get('email').hasError('required')) {
+        <mat-error>Please enter a valid email address</mat-error>
+        } @if (loginForm.get('email').hasError('required')) {
+        <mat-error>Email is required</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field class="passwordField">
+        <mat-label>Enter your password</mat-label>
+        <input
+          matInput
+          [type]="hide() ? 'password' : 'text'"
+          formControlName="password"
+        />
+        <mat-icon (click)="hideClick($event)" class="hideIcon">{{
+          hide() ? "visibility_off" : "visibility"
+        }}</mat-icon>
+        @if (loginForm.get('password').hasError('required')) {
+        <mat-error>Password is required</mat-error>
+        }
+      </mat-form-field>
+      <div class="recoverPasssword" (click)="openPopup()">
+        Forgot Password
+      </div>
+      <button
+        mat-flat-button
+        type="submit"
+        [disabled]="loginForm.invalid"
+        class="loginBtn"
+      >
+        Sign in
+      </button>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div class="signupRedirect">
+      have an account? <a routerLink="/signup">Sign up!</a>
+    </div>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,208 @@
+.aboutUs {
+  margin-top: 33px;
+  height: 516px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .aboutUsText {
+    display: flex;
+    flex-direction: column;
+    width: 572px;
+    padding-top: 30px;
+
+    .weekendUx {
+      color: #ff9b26;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 400;
+      margin-bottom: 35px;
+      color: #1a906b;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
+
+  .aboutUsImg {
+    position: relative;
+    width: 530px;
+    padding: 20px;
+
+    .officeImg1,
+    .officeImg2 {
+      width: 376px;
+      height: 246px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .officeImg2 {
+      top: 270px;
+      left: 0px;
+    }
+
+    .officeImg1 {
+      top: 0px;
+      right: 55px;
+    }
+
+    .backgroundImg {
+      position: absolute;
+      z-index: 1;
+      width: 474px;
+      height: 474px;
+    }
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+
+  .featuresTxt {
+    display: flex;
+    flex-direction: column;
+    width: 572px;
+    padding-top: 30px;
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #1a906b;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+  }
+
+  .featuresImg {
+    position: relative;
+    width: 500px;
+    padding-right: 180px;
+    .bulbImg {
+      position: absolute;
+      z-index: 2;
+      width: 434px;
+      height: 471px;
+      top: 40px;
+      left: 75px;
+    }
+
+    .bulbBackground {
+      position: absolute;
+      z-index: 1;
+      width: 474px;
+      height: 474px;
+      padding-left: 55px;
+    }
+  }
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0px 10px 0px;
+  .benefitsHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #1a906b;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 50px;
+    }
+  }
+
+  .allBenefits {
+    display: flex;
+    flex-direction: column;
+
+    .row1,
+    .row2 {
+      display: flex;
+      flex-direction: row;
+      padding-left: 30px;
+    }
+    .benefit {
+      width: 336px;
+      height: 196px;
+      margin: 20px;
+      padding: 8px 0px 0px 13px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 18px;
+        color: #1a906b;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.6;
+      }
+    }
+
+    .b1,
+    .b3,
+    .b5 {
+      background-color: #f7fdf9;
+    }
+
+    .b2,
+    .b4,
+    .b6 {
+      border: 1px solid #e6e0e0;
+    }
+  }
+}
+

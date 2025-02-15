@@ -1,0 +1,61 @@
+<div class="main-container">
+  <app-afterapply-banner></app-afterapply-banner>
+  <div class="containers">
+    <h2>Manage Courses</h2>
+
+    @if( modules.length > 0){
+    <table class="instructor-table">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Lecture Title</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(module of course.modules; track $index){
+        <tr>
+          <td>{{ course.name }}</td>
+          <td>{{ module.name }}</td>
+          <td>
+            <button class="reupload" (click)="openFileUploadDialog(module.id)">
+              Reupload
+            </button>
+            <button
+              class="download"
+              *ngIf="module.contentUrl"
+              (click)="downloadModule(module.contentUrl)"
+            >
+              Download
+            </button>
+            <button class="delete" (click)="deleteModule(courseId, module.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    <input
+      type="file"
+      #fileInput
+      style="display: none"
+      (change)="reuploadModule($event)"
+    />
+    }
+    <div class="upload-container">
+      <button
+        class="reupload upload"
+        [routerLink]="['/upload-course', courseId]"
+      >
+        Upload Material
+      </button>
+    </div>
+
+    @if(modules.length === 0){
+    <div>
+      <p>No modules available.</p>
+    </div>
+    }
+  </div>
+</div>

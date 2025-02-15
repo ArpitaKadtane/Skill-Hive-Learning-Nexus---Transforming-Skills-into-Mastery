@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #f0f4f8, #e8eaf6); */
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+}
+
+.left-side h1 {
+  font-size: 3em;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.left-side p {
+  font-size: 1.2em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+
+.left-side img.left-image {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-form {
+  background: #ffe5e1;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  background: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #9c4df4;
+  outline: none;
+  box-shadow: 0 0 8px rgba(156, 77, 244, 0.3);
+}
+
+input.invalid {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9c4df4;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7a3bb7;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.register-prompt {
+  margin-top: 20px;
+  font-size: 0.95em;
+  color: #757575;
+  text-align: center;
+}
+
+a {
+  color: #9c4df4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #757575;
+}
+
+.toggle-password:hover {
+  color: #9c4df4;
+}

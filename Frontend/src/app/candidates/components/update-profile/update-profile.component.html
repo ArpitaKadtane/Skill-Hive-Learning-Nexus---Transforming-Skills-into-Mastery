@@ -1,0 +1,153 @@
+<div class="full-screen-profile">
+  <!-- <h2>Update Candidate Profile</h2> -->
+
+  <form (ngSubmit)="onUpdate()" #updateForm="ngForm" class="form-container">
+    <!-- Profile Picture Section -->
+    <div class="form-section">
+      <!-- <h3>Profile Picture</h3> -->
+      <div class="profile-picture">
+        <label for="newprofile" class="user-img" [ngStyle]="{ 
+            'background-image': additionalDetails.profilePicture 
+            ? 'url(' + additionalDetails.profilePicture + ')' 
+            : (newProfile ? 'url(' + newProfile + ')' : 'url(' + '../../assets/icons/person-outline.svg' + ')') }">
+        </label>
+        <ngx-dropzone   (change)="onFileSelected($event)" >
+          <ngx-dropzone-label> upload yourphoto</ngx-dropzone-label>
+          @for(file of files; track $index){
+            <ngx-dropzone-preview [file]="file" [removable]="true" >
+              <ngx-dropzone-label > {{file.name}} {{file.type}}</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          } 
+        </ngx-dropzone>/>
+      </div>
+    </div>
+
+    <!-- Personal Information Section -->
+    <div class="form-section">
+      <h3>Personal Information</h3>
+      <div class="row">
+        <div class="form-group">
+          <label for="username">Username *</label>
+          <input
+            id="username"
+            type="text"
+            [(ngModel)]="candidate.fullName"
+            name="username"
+            required
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input
+            id="email"
+            type="email"
+            [(ngModel)]="candidate.email"
+            name="email"
+            readonly
+            required
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number *</label>
+          <input
+            id="phoneNumber"
+            type="text"
+            [(ngModel)]="additionalDetails.phoneNumber"
+            name="phoneNumber"
+            required
+            pattern="^(?!0)[0-9]{10}$"
+          />
+        </div>
+        <div class="form-group">
+          <label for="location">Location *</label>
+          <input
+            id="location"
+            type="text"
+            [(ngModel)]="additionalDetails.location"
+            name="location"
+            required
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Information Section -->
+    <div class="form-section">
+      <h3>Professional Information</h3>
+      <div class="row">
+        <div class="form-group">
+          <label for="specialization">Specialization *</label>
+          <input
+            id="specialization"
+            type="text"
+            [(ngModel)]="additionalDetails.specialization"
+            name="specialization"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="companyName">Company/College Name *</label>
+          <input
+            id="companyName"
+            type="text"
+            [(ngModel)]="additionalDetails.companyName"
+            name="companyName"
+            required
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Details Section -->
+    <div class="form-section">
+      <h3>Additional Details</h3>
+      <div class="row">
+        <div class="form-group">
+          <label for="gender">Gender *</label>
+          <select
+            id="gender"
+            [(ngModel)]="additionalDetails.gender"
+            name="gender"
+            required
+          >
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="status">Status *</label>
+          <select
+            id="status"
+            [(ngModel)]="additionalDetails.status"
+            name="status"
+            required
+          >
+            <option value="" disabled selected>Select your status</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Working">Working</option>
+            <option value="Studying">Studying</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p>{{errorMessage}}</p>
+
+    <!-- Action Buttons -->
+    <div *ngIf="additionaldetails" class="form-buttons">
+      <button type="button" class="cancel" (click)="cancel()">Cancel</button>
+      <button type="submit" class="primary" >
+        Save
+      </button>
+    </div>
+    <div *ngIf="!additionaldetails" class="from-buttons">
+      <button (click)="navigateRegister()">Register Details</button>
+    </div>
+  </form>
+</div>

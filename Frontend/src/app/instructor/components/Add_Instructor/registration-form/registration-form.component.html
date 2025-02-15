@@ -1,0 +1,169 @@
+<app-befor-apply-banner></app-befor-apply-banner>
+<div class="container-instructor-form">
+  <h2>Apply As Instructor</h2>
+  <p>
+    Are you passionate about teaching and eager to inspire others? Join our team
+    of dedicated instructors and make a difference! We're looking for
+    professionals who are skilled, motivated, and ready to share their knowledge
+    with a diverse group of learners. Whether you're an expert in technology,
+    arts, sciences, or any other field, this is your chance to empower others
+    and grow your career in a supportive and dynamic environment. Apply today
+    and start your journey as an impactful educator!
+  </p>
+
+  <form [formGroup]="instructorForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="full-name">Full Name <span class="required">*</span></label>
+      <input
+        id="full-name"
+        formControlName="fullName"
+        placeholder="Enter your full name"
+        [class.invalid-input]="instructorForm.get('fullName')?.invalid && (instructorForm.get('fullName')?.dirty || instructorForm.get('fullName')?.touched)"
+      />
+      <div class="error-message" *ngIf="instructorForm.get('fullName')?.invalid && (instructorForm.get('fullName')?.dirty || instructorForm.get('fullName')?.touched)">
+        <span *ngIf="instructorForm.get('fullName')?.errors?.['required']">Full name is required</span>
+        <span *ngIf="instructorForm.get('fullName')?.errors?.['pattern']">Name should only contain letters</span>
+        <span *ngIf="instructorForm.get('fullName')?.errors?.['minlength']">Name must be at least 2 characters</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-number">Contact Number <span class="required">*</span></label>
+      <input
+        id="contact-number"
+        formControlName="contactNumber"
+        placeholder="Enter your contact number"
+        [class.invalid-input]="instructorForm.get('contactNumber')?.invalid && (instructorForm.get('contactNumber')?.dirty || instructorForm.get('contactNumber')?.touched)"
+      />
+      <div class="error-message" *ngIf="instructorForm.get('contactNumber')?.invalid && (instructorForm.get('contactNumber')?.dirty || instructorForm.get('contactNumber')?.touched)">
+        <span *ngIf="instructorForm.get('contactNumber')?.errors?.['required']">Contact number is required</span>
+        <span *ngIf="instructorForm.get('contactNumber')?.errors?.['pattern']">Please enter a valid 10-15 digit number</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email <span class="required">*</span></label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+        [class.invalid-input]="instructorForm.get('email')?.invalid && (instructorForm.get('email')?.dirty || instructorForm.get('email')?.touched)"
+      />
+      <div class="error-message" *ngIf="instructorForm.get('email')?.invalid && (instructorForm.get('email')?.dirty || instructorForm.get('email')?.touched)">
+        <span *ngIf="instructorForm.get('email')?.errors?.['required']">Email is required</span>
+        <span *ngIf="instructorForm.get('email')?.errors?.['pattern']">Please enter a valid email address</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="experience">Years of Experience <span class="required">*</span></label>
+      <input
+        id="experience"
+        type="number"
+        formControlName="experience"
+        placeholder="Enter your experience in years"
+        [class.invalid-input]="instructorForm.get('experience')?.invalid && (instructorForm.get('experience')?.dirty || instructorForm.get('experience')?.touched)"
+      />
+      <div class="error-message" *ngIf="instructorForm.get('experience')?.invalid && (instructorForm.get('experience')?.dirty || instructorForm.get('experience')?.touched)">
+        <span *ngIf="instructorForm.get('experience')?.errors?.['required']">Experience is required</span>
+        <span *ngIf="instructorForm.get('experience')?.errors?.['min']">Experience cannot be negative</span>
+        <span *ngIf="instructorForm.get('experience')?.errors?.['max']">Experience cannot exceed 50 years</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="teaching-domain">Preferred Teaching Domain <span class="required">*</span></label>
+      <select 
+        id="teaching-domain" 
+        formControlName="teachingDomain"
+        [class.invalid-input]="instructorForm.get('teachingDomain')?.invalid && (instructorForm.get('teachingDomain')?.dirty || instructorForm.get('teachingDomain')?.touched)"
+      >
+        <option value="">Select domain</option>
+        <option value="Web Development">Web Development</option>
+        <option value="AI ML">AI ML</option>
+        <option value="Cloud Computing">Cloud Computing</option>
+        <option value="DevOps">DevOps</option>
+      </select>
+      <div class="error-message" *ngIf="instructorForm.get('teachingDomain')?.invalid && (instructorForm.get('teachingDomain')?.dirty || instructorForm.get('teachingDomain')?.touched)">
+        <span *ngIf="instructorForm.get('teachingDomain')?.errors?.['required']">Teaching domain is required</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="specialization">Specialization <span class="required">*</span></label>
+      <select 
+        id="specialization" 
+        formControlName="specialization"
+        [class.invalid-input]="instructorForm.get('specialization')?.invalid && (instructorForm.get('specialization')?.dirty || instructorForm.get('specialization')?.touched)"
+      >
+        <option value="">Select specialization</option>
+        <option value="Algebra">Algebra</option>
+        <option value="Programming">Programming</option>
+        <option value="Data Structures">Data Structures</option>
+      </select>
+      <div class="error-message" *ngIf="instructorForm.get('specialization')?.invalid && (instructorForm.get('specialization')?.dirty || instructorForm.get('specialization')?.touched)">
+        <span *ngIf="instructorForm.get('specialization')?.errors?.['required']">Specialization is required</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="degree">Highest Degree Earned <span class="required">*</span></label>
+      <input
+        id="degree"
+        formControlName="degree"
+        placeholder="Enter your highest degree"
+        [class.invalid-input]="instructorForm.get('degree')?.invalid && (instructorForm.get('degree')?.dirty || instructorForm.get('degree')?.touched)"
+      />
+      <div class="error-message" *ngIf="instructorForm.get('degree')?.invalid && (instructorForm.get('degree')?.dirty || instructorForm.get('degree')?.touched)">
+        <span *ngIf="instructorForm.get('degree')?.errors?.['required']">Degree is required</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="certifications">Relevant Certifications</label>
+      <input
+        id="certifications"
+        formControlName="certifications"
+        placeholder="Enter your certifications"
+      />
+    </div>
+
+
+    <div class="form-group">
+      <label>Resume Upload <span class="required">*</span></label>
+      <ngx-dropzone 
+        (change)="onSelect($event)"
+        [class.invalid-input]="files.length === 0 && instructorForm.touched"
+      >
+        <ngx-dropzone-label>Drag and drop your files or click to browse</ngx-dropzone-label>
+        @for(file of files; track $index){
+          <ngx-dropzone-preview
+            [file]="file"
+            [removable]="true"
+            (onRemove)="onRemove(file)"
+          >
+            <ngx-dropzone-label>{{ file.name }} ({{ (file.size / 1024 / 1024).toFixed(2) }} MB)</ngx-dropzone-label>
+          </ngx-dropzone-preview>
+        }
+      </ngx-dropzone>
+      <div class="error-message" *ngIf="files.length === 0 && instructorForm.touched">
+        <span>Resume upload is required</span>
+      </div>
+    </div>
+
+    <div class="form-group button-group">
+      <button type="button" class="btn cancel-btn" (click)="onCancel()">
+        Cancel
+      </button>
+      <button 
+        type="submit" 
+        class="btn submit-btn"
+        [disabled]="isSubmitting"
+      >
+        {{ isSubmitting ? 'Submitting...' : 'Submit Your Application' }}
+      </button>
+    </div>
+  </form>
+</div>
+<app-newsletter></app-newsletter>

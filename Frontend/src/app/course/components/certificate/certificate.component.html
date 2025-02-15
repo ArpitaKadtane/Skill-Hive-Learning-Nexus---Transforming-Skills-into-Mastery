@@ -1,0 +1,42 @@
+<div id="certificate" class="certificate-container">
+  <div class="certificate-header">
+    <img src="assets/logo.png" alt="Skill Hive Logo" class="logo">
+    <h1 class="certificate-title">Skill Hive</h1>
+  </div>
+
+  <h2 class="certificate-subtitle">Certificate of Completion</h2>
+
+  <div class="certificate-body">
+    <p class="certificate-text">This is to certify that</p>
+    <h2 class="user-name">{{ fullName }}</h2>
+    <p class="certificate-text">has successfully completed the course</p>
+    <h3 class="course-name">{{ courseName }}</h3>
+    <p class="certificate-text">on the date: <strong>{{ currentDate }}</strong></p>
+  </div> 
+
+  <div class="certificate-footer">
+    <div class="signatures">
+      <div class="signature-line">
+        <p class="signature-name">{{ instructor }}</p>
+        <p>-------------------</p>
+        <p>Instructor</p>
+      </div>
+      <div class="signature-line">
+        <p class="signature-name">Skill Hive Nexus</p>
+        <p>-------------------</p>
+        <p>Director</p>
+      </div>
+    </div>
+    <p class="issued-text">Issued on: <strong>{{ currentDate }}</strong></p>
+  </div>
+
+  <div class="button-container">
+    <button class="download-btn" (click)="downloadPDF()">Download as PDF</button>
+    <button class="download-btn" (click)="downloadJPG()">Download as JPG</button>
+  </div>
+</div>
+
+
+<div class="btn-cont">
+  <button (click)="home()">Back to Home</button>
+</div>

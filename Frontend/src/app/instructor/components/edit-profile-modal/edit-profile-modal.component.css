@@ -1,0 +1,226 @@
+/* 🌟 Modal Overlay with Blur Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🎨 Glassmorphic Modal Content (Form-Like Design) */
+.modal-content {
+    background: rgba(255, 228, 224, 0.9); /* Soft Transparent Look */
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease-in-out;
+    max-height: 600px;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+/* ✨ Modal Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 🏆 Close Button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ff6652;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* 📝 Title */
+.modal-content h2 {
+    color: #ff6652;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 📋 Input Group for Form */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+/* 🎀 Labels */
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* 🎀 Inputs & Textarea */
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background: white;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* 🏆 Input Focus Effect */
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+    border-color: #ff6652;
+    box-shadow: 0px 0px 10px rgba(255, 102, 82, 0.5);
+}
+
+/* 📜 Textarea */
+.modal-content textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* 🎀 Two-Column Layout for Specific Fields */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap; /* Allows wrapping of fields on smaller screens */
+}
+
+.input-row .input-group {
+    flex: 1 1 calc(50% - 10px); /* 50% width for each input */
+    min-width: 180px; /* Ensures minimum width */
+}
+
+/* 🎀 Stats Section - Display as Flex Columns */
+.stats-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* 🎀 Stat Box - Flex Item */
+.stat-box {
+    flex: 1 1 calc(33.33% - 10px); /* 3 equal-width columns */
+    min-width: 180px;
+}
+
+/* 🎀 Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* 🔥 Save Button */
+.save-btn {
+    background: linear-gradient(45deg, #ff6652, #ff9985);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 48%;
+}
+
+.save-btn:hover {
+    background: black;
+}
+
+/* ❌ Cancel Button */
+.cancel-btn {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border: 2px solid #ff6652;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 48%;
+}
+
+.cancel-btn:hover {
+    background: #ff6652;
+    color: white;
+}
+.upload_photo{
+    width: 100%;
+    height: 50px;
+}
+/* 📱 Mobile Responsive */
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .save-btn, .cancel-btn {
+        width: 100%;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-row .input-group {
+        flex: 1 1 100%; /* Stack inputs vertically on small screens */
+    }
+
+    .stats-section {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        flex: 1 1 100%; /* Stacked layout for mobile */
+        min-width: 100%;
+    }
+}

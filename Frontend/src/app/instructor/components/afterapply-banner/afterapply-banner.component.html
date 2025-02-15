@@ -1,0 +1,28 @@
+<!-- Header Section -->
+<div class="head_box1">
+  <nav>
+      <div>
+          <ul class="nav-links2">
+              <li><a href="#home">Home</a> |</li>
+              <!-- @if (isAdmin === true) { -->
+                  <li><a [routerLink]="['/available-tutors']" routerLinkActive="router-link-active" ><span id="specialtxt">Our Mentors</span></a></li>
+              <!-- } -->
+          </ul>
+      </div>
+  </nav>
+  <div class="head_content">
+      <div class="head_txt">
+          <p>
+              <br> <span id="specialtxt2">SkillHive</span> has <br>
+              Qualified Mentors<br>
+          </p>
+      </div>
+      <div class="head_img">
+          <img src="assets/images/instructor.png" alt="People">
+      </div>
+  </div>
+  <div class="Pattern">
+      <img src="assets/images/Pattern.png" alt="Pattern">
+  </div>
+</div> 
+<!-- <app-introduction></app-introduction> -->

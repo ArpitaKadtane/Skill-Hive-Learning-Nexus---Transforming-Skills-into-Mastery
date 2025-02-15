@@ -1,0 +1,76 @@
+<div class="flex cont">
+  <div class="course-container">
+    <h3 class="course-header">Enrolled Courses</h3>
+    <div 
+      class="course-tile" 
+      *ngFor="let course of user?.enrolledCourses"
+      [ngClass]="{'selected-course': course.courseId == selectedCourse?.courseId}"
+      (click)="courseSelected(course)"
+    >
+      {{ course.title }}
+    </div>
+  </div>
+
+  <div class="child w-full">
+    <div class="flex items-center justify-center text-lg py-3 font-medium border-b-2">
+      {{ selectedCourse?.title || 'Select a Course' }}
+    </div>
+
+    <!-- Show assessments only if the course is completed -->
+    <div *ngIf="selectedCourse?.isCompleted; else courseNotCompleted">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Assessment Name</th>
+              <th>Total Questions</th>
+              <th>Duration (in minutes)</th>
+              <th>Attempt / Review</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let assessment of candidateAssessment">
+              <td>{{ assessment.assessmentName }}</td>
+              <td>{{ assessment.totalQuestions }}</td>
+              <td>{{ assessment.scheduledDetails?.duration || 'N/A' }}</td>
+              <td>
+                <button
+                  style="background-color: #9c4df4;"
+                  *ngIf="!assessment.isCompleted; else notActive"
+                  class="rounded-sm text-white py-1 px-2"
+                  [ngClass]="{ 'hover:bg-green-500' : assessment.isActive , 'bg-green-600' : !assessment.isActive}"
+                  (click)="attemptAssessment(assessment.assessmentID)"
+                >
+                  Attempt
+                </button>
+                <ng-template #notActive>
+                  <button
+                    style="background-color: #9c4df4;"
+                    (click)="reviewAssessment(assessment.assessmentID)"
+                    class="hover:bg-blue-400 rounded-sm text-white py-1 px-2"
+                  >
+                    Review
+                  </button>
+                </ng-template>
+              </td>
+            </tr>
+
+            <!-- Show message when no assessments are found -->
+            <tr *ngIf="candidateAssessment.length === 0">
+              <td colspan="4" class="text-center text-gray-500 py-3">
+                No assessments available for this course.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Message if the course is not completed -->
+    <ng-template #courseNotCompleted>
+      <div class="text-center text-gray-500 py-5">
+        Complete the course to access assessments.
+      </div>
+    </ng-template>
+  </div>
+</div>

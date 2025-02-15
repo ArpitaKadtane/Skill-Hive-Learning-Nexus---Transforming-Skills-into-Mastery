@@ -1,0 +1,47 @@
+<app-afterapply-banner></app-afterapply-banner>
+<div class="table-container">
+  <h2>Applicants Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id No.</th>
+        <th>Name</th>
+        <th>Email Id</th>
+        <th>Applied For</th>
+        <th>Profile</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let instructor of instructors; track instructors.id"
+        [ngClass]="{ 'shortlisted-row': instructor.status === 'Shortlisted' }"
+      >
+        <td>T{{ instructor.id }}</td>
+        <td>{{ instructor.fullName }}</td>
+        <td>{{ instructor.email }}</td>
+        <td>{{ instructor.teachingDomain }}</td>
+        <td>
+          <span class="profile-icon">
+            <a [href]="instructor.resume" target="_blank" rel="noopener noreferrer">
+                📄
+            </a>
+        </span>
+        </td>
+        <td>
+          <div class="dropdown">
+            <button 
+              class="action-button"
+            >Pending
+            </button>
+            <div class="dropdown-content">
+              <a (click)="shortlistInstructor(instructor)" >Shortlisted</a>
+              <a >Pending</a>
+              <a (click)="rejectInstructor(instructor.id)">Rejected</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

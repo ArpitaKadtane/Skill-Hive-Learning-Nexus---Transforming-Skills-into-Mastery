@@ -1,0 +1,100 @@
+.signupCard {
+  width: 420px;
+  border: 0px;
+  margin-top: 38px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formSubTitle {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+
+  .formTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+
+    .errorsContainer{
+      min-height: 22px;
+    }
+
+    ::ng-deep {
+      .mat-mdc-text-field-wrapper {
+        border-radius: 8px;
+        background-color: white;
+        border: 1px solid #d4d4d4;
+      }
+
+      .mdc-line-ripple::after {
+        border-bottom-color: black;
+      }
+    }
+
+    .passwordField,
+    .confirmPasswordField {
+      ::ng-deep {
+        .mat-mdc-form-field-infix {
+          display: flex;
+        }
+      }
+
+      .hideIcon:hover {
+        cursor: pointer;
+      }
+
+      ::ng-deep {
+        .mat-mdc-form-field-subscript-wrapper {
+          height: 0px;
+        }
+      }
+    }
+    // .passwordField {
+    //   margin-bottom: 22px;
+    // }
+
+    .confirmPasswordErrors {
+      font-size: 12px;
+      color: #f44336;
+      padding: 3px 16px;
+    }
+
+    .signupBtn {
+      margin-top: 15px;
+      color: #ffffff;
+      background: #20dc49;
+      border: 1px solid #3bf64d;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+        box-shadow 0.2s;
+      border-radius: 6px;
+      outline-color: transparent;
+      height: 42px;
+    }
+
+    .signupBtn:disabled {
+      background-color: #bff5bc;
+    }
+  }
+
+  .loginRedirect {
+    font-weight: normal;
+    height: 20px;
+    margin-left: 10px;
+
+    a {
+      color: #05a205;
+    }
+  }
+}

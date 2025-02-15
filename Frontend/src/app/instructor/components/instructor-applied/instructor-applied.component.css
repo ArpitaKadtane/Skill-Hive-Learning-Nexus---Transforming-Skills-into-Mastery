@@ -1,0 +1,182 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Container for the table */
+.table-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title for the table */
+.table-container h2 {
+  font-size: 24px;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Table header */
+th {
+  background-color: #ffe4e0;
+  font-weight: bold;
+  color: #2b2b2b;
+  padding: 12px 16px;
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Table cells */
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #2b2b2b;
+}
+
+/* Row for shortlisted instructors */
+.shortlisted-row {
+  background-color: #bcffda;
+  color: white;
+}
+
+/* Profile icon styles */
+.profile-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+/* Dropdown button styling */
+/* General button styling */
+.action-button {
+  background-color: #9c4ef5; /* Default purple background */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #7a35d4; /* Darker purple on hover */
+}
+
+/* Change the background color to green if the instructor is shortlisted */
+.action-button.shortlisted {
+  background-color: #4CAF50; /* Green color */
+}
+
+.action-button.shortlisted:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Light background color */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure it's above other elements */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Display the dropdown on hover */
+}
+
+.dropdown-content a {
+  color: #333; /* Dark text color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+
+/* Modal styling (optional, if used for profile preview) */
+.resume-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* No instructors available message */
+.no-instructors-message {
+  text-align: center;
+  font-size: 18px;
+  color: #9c4ef5;
+  padding: 20px;
+}
+
+/* Status text for action items (Optional, if needed) */
+.status-text {
+  font-weight: bold;
+  color: #007BFF;
+}

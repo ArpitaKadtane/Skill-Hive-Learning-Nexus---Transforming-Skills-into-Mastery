@@ -1,0 +1,36 @@
+<main>
+    <h2>Upcoming Assessments</h2>
+    <div class="container">
+        <!-- Task List Section -->
+        <div (click)="navigateToAssesment()" *ngFor="let assess of assessments" class="task-list">
+          <h3>{{ assess.courseTitle }}</h3>
+          <p><strong>Assessment Name:</strong> {{ assess.assessmentName }}</p>
+          <p><strong>Scheduled Duration:</strong> {{ assess.scheduledDuration }} mins</p>
+          <p><strong>Total Questions:</strong> {{ assess.totalQuestions }}</p>
+        </div>
+      
+        <!-- Calendar Section -->
+        <!-- <div class="calendar">
+          <div class="month-header">
+            <button (click)="prevMonth()">&#8249;</button>
+            <span>{{ monthNames[currentMonth] }} {{ currentYear }}</span>
+            <button (click)="nextMonth()">&#8250;</button>
+          </div>
+          <div class="weekdays">
+            <span *ngFor="let day of weekdays">{{ day }}</span>
+          </div>
+          <div class="days">
+            <span
+              *ngFor="let day of daysInMonth; let i = index"
+              [class.selected]="selectedDate === day.date"
+              [class.has-events]="day.hasEvents"
+              (click)="selectDate(day.date)"
+            >
+              {{ day.day }}
+            </span>
+          </div>
+          
+        </div> -->
+      </div>
+</main>
+  

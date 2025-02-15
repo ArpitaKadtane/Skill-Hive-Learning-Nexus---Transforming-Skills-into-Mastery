@@ -1,0 +1,144 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-toastr/toastr.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  overflow-y: scroll;
+}
+
+.toast-error {
+  width: 400px !important;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+app-header {
+  z-index: 3;
+  position: fixed;
+  width: -webkit-fill-available;
+}
+
+app-sidemenu,
+app-side-menu {
+  position: fixed;
+  z-index: 3;
+  margin-top: 57px;
+}
+
+app-footer {
+  width: -webkit-fill-available;
+  margin-top: 40px !important;
+}
+
+app-newsletter {
+  width: 90%;
+}
+
+app-contact,
+app-signup,
+app-login,
+app-aboutus,
+app-home,
+app-instructor-apply,
+app-registration-form,
+app-formsubmitted,
+app-afterapply-banner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 57px;
+}
+
+app-forgotpassword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+app-instructor-profile,
+app-application-status,
+app-feedback,
+app-profile {
+  margin-top: 57px;
+}
+
+candidate-view-courses {
+  margin-top: 57px;
+  min-height: 378px;
+}
+
+admin-app-view-all-courses,
+app-admin-create-course,
+app-admin-view-courses,
+app-certificate,
+app-course,
+app-assessment {
+  margin-top: 50px;
+}
+
+// Team4 CSS,
+
+.loader-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  --c: linear-gradient(#ff532f 0 0);
+  --r1: radial-gradient(farthest-side at bottom, #ff532f 93%, #0000);
+  --r2: radial-gradient(farthest-side at top, #ff532f 93%, #0000);
+  background: var(--c), var(--r1), var(--r2), var(--c), var(--r1), var(--r2),
+    var(--c), var(--r1), var(--r2);
+  background-repeat: no-repeat;
+  animation: l2 1s infinite alternate;
+}
+@keyframes l2 {
+  0%,
+  25% {
+    background-size: 8px 0, 8px 4px, 8px 4px, 8px 0, 8px 4px, 8px 4px, 8px 0,
+      8px 4px, 8px 4px;
+    background-position: 0 50%, 0 calc(50% - 2px), 0 calc(50% + 2px), 50% 50%,
+      50% calc(50% - 2px), 50% calc(50% + 2px), 100% 50%, 100% calc(50% - 2px),
+      100% calc(50% + 2px);
+  }
+  50% {
+    background-size: 8px 100%, 8px 4px, 8px 4px, 8px 0, 8px 4px, 8px 4px, 8px 0,
+      8px 4px, 8px 4px;
+    background-position: 0 50%, 0 calc(0% - 2px), 0 calc(100% + 2px), 50% 50%,
+      50% calc(50% - 2px), 50% calc(50% + 2px), 100% 50%, 100% calc(50% - 2px),
+      100% calc(50% + 2px);
+  }
+  75% {
+    background-size: 8px 100%, 8px 4px, 8px 4px, 8px 100%, 8px 4px, 8px 4px,
+      8px 0, 8px 4px, 8px 4px;
+    background-position: 0 50%, 0 calc(0% - 2px), 0 calc(100% + 2px), 50% 50%,
+      50% calc(0% - 2px), 50% calc(100% + 2px), 100% 50%, 100% calc(50% - 2px),
+      100% calc(50% + 2px);
+  }
+  95%,
+  100% {
+    background-size: 8px 100%, 8px 4px, 8px 4px, 8px 100%, 8px 4px, 8px 4px,
+      8px 100%, 8px 4px, 8px 4px;
+    background-position: 0 50%, 0 calc(0% - 2px), 0 calc(100% + 2px), 50% 50%,
+      50% calc(0% - 2px), 50% calc(100% + 2px), 100% 50%, 100% calc(0% - 2px),
+      100% calc(100% + 2px);
+  }
+}

@@ -1,0 +1,322 @@
+
+/* Navbar */
+.navbar_1 {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left part */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*logo*/
+
+#logo {
+  margin-top: 5px;
+}
+
+.file-upload{
+  width: 100%;
+  margin-left: 50%;}
+
+/* logo txt */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #FF6652;
+  margin-left: -1.3rem;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF6652;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #FF6652;
+}
+
+/* Right part */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Profile */
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #FF6652;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  background-color: black;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+/*head_Box1*/
+.head_box1 {
+  background-color: #FFE5E1;
+  margin: 2rem;
+  font-family:"Alef", serif;
+  padding-bottom: rem;
+  border-radius: 20px;
+}
+
+#specialtxt {
+  color: #8717d2;
+}
+
+.nav-links2 {
+  list-style: none;
+  display: flex;
+  gap: .3rem;
+  margin:0 0 0 2.2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.nav-links2 a{
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+
+.nav-links2 a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #000;
+  transition: width 0.3s ease; 
+}
+
+.nav-links2 a:hover::after {
+  width: 100%; 
+}
+
+.head_content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10rem;
+  margin-top: 1.3rem;
+  gap: 20rem;
+  font-family: "Lato", serif;
+}
+
+.head_txt {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.Pattern {
+ padding-left: 25rem;
+ margin-top: -4rem;
+}
+
+#specialtxt2 {
+  color: #FF6652;
+}
+
+.container-instructor-form {
+  font-family: Arial, sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #333; /* Neutral text color for readability */
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #4a4a4a; /* Slightly darker for headings */
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555; /* Lighter gray for paragraph text */
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+  gap: 20px;
+  padding: 20px;
+  border: none;
+  background-color: #f9f9f9; /* Light background for form section */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500; /* Slightly bold for better label visibility */
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 94%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border for input fields */
+  border-radius: 5px;
+  background-color: #fff; /* White background for inputs */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4a90e2; /* Blue highlight on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Subtle glow for focus */
+}
+
+.form-group.row {
+  display: flex;
+  justify-content: center; /* Centers the form group horizontally */
+  align-items: center;    /* Centers the content vertically */
+  grid-column: span 2;    /* Ensures it spans the full width of the form if needed */
+  text-align: center;
+}
+
+.form-group.row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the label and input */
+  width: 100%;
+}
+
+.form-group.row input[type="file"] {
+  margin-top: 10px; /* Adds space between the label and file input */
+  text-align: center;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center; /* Center-aligns the buttons horizontally */
+  gap: 10px; /* Adds spacing between the buttons */
+  grid-column: span 2; /* Ensures the button group spans the full form width */
+}
+
+button.cancel-btn,
+button.submit-btn {
+  width: 150px; /* Sets a consistent button width */
+  padding: 10px; /* Adds padding for better appearance */
+  text-align: center;
+  font-size: 16px;
+}
+
+button.cancel-btn {
+  width: 25%;
+  padding: 6px;
+  background: #f68574; /* Soft pink for cancel button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button.cancel-btn:hover {
+  background: #eb5740; /* Slightly darker pink on hover */
+}
+
+button.submit-btn {
+  width: 25%;
+  padding: 6px;
+  background: #9C4DF4; /* Green for submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background: #7d1aee; /* Darker green on hover */
+}
+ngx-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  border: 2px dashed #717386;
+  background-color: #fff;
+  color: #717386;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+ngx-dropzone-label {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}

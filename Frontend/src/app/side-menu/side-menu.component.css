@@ -1,0 +1,88 @@
+.side-menu {
+  position: fixed;
+  width: 250px;
+  background-color: #f4f4f4;
+  height: 92vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; /* Ensures the logout button stays at the bottom */
+}
+
+.side-menu.show {
+  transform: translateX(0);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #e0e0e0;
+}
+
+.menu-item img {
+  margin-right: 15px;
+  width: 22px;
+  height: 22px;
+}
+
+.menu-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Active (selected) menu item */
+.menu-item.active {
+  background-color: #e0e0e0; /* Light blue for active state */
+  border-left: 4px solid #333; /* Optional: Highlight with a border */
+  color: #ff532f; /* Change text color for active state */
+}
+
+.menu-item.active img {
+  filter: brightness(0.5) sepia(1) hue-rotate(190deg) saturate(5); /* Change icon color */
+}
+
+/* Logout Button Styling */
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #ff532f;
+  color: white;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #ff4621;
+}
+
+.logout-button img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .side-menu{
+    padding-top: 70px;
+  }
+}

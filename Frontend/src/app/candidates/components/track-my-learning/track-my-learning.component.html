@@ -1,0 +1,80 @@
+<div class="container">
+  <h2>My Learning</h2>
+  <!-- Overall Performance Section -->
+  <div class="overall-performance">
+    <div class="performance-card">
+      <div class="progress-circle">
+        <div class="circle" style="--progress: {{ overallPerformance }}%">
+          <span>{{ overallPerformance }}%</span>
+        </div>
+        <h3>Overall performance</h3>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+          <div class="details">
+        <h4>Total enrolled courses</h4>
+        <p>{{ totalEnrolledCourses }}</p>
+      </div>
+      <img src="../../../../assets/icons/book-outline.svg" alt="">
+      </div>
+      <div class="stat-card">
+          <div class="details">
+        <h4>Course completed</h4>
+        <p>{{ completedCourses }}</p>
+      </div>
+      <img src="../../../../assets/icons/checkmark-circle-outline.svg" alt="">
+      </div>
+      <!-- <div class="stat-card">
+          <div class="details">
+        <h4>Hours spent</h4>
+        <p> -- hrs</p>
+      </div>
+      <img src="../../../../assets/icons/time-outline.svg" alt="">
+      </div> -->
+    </div>
+  </div>
+
+  <div class="total-courses">
+    <h3>Courses</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Course Name (Course ID)</th>
+          <th>Course Details</th>
+          <th>Progress</th>
+          <th>Status</th>
+          <th>Overall Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of filteredCourses; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td (click)="navigateCourse(course.id)">
+            {{ course.name }} ({{ course.id }})
+            <div class="instructor-details">
+              <small *ngIf="course.instructor">Instructor: {{ course.instructor }}</small>
+            </div>
+          </td>
+          <td>
+            <small>Duration: {{ calculateDuration(course.startDate, course.endDate) }}</small><br />
+            <small>Start Date: {{ course.startDate }}</small><br />
+            <small>End Date: {{ course.endDate }}</small>
+          </td>
+          <td>
+            <div class="progress-bar-container">
+              <div class="progress-bar" [style.width.%]="getProgress(course)"></div>
+            </div>
+            {{ getProgress(course) }}%
+          </td>
+          <td>{{ getProgress(course) != 100 ? 'Ongoing' : 'Completed'}}</td>
+          <td>{{ getProgress(course) == 100 ? calculateAssessmentScore(course) : '--'}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="!filteredCourses.length" style="padding: 20px 0px;text-align: center;color: #9c4df4;">No Courses Enrolled</p>
+  </div>
+</div>
+  

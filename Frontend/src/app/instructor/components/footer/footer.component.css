@@ -1,0 +1,95 @@
+/* Footer container setup */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create five equal columns */
+  margin-top: 30px;
+  gap: 20px;
+  background-color: #ffe4e0; /* Light background color */
+  color: #333333; /* Dark text color */
+  padding: 30px 50px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+
+/* Logo and social section */
+.footer-logo {
+  grid-column: span 1;
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  color: #2b2b52;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.icon-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Style the social media images */
+.icon-link img {
+  width: 30px; /* Set a fixed width for the images */
+  height: 30px; /* Set a fixed height for the images */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for social media links */
+.icon-link:hover img {
+  transform: scale(1.1); /* Slight zoom effect */
+  filter: brightness(1.2); /* Slight brightness effect */
+}
+
+/* Footer sections */
+.footer-section {
+  grid-column: span 1;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #2b2b52;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, padding-left 0.3s ease; /* Adding smooth color and padding transitions */
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff4500; /* Orange color for underline */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect for footer links */
+.footer-link:hover {
+  color: #ff4500; /* Change text color to orange */
+  padding-left: 5px; /* Slight padding-left to shift the text */
+}
+
+.footer-link:hover::after {
+  width: 100%; /* Expand the underline */
+}

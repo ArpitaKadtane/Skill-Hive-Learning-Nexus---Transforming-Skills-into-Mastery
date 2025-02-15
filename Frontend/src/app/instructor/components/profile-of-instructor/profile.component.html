@@ -1,0 +1,73 @@
+<div class="header_bar">
+  <!-- <div class="pattern1"><img src="assets/Pattern.png" alt=""></div>
+  <div class="pattern2"><img id="pattern_bottom" src="assets/Pattern.png" alt=""></div> -->
+  <img id="instructor_profile" [src]="instructordetails.photoUrl" alt="profilepicofinstructor">
+</div>
+
+<div class="instructor_details">
+  <div class="name_instructor">{{instructordetails.fullName}}</div>
+  <div class="text_instructor">{{instructordetails.teachingDomain}} 
+  </div>
+</div>
+
+<div class="about-heading">
+  <h2>About</h2>
+</div>
+
+<div class="main-content">
+  <div class="about-section">
+    <p>
+      {{instructordetails.about}}
+      </p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-box">
+      <h3>Total Courses</h3>
+      <p>{{instructordetails.assignedCourses.length}}</p>
+    </div>
+    <div class="stat-box">
+      <h3>Ratings</h3>
+      <p>{{instructordetails.Ratings}}⭐</p>
+    </div>
+    <div class="stat-box">
+      <h3>Experience</h3>
+      <p>{{instructordetails.experience}}</p>
+    </div>
+    <div class="stat-box">
+      <h3>Graduated</h3>
+      <p>Yes</p>
+    </div>
+    <div class="stat-box">
+      <h3>Languages</h3>
+      <p>{{instructordetails.languages}}</p>
+    </div>
+    <div class="stat-box">
+      <h3>Socials</h3>
+      <p>
+        <a [href]="'mailto:' + instructordetails.email" target="_blank">
+          <img src="assets/images/gmail.png" alt="Mail" style="width: 20px; height: 20px;">
+        </a>
+        <a [href]="instructordetails.linkedin" target="_blank">
+          <img src="assets/images/linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Edit Icon -->
+<!-- Edit Icon -->
+<!-- Edit Icon -->
+<!-- Edit Icon -->
+<!-- <div class="edit-profile" (click)="openModal()">
+  <img src="assets/images/edit.png" alt="Edit Profile">
+</div> -->
+
+<!-- Modal Component -->
+<!-- <app-edit-profile-modal 
+  *ngIf="isModalOpen" 
+  (close)="closeModal()" 
+  (save)="handleSave($event)">
+</app-edit-profile-modal> -->
+
+

@@ -1,0 +1,65 @@
+<div class="newsletter-section">
+  <div class="side-images">
+    <img
+      src="../../../../assets/images/person1.jpeg"
+      alt="User 1"
+      class="circle-img top-left"
+    />
+    <img
+      src="../../../../assets/images/person3.jpeg"
+      alt="User 2"
+      class="circle-img middle-left"
+    />
+    <img
+      src="../../../../assets/images/person 2.jpg"
+      alt="User 3"
+      class="circle-img bottom-left"
+    />
+    <img
+      src="../../../../assets/images/person4.png"
+      alt="User 4"
+      class="circle-img top-right"
+    />
+    <img
+      src="../../../../assets/images/person6.jpeg"
+      alt="User 5"
+      class="circle-img middle-right"
+    />
+    <img
+      src="../../../../assets/images/person5.jpeg"
+      alt="User 6"
+      class="circle-img bottom-right"
+    />
+  </div>
+
+  <div class="newsletter-content">
+    <h2>📩 Subscribe to SkillHive</h2>
+    <p>
+      Join 20k+ learners who are leveling up their skills every day! Sign up to
+      stay updated on our latest courses and exclusive content.
+    </p>
+    <div class="newsletter-form">
+      <form
+        class="searchFormContainer"
+        [formGroup]="newsLetterForm"
+        (ngSubmit)="subscribe()"
+      >
+        <div class="searchInputContainer">
+          <input
+            class="searchInput"
+            type="email"
+            formControlName="email"
+            placeholder="Enter your email"
+            aria-label="Enter your email"
+          />
+          @if (newsLetterForm.get('email').hasError('email') && newsLetterForm.get('email').touched) {
+          <div class="emailError">*Please enter a valid email address</div>
+          }
+        </div>
+        <button class="submitBtn" type="submit" [disabled]="newsLetterForm.invalid">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

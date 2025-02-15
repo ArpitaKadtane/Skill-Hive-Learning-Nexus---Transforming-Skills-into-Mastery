@@ -1,0 +1,5007 @@
+{
+  "users": [
+    {
+      "id": "ed3e",
+      "user": "users",
+      "fullName": "Bhanu Pratap Singh",
+      "email": "bhanusinghpcm09@gmail.com",
+      "password": "Bhanu10@gn",
+      "otp": null,
+      "otpExpiry": null
+    }
+  ],
+  "admins": [
+    {
+      "id": "57be",
+      "fullName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "Admin10@gn"
+    }
+  ],
+  "instructors": [
+    {
+      "id": "8afb",
+      "user": "instructors",
+      "fullName": "Jenny Wilson",
+      "email": "jennywilson@gmail.com",
+      "password": "Jenny123?"
+    },
+    {
+      "id": "4540",
+      "user": "instructors",
+      "fullName": "Esther Howard",
+      "email": "estherhoward@gmail.com",
+      "password": "Esther123?"
+    },
+    {
+      "id": "6ce7",
+      "user": "instructors",
+      "fullName": "Jane Copper",
+      "email": "janecopper@gmail.com",
+      "password": "Jane123?"
+    },
+    {
+      "id": "4115",
+      "user": "instructors",
+      "fullName": "Bhanu Pratap Singh",
+      "email": "bhanusinghpcm091201@gmail.com",
+      "password": "Bhanu10@gn"
+    }
+  ],
+  "newsletteremails": [
+    {
+      "id": "29d2",
+      "email": "bhanusinghpcm09@gmail.com"
+    }
+  ],
+  "courses": [
+    {
+      "id": "5693",
+      "courseId": "1",
+      "name": "React Basics",
+      "startDate": "2024-12-21",
+      "endDate": "2025-12-29",
+      "technology": "Web Development",
+      "status": "Ongoing",
+      "instructor": "Esther Howard",
+      "modules": [
+        {
+          "id": "4fmxhg",
+          "name": "Deep Dive into React Hooks ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702033/huh92uiglegqq3yjgs7s.pdf",
+          "completed": false
+        },
+        {
+          "id": "tzllpr",
+          "name": "State Management Beyond use State ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702191/hridarawxqadudyniz5p.pdf",
+          "completed": false
+        },
+        {
+          "id": "8dkg5e7",
+          "name": "Performance Optimization in React",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702300/bakthohssvrdz7rdrnvi.pdf",
+          "completed": false
+        },
+        {
+          "id": "6ilnt",
+          "name": "Advanced Component Patterns",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702407/cl3a14svgltl0n9pylci.pdf",
+          "completed": false
+        },
+        {
+          "id": "eunwc8",
+          "name": "Server-Side Rendering (SSR) and Static Site Generation (SSG) ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702541/iik971urlzr7uatumsa0.pdf",
+          "completed": false
+        },
+        {
+          "id": "8ud9b",
+          "name": "React Testing and Debugging ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702598/irtiifjls5cxxyb698jg.pdf",
+          "completed": false
+        },
+        {
+          "id": "3rmogu",
+          "name": "React with TypeScript 7",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702669/gaenqpjcxfx9pgl9fjbv.pdf",
+          "completed": false
+        },
+        {
+          "id": "t4ugqw",
+          "name": "Integrating React with Backend Services ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702789/xuwficxgwnkud5ro7qvw.pdf",
+          "completed": false
+        },
+        {
+          "id": "ax726o",
+          "name": "Building Scalable and Maintainable React Apps ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738722885/yirj9ya8ix9lwioqikj4.pdf",
+          "completed": false
+        },
+        {
+          "id": "nsw2x",
+          "name": "Building a Full-Stack React Project ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738722948/wvgkpnbphrxd7clqajyy.pdf",
+          "completed": false
+        }
+      ],
+      "thumbnail": "https://kinsta.com/wp-content/uploads/2023/04/react-must-be-in-scope-when-using-jsx.jpg",
+      "assessment": [
+        {
+          "assessmentName": "React Basics End Assessment",
+          "questions": [
+            {
+              "question": "What is JavaScript primarily used for?",
+              "choices": [
+                "Styling web pages",
+                "Adding interactivity to web pages",
+                "Creating database schemas",
+                "Managing server configurations"
+              ],
+              "answer": "Adding interactivity to web pages"
+            },
+            {
+              "question": "Who created JavaScript?",
+              "choices": [
+                "Tim Berners-Lee",
+                "Brendan Eich",
+                "Dennis Ritchie",
+                "Guido van Rossum"
+              ],
+              "answer": "Brendan Eich"
+            },
+            {
+              "question": "Which year was JavaScript created?",
+              "choices": [
+                "1991",
+                "1995",
+                "2000",
+                "2005"
+              ],
+              "answer": "1995"
+            },
+            {
+              "question": "What does ECMAScript (ES) refer to?",
+              "choices": [
+                "A JavaScript framework",
+                "A JavaScript library",
+                "The standard for JavaScript",
+                "A database query language"
+              ],
+              "answer": "The standard for JavaScript"
+            },
+            {
+              "question": "Which keyword is used to declare a constant variable in JavaScript?",
+              "choices": [
+                "var",
+                "let",
+                "const",
+                "static"
+              ],
+              "answer": "const"
+            },
+            {
+              "question": "Which symbol is used for single-line comments in JavaScript?",
+              "choices": [
+                "//",
+                "/*",
+                "#",
+                "<!--"
+              ],
+              "answer": "//"
+            },
+            {
+              "question": "Which function is used to print something in the browser console?",
+              "choices": [
+                "console.log()",
+                "print()",
+                "log()",
+                "display()"
+              ],
+              "answer": "console.log()"
+            },
+            {
+              "question": "What is the output of 'typeof null' in JavaScript?",
+              "choices": [
+                "null",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "answer": "object"
+            },
+            {
+              "question": "Which of the following is NOT a JavaScript data type?",
+              "choices": [
+                "String",
+                "Boolean",
+                "Integer",
+                "Undefined"
+              ],
+              "answer": "Integer"
+            },
+            {
+              "question": "Which JavaScript method is used to select an HTML element by its ID?",
+              "choices": [
+                "getElementById()",
+                "querySelector()",
+                "getElementByClass()",
+                "selectById()"
+              ],
+              "answer": "getElementById()"
+            },
+            {
+              "question": "What does the 'this' keyword refer to in JavaScript?",
+              "choices": [
+                "The previous function",
+                "The global object",
+                "The current object",
+                "A new instance of an object"
+              ],
+              "answer": "The current object"
+            },
+            {
+              "question": "Which method is used to convert a string to an integer in JavaScript?",
+              "choices": [
+                "parseInt()",
+                "toInteger()",
+                "int()",
+                "Number()"
+              ],
+              "answer": "parseInt()"
+            },
+            {
+              "question": "Which of the following loops does NOT exist in JavaScript?",
+              "choices": [
+                "for",
+                "while",
+                "foreach",
+                "repeat"
+              ],
+              "answer": "repeat"
+            },
+            {
+              "question": "Which operator is used to compare values AND types in JavaScript?",
+              "choices": [
+                "==",
+                "===",
+                "!=",
+                "<>"
+              ],
+              "answer": "==="
+            },
+            {
+              "question": "Which keyword is used to define a function in JavaScript?",
+              "choices": [
+                "function",
+                "def",
+                "method",
+                "fun"
+              ],
+              "answer": "function"
+            },
+            {
+              "question": "Which built-in object can be used to store key-value pairs in JavaScript?",
+              "choices": [
+                "Array",
+                "Object",
+                "Set",
+                "Map"
+              ],
+              "answer": "Object"
+            },
+            {
+              "question": "Which method is used to add an element to the end of an array?",
+              "choices": [
+                "push()",
+                "append()",
+                "add()",
+                "insert()"
+              ],
+              "answer": "push()"
+            },
+            {
+              "question": "What will '5' + 3 evaluate to in JavaScript?",
+              "choices": [
+                "8",
+                "53",
+                "Error",
+                "None"
+              ],
+              "answer": "53"
+            },
+            {
+              "question": "Which method is used to remove the last element from an array?",
+              "choices": [
+                "pop()",
+                "remove()",
+                "delete()",
+                "shift()"
+              ],
+              "answer": "pop()"
+            },
+            {
+              "question": "Which function is used to execute a function after a specified delay?",
+              "choices": [
+                "setInterval()",
+                "setTimeout()",
+                "delay()",
+                "wait()"
+              ],
+              "answer": "setTimeout()"
+            },
+            {
+              "question": "How do you check if a variable is an array in JavaScript?",
+              "choices": [
+                "typeof variable === 'array'",
+                "variable.isArray()",
+                "Array.isArray(variable)",
+                "instanceof Array"
+              ],
+              "answer": "Array.isArray(variable)"
+            },
+            {
+              "question": "What is the default return value of a function that does not explicitly return anything?",
+              "choices": [
+                "null",
+                "0",
+                "undefined",
+                "false"
+              ],
+              "answer": "undefined"
+            },
+            {
+              "question": "Which keyword is used to handle exceptions in JavaScript?",
+              "choices": [
+                "catch",
+                "throw",
+                "try",
+                "error"
+              ],
+              "answer": "try"
+            },
+            {
+              "question": "Which event is triggered when an HTML element loses focus?",
+              "choices": [
+                "onchange",
+                "onblur",
+                "onfocus",
+                "onlost"
+              ],
+              "answer": "onblur"
+            },
+            {
+              "question": "What is the purpose of the JSON.stringify() method?",
+              "choices": [
+                "To parse a JSON string",
+                "To convert an object to a JSON string",
+                "To validate JSON",
+                "To compress JSON"
+              ],
+              "answer": "To convert an object to a JSON string"
+            },
+            {
+              "question": "Which method is used to check if a string contains a specific substring?",
+              "choices": [
+                "includes()",
+                "contains()",
+                "search()",
+                "find()"
+              ],
+              "answer": "includes()"
+            },
+            {
+              "question": "Which object represents the global scope in a browser environment?",
+              "choices": [
+                "window",
+                "global",
+                "document",
+                "navigator"
+              ],
+              "answer": "window"
+            },
+            {
+              "question": "Which statement is true about arrow functions in JavaScript?",
+              "choices": [
+                "They always have their own 'this' context",
+                "They inherit 'this' from their surrounding scope",
+                "They cannot take parameters",
+                "They must always have a return statement"
+              ],
+              "answer": "They inherit 'this' from their surrounding scope"
+            },
+            {
+              "question": "Which of the following is NOT a falsy value in JavaScript?",
+              "choices": [
+                "0",
+                "''",
+                "null",
+                "'false'"
+              ],
+              "answer": "'false'"
+            },
+            {
+              "question": "Which operator is used for optional chaining in JavaScript?",
+              "choices": [
+                ".?",
+                "??",
+                "=>",
+                "::"
+              ],
+              "answer": "?. (optional chaining)"
+            }
+          ],
+          "assessmentID": "a14d85f2-3b79-47c1-b5e9-2c60d8a3f4b1",
+          "createdAt": "2025-01-28T15:21:11.120Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 60
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "feedback": [],
+      "avgRating": 0,
+      "enrolledCandidates": [
+        "bhanusinghpcm09@gmail.com"
+      ],
+      "isEnrolled": false,
+      "instructorId": "d569"
+    },
+    {
+      "id": "5692",
+      "courseId": "2",
+      "name": "Angular Basics",
+      "startDate": "2024-12-21",
+      "endDate": "2025-02-13",
+      "technology": "Full Stack",
+      "status": "Ongoing",
+      "instructor": "Esther Howard",
+      "modules": [
+        {
+          "id": "kip4pp",
+          "name": "Introduction to Angular ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723435/grgt5bso5guz30nxveop.pdf",
+          "completed": false
+        },
+        {
+          "id": "1f03kr",
+          "name": "Angular Components ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723504/kaqwtwujmqhg4xdrk8xw.pdf",
+          "completed": false
+        },
+        {
+          "id": "m3m8qi",
+          "name": " Angular Modules and Directives ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723583/b3q5c7s059o7m8uluiuk.pdf",
+          "completed": false
+        },
+        {
+          "id": "twlss8",
+          "name": "Angular Data Binding ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723630/heab6smovu1zkv6skfl6.pdf",
+          "completed": false
+        },
+        {
+          "id": "4g1jqa",
+          "name": "Angular Services and Dependency Injection ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723704/f8yjolz4nv2b9jxchrmj.pdf",
+          "completed": false
+        },
+        {
+          "id": "50q89",
+          "name": "Angular Routing and Navigation ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723769/hf4dizockwj8q8iqudpb.pdf",
+          "completed": false
+        },
+        {
+          "id": "rnle78",
+          "name": "Forms in Angular ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723816/qjgaxqecjnkjihpi9dfu.pdf",
+          "completed": false
+        },
+        {
+          "id": "pucrjv",
+          "name": "Angular Pipes ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723863/azy2hfkynkam0euhsmwq.pdf",
+          "completed": false
+        },
+        {
+          "id": "zgwsr",
+          "name": "Advanced Angular Concepts",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723919/qlhqo0vlgwsumjoqwzll.pdf",
+          "completed": false
+        },
+        {
+          "id": "144ekj",
+          "name": "Deploying an Angular Application ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738723958/diq170kjgogynjlt0s65.pdf",
+          "completed": false
+        }
+      ],
+      "thumbnail": "https://www.tatvasoft.com/outsourcing/wp-content/uploads/2021/07/Angular-for-Front-end-Development.webp",
+      "enrolledCandidates": [
+        "bhanusinghpcm09@gmail.com"
+      ],
+      "avgRating": 0,
+      "userProgress": {},
+      "assessment": [
+        {
+          "assessmentName": "Angular Basics End Assessment",
+          "questions": [
+            {
+              "question": "What is Angular?",
+              "choices": [
+                "A front-end web framework",
+                "A database management system",
+                "A programming language",
+                "A server-side framework"
+              ],
+              "answer": "A front-end web framework"
+            },
+            {
+              "question": "Which command is used to create a new Angular project using Angular CLI?",
+              "choices": [
+                "ng new",
+                "ng create",
+                "ng generate",
+                "ng init"
+              ],
+              "answer": "ng new"
+            },
+            {
+              "question": "Which decorator is used to define an Angular component?",
+              "choices": [
+                "@NgModule",
+                "@Component",
+                "@Injectable",
+                "@Directive"
+              ],
+              "answer": "@Component"
+            },
+            {
+              "question": "What is a module in Angular?",
+              "choices": [
+                "A container for a group of components, directives, and services",
+                "A file that contains HTML templates",
+                "A type of service",
+                "A routing configuration"
+              ],
+              "answer": "A container for a group of components, directives, and services"
+            },
+            {
+              "question": "How does Angular support two-way data binding?",
+              "choices": [
+                "Using the [(ngModel)] syntax",
+                "Using [data] binding only",
+                "Using event binding only",
+                "Using service injection"
+              ],
+              "answer": "Using the [(ngModel)] syntax"
+            },
+            {
+              "question": "What is dependency injection in Angular?",
+              "choices": [
+                "A design pattern that allows classes to receive dependencies",
+                "A way to inject HTML templates",
+                "A method to connect with databases",
+                "A technique for compiling code"
+              ],
+              "answer": "A design pattern that allows classes to receive dependencies"
+            },
+            {
+              "question": "Which directive is used to iterate over a list in Angular templates?",
+              "choices": [
+                "*ngFor",
+                "*ngIf",
+                "*ngSwitch",
+                "*ngRepeat"
+              ],
+              "answer": "*ngFor"
+            },
+            {
+              "question": "Which lifecycle hook is called after Angular has initialized all data-bound properties of a directive?",
+              "choices": [
+                "ngOnInit",
+                "ngAfterViewInit",
+                "ngDoCheck",
+                "ngAfterContentInit"
+              ],
+              "answer": "ngOnInit"
+            },
+            {
+              "question": "What is the primary purpose of services in Angular?",
+              "choices": [
+                "To share data and logic across components",
+                "To create UI components",
+                "To define routing",
+                "To style the application"
+              ],
+              "answer": "To share data and logic across components"
+            },
+            {
+              "question": "How can you create a service in Angular?",
+              "choices": [
+                "Using the command 'ng generate service'",
+                "Manually writing a function in a component",
+                "Using a module decorator",
+                "By adding it to the bootstrap array"
+              ],
+              "answer": "Using the command 'ng generate service'"
+            },
+            {
+              "question": "What is the role of the RouterModule in Angular?",
+              "choices": [
+                "To enable routing and navigation between views",
+                "To manage HTTP requests",
+                "To provide dependency injection",
+                "To create services"
+              ],
+              "answer": "To enable routing and navigation between views"
+            },
+            {
+              "question": "Which Angular directive is used to conditionally display content?",
+              "choices": [
+                "*ngIf",
+                "*ngFor",
+                "*ngSwitch",
+                "*ngShow"
+              ],
+              "answer": "*ngIf"
+            },
+            {
+              "question": "What does the ngOnInit lifecycle hook do?",
+              "choices": [
+                "Initializes component properties",
+                "Destroys the component",
+                "Handles user input",
+                "Compiles the component template"
+              ],
+              "answer": "Initializes component properties"
+            },
+            {
+              "question": "How do you pass data from a parent component to a child component?",
+              "choices": [
+                "Using Input property binding",
+                "Using Output event binding",
+                "Using services",
+                "Using routing parameters"
+              ],
+              "answer": "Using Input property binding"
+            },
+            {
+              "question": "Which of the following is a valid Angular pipe?",
+              "choices": [
+                "date",
+                "filter",
+                "sort",
+                "map"
+              ],
+              "answer": "date"
+            },
+            {
+              "question": "How do you handle HTTP requests in Angular?",
+              "choices": [
+                "Using the HttpClient service",
+                "Using JavaScript fetch API",
+                "Using XMLHttpRequest",
+                "Using Angular Router"
+              ],
+              "answer": "Using the HttpClient service"
+            },
+            {
+              "question": "Which Angular module provides HTTP client functionality?",
+              "choices": [
+                "HttpClientModule",
+                "BrowserModule",
+                "FormsModule",
+                "RouterModule"
+              ],
+              "answer": "HttpClientModule"
+            },
+            {
+              "question": "What is the purpose of the Angular CLI command 'ng serve'?",
+              "choices": [
+                "To compile and serve the application locally",
+                "To create a new component",
+                "To generate a service",
+                "To run unit tests"
+              ],
+              "answer": "To compile and serve the application locally"
+            },
+            {
+              "question": "How do you add Angular Material to your project?",
+              "choices": [
+                "Using the command 'ng add @angular/material'",
+                "By importing MaterialModule manually",
+                "By downloading it from the website",
+                "Using npm install angular-material only"
+              ],
+              "answer": "Using the command 'ng add @angular/material'"
+            },
+            {
+              "question": "What is the use of the 'providers' array in an Angular module?",
+              "choices": [
+                "To register services for dependency injection",
+                "To declare components",
+                "To import modules",
+                "To bootstrap the application"
+              ],
+              "answer": "To register services for dependency injection"
+            },
+            {
+              "question": "What is the significance of the 'bootstrap' array in the Angular module?",
+              "choices": [
+                "It defines the entry component that Angular should bootstrap",
+                "It lists all the components in the application",
+                "It registers services",
+                "It configures routing"
+              ],
+              "answer": "It defines the entry component that Angular should bootstrap"
+            },
+            {
+              "question": "Which binding syntax is used for event binding in Angular?",
+              "choices": [
+                "()",
+                "[]",
+                "[()]",
+                "{{}}"
+              ],
+              "answer": "()"
+            },
+            {
+              "question": "How do you apply CSS styles to an Angular component?",
+              "choices": [
+                "Using the 'styles' or 'styleUrls' properties in the @Component decorator",
+                "By linking a global CSS file",
+                "Using inline HTML styles only",
+                "By editing the index.html file"
+              ],
+              "answer": "Using the 'styles' or 'styleUrls' properties in the @Component decorator"
+            },
+            {
+              "question": "Which file typically contains global styles in an Angular project?",
+              "choices": [
+                "styles.css",
+                "app.component.css",
+                "main.css",
+                "index.css"
+              ],
+              "answer": "styles.css"
+            },
+            {
+              "question": "What is the purpose of the Angular Router outlet?",
+              "choices": [
+                "To display routed components",
+                "To serve static files",
+                "To handle dependency injection",
+                "To compile templates"
+              ],
+              "answer": "To display routed components"
+            },
+            {
+              "question": "How do you guard routes in Angular?",
+              "choices": [
+                "Using route guards like CanActivate",
+                "By disabling the router",
+                "Using services only",
+                "Using CSS classes"
+              ],
+              "answer": "Using route guards like CanActivate"
+            },
+            {
+              "question": "Which Angular decorator is used to create a directive?",
+              "choices": [
+                "@Directive",
+                "@Component",
+                "@Pipe",
+                "@Injectable"
+              ],
+              "answer": "@Directive"
+            },
+            {
+              "question": "What is lazy loading in Angular?",
+              "choices": [
+                "A design pattern to load modules on demand",
+                "A technique to delay component initialization",
+                "A method for styling components",
+                "A feature for handling HTTP requests"
+              ],
+              "answer": "A design pattern to load modules on demand"
+            },
+            {
+              "question": "How do you share data between sibling components in Angular?",
+              "choices": [
+                "Using a shared service",
+                "Using Input properties",
+                "Using Output events",
+                "By directly accessing each other’s variables"
+              ],
+              "answer": "Using a shared service"
+            },
+            {
+              "question": "What is the function of the RxJS library in Angular?",
+              "choices": [
+                "To handle asynchronous operations and event streams",
+                "To compile Angular templates",
+                "To perform dependency injection",
+                "To manage component styling"
+              ],
+              "answer": "To handle asynchronous operations and event streams"
+            }
+          ],
+          "assessmentID": "d9da3ab2-cb4e-487b-86ca-228ee2d57723",
+          "createdAt": "2025-02-04T15:08:14.606Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 30
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "feedback": [],
+      "isEnrolled": false,
+      "instructorId": "d569"
+    },
+    {
+      "id": "5695",
+      "courseId": "3",
+      "name": "Big data",
+      "startDate": "2024-12-21",
+      "endDate": "2024-12-28",
+      "technology": "TypeScript",
+      "status": "Upcoming",
+      "instructor": "Jane Copper",
+      "avgRating": 0,
+      "instructorId": "9b25",
+      "enrolledCandidates": [
+        "bhanusinghpcm09@gmail.com"
+      ],
+      "thumbnail": "https://cdn.bap-software.net/2023/02/what-is-Big-Data-analytics.jpg",
+      "modules": [
+        {
+          "id": "gebza6",
+          "name": "Introduction to Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696188/w9befxnahyexcqrclgmh.pdf",
+          "completed": false
+        },
+        {
+          "id": "7xvm27",
+          "name": "Big Data Frameworks",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696268/ayl5n11bn9wfzenrodud.pdf",
+          "completed": false
+        },
+        {
+          "id": "ct2tlm",
+          "name": "Data Storage in Big Data",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696340/hhe0ewea9jccmnmx7sws.pdf",
+          "completed": false
+        },
+        {
+          "id": "nmvqam",
+          "name": "Big Data Processing ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696394/ffzojaosxjkwqay51wab.pdf",
+          "completed": false
+        },
+        {
+          "id": "jb3flp",
+          "name": "Programming for Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696455/exfkqphrbbcd9byxbgdm.pdf",
+          "completed": false
+        },
+        {
+          "id": "5w6k1",
+          "name": "Big Data Analytics",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696517/ibn0vl7nzsnbtrhvvo6y.pdf",
+          "completed": false
+        },
+        {
+          "id": "e5ay1q",
+          "name": "Machine Learning and AI in Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696611/y1cgfpcmfhdx1j2wer3v.pdf",
+          "completed": false
+        },
+        {
+          "id": "tfvr4j",
+          "name": "Cloud and Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696650/xexygbaqaageiaxr3ruo.pdf",
+          "completed": false
+        },
+        {
+          "id": "u61yek",
+          "name": "Data Security Challenges in Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696714/xlbsmepfbjzm8px0zn1f.pdf",
+          "completed": false
+        },
+        {
+          "id": "ddxlwd",
+          "name": "Big Data Testing and Optimization ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696767/rohwzelqc3tmefx741ii.pdf",
+          "completed": false
+        },
+        {
+          "id": "ifov0r",
+          "name": "Case Studies and Industry Applications ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696838/cm5zd78vbyivfeqvhixz.pdf",
+          "completed": false
+        },
+        {
+          "id": "p1l799",
+          "name": "Emerging Trends in Big Data ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696874/freyv5sc9xobk3kofek3.pdf",
+          "completed": false
+        },
+        {
+          "id": "nbos2p",
+          "name": "Capstone Project ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738696948/zxaxx5f6pbhxomlh7o9q.pdf",
+          "completed": false
+        }
+      ],
+      "feedback": [],
+      "isEnrolled": false,
+      "userProgress": {
+        "bhanusinghpcm09@gmail.com": {
+          "completedModules": [
+            "gebza6",
+            "7xvm27",
+            "ct2tlm",
+            "nmvqam",
+            "jb3flp",
+            "5w6k1",
+            "e5ay1q",
+            "tfvr4j",
+            "u61yek",
+            "ddxlwd",
+            "ifov0r",
+            "p1l799",
+            "nbos2p"
+          ]
+        }
+      },
+      "assessment": [
+        {
+          "assessmentName": "End Assessment",
+          "questions": [
+            {
+              "question": "What is Big Data?",
+              "choices": [
+                "Small datasets with minimal complexity",
+                "Large datasets that traditional tools can't handle",
+                "Only structured data from databases",
+                "A type of software for data processing"
+              ],
+              "answer": "Large datasets that traditional tools can't handle"
+            },
+            {
+              "question": "Which of the following is NOT a characteristic of Big Data?",
+              "choices": [
+                "Volume",
+                "Velocity",
+                "Variety",
+                "Simplicity"
+              ],
+              "answer": "Simplicity"
+            },
+            {
+              "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+              "choices": [
+                "Healthcare",
+                "Retail",
+                "Finance",
+                "Telecommunications"
+              ],
+              "answer": "Healthcare"
+            },
+            {
+              "question": "What is a challenge in handling Big Data?",
+              "choices": [
+                "Data privacy",
+                "Scalability",
+                " Skill gap",
+                "All of the above"
+              ],
+              "answer": "All of the above"
+            },
+            {
+              "question": "Which tool is a framework for distributed processing of large datasets?",
+              "choices": [
+                "Hadoop",
+                "Excel",
+                "Apache NiFi",
+                "Tableau"
+              ],
+              "answer": "Hadoop"
+            },
+            {
+              "question": "What is HDFS designed for?",
+              "choices": [
+                "Managing real-time analytics",
+                "Storing vast amounts of data with high throughput",
+                "Performing machine learning",
+                "Visualizing data"
+              ],
+              "answer": "Storing vast amounts of data with high throughput"
+            },
+            {
+              "question": "Which component of Hadoop is responsible for job scheduling?",
+              "choices": [
+                "HDFS",
+                "YARN",
+                "Spark Core",
+                "NoSQL"
+              ],
+              "answer": "YARN"
+            },
+            {
+              "question": "Spark is primarily known for which feature?",
+              "choices": [
+                "Disk-based processing",
+                "In-memory computing",
+                "Database integration",
+                "Data visualization"
+              ],
+              "answer": "In-memory computing"
+            },
+            {
+              "question": "What does RDD stand for in Apache Spark?",
+              "choices": [
+                "Relational Data Descriptor",
+                "Resilient Distributed Dataset",
+                "Resource Data Driver",
+                "Remote Dataset Directory"
+              ],
+              "answer": "Resilient Distributed Dataset"
+            },
+            {
+              "question": "Which tool supports both batch and real-time data processing?",
+              "choices": [
+                "Hadoop",
+                "Spark",
+                "Apache NiFi",
+                "Cassandra"
+              ],
+              "answer": "Spark"
+            },
+            {
+              "question": "What type of database is MongoDB?",
+              "choices": [
+                "Relational",
+                "NoSQL",
+                "In-memory",
+                "Analytical"
+              ],
+              "answer": "NoSQL"
+            },
+            {
+              "question": "Which NoSQL database is known for high performance and scalability?",
+              "choices": [
+                "Cassandra",
+                "MySQL",
+                "PostgreSQL",
+                "Oracle"
+              ],
+              "answer": "Cassandra"
+            },
+            {
+              "question": "Which cloud-based data warehouse offers serverless architecture?",
+              "choices": [
+                "Amazon Redshift",
+                "Google BigQuery",
+                " Snowflake",
+                "Microsoft Azure"
+              ],
+              "answer": "Google BigQuery"
+            },
+            {
+              "question": "Which feature is central to HDFS?",
+              "choices": [
+                "Data encryption",
+                "Fault tolerance",
+                "Low latency",
+                "Data compression"
+              ],
+              "answer": "Fault tolerance"
+            },
+            {
+              "question": "What does Snowflake provide?",
+              "choices": [
+                "Only data lakes",
+                "A cloud platform for data warehousing and sharing",
+                "Machine learning tools",
+                "A visualization dashboard"
+              ],
+              "answer": "A cloud platform for data warehousing and sharing"
+            },
+            {
+              "question": "What distinguishes real-time processing from batch processing?",
+              "choices": [
+                "It handles only historical data",
+                "It processes data as it arrives",
+                "It uses Hadoop exclusively",
+                "It supports offline analysis"
+              ],
+              "answer": "It processes data as it arrives"
+            },
+            {
+              "question": "Which tool is used for real-time stream processing?",
+              "choices": [
+                "Apache Flink",
+                "Tableau",
+                "AWS S3",
+                "Apache Sqoop"
+              ],
+              "answer": "Apache Flink"
+            },
+            {
+              "question": "What is the purpose of Apache NiFi?",
+              "choices": [
+                "Data visualization",
+                "Automating data flow between systems",
+                "In-memory analytics",
+                "Distributed storage"
+              ],
+              "answer": "Automating data flow between systems"
+            },
+            {
+              "question": "What is MapReduce's primary function?",
+              "choices": [
+                "Data visualization",
+                "Distributed data processing",
+                "Real-time data ingestion",
+                "Machine learning"
+              ],
+              "answer": "Distributed data processing"
+            },
+            {
+              "question": "Which stage of MapReduce involves sorting and aggregating data?",
+              "choices": [
+                "Map phase",
+                "Shuffle and Sort phase",
+                "Reduce phase",
+                "Transformation phase"
+              ],
+              "answer": "Shuffle and Sort phase"
+            },
+            {
+              "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+              "choices": [
+                "Dask",
+                "Pandas",
+                "PySpark",
+                "NumPy"
+              ],
+              "answer": "PySpark"
+            },
+            {
+              "question": "What is the main advantage of using Scala for Apache Spark?",
+              "choices": [
+                "Easier syntax than Python",
+                "Default language for Spark with functional programming features",
+                "Better visualization tools",
+                "Compatibility with SQL databases"
+              ],
+              "answer": "Default language for Spark with functional programming features"
+            },
+            {
+              "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+              "choices": [
+                "Presto",
+                "Apache Hive",
+                "Impala",
+                "All of the above"
+              ],
+              "answer": "All of the above"
+            },
+            {
+              "question": "What is the main purpose of MapReduce in Big Data processing?",
+              "choices": [
+                "Query optimization",
+                "Converting input data into key-value pairs and aggregating them",
+                "Creating machine learning models",
+                "Generating data visualizations"
+              ],
+              "answer": "Converting input data into key-value pairs and aggregating them"
+            },
+            {
+              "question": "What is the primary purpose of shell scripting in HDFS?",
+              "choices": [
+                "Automating data ingestion and managing directories",
+                "Performing in-memory analytics",
+                "Creating dashboards",
+                "Writing machine learning algorithms"
+              ],
+              "answer": "Automating data ingestion and managing directories"
+            },
+            {
+              "question": "What is Apache Sqoop used for in Big Data?",
+              "choices": [
+                "Transferring data between Hadoop and relational databases",
+                "Real-time stream processing",
+                "Data visualization",
+                "Building machine learning models"
+              ],
+              "answer": "Transferring data between Hadoop and relational databases"
+            },
+            {
+              "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+              "choices": [
+                "Apache Flume",
+                "Kafka Connect",
+                "Sqoop",
+                "Spark Streaming"
+              ],
+              "answer": "Apache Flume"
+            },
+            {
+              "question": "What type of API is typically used to fetch data dynamically from web services?",
+              "choices": [
+                "REST API",
+                "SOAP API",
+                "SQL API",
+                "File API"
+              ],
+              "answer": "REST API"
+            },
+            {
+              "question": "What is a key challenge in real-time data integration?",
+              "choices": [
+                "High throughput and scalability",
+                "Data visualization",
+                "Reducing cost",
+                "Handling offline data"
+              ],
+              "answer": "High throughput and scalability"
+            },
+            {
+              "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+              "choices": [
+                "Apache NiFi",
+                "Apache Flink",
+                "AWS Redshift",
+                "Spark SQL"
+              ],
+              "answer": "Apache NiFi"
+            }
+          ],
+          "assessmentID": "146e7dc8-4357-42e9-8a2a-9f08957d0e7c",
+          "createdAt": "2025-01-23T04:43:33.260Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 60
+            }
+          },
+          "assessmentCompletions": [
+            {
+              "userId": "a047",
+              "completionDate": "2025-02-11T13:09:25.419Z",
+              "assessmentData": {
+                "assessmentName": "End Assessment",
+                "createdAt": "2025-01-23T04:43:33.260Z",
+                "scheduledDetails": {
+                  "duration": 60
+                },
+                "totalQuestions": 30,
+                "questions": [
+                  {
+                    "question": "What is Big Data?",
+                    "choices": [
+                      "Small datasets with minimal complexity",
+                      "Large datasets that traditional tools can't handle",
+                      "Only structured data from databases",
+                      "A type of software for data processing"
+                    ],
+                    "answer": "Large datasets that traditional tools can't handle",
+                    "userAnswer": "A type of software for data processing"
+                  },
+                  {
+                    "question": "Which of the following is NOT a characteristic of Big Data?",
+                    "choices": [
+                      "Volume",
+                      "Velocity",
+                      "Variety",
+                      "Simplicity"
+                    ],
+                    "answer": "Simplicity",
+                    "userAnswer": "Simplicity"
+                  },
+                  {
+                    "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+                    "choices": [
+                      "Healthcare",
+                      "Retail",
+                      "Finance",
+                      "Telecommunications"
+                    ],
+                    "answer": "Healthcare",
+                    "userAnswer": "Telecommunications"
+                  },
+                  {
+                    "question": "What is a challenge in handling Big Data?",
+                    "choices": [
+                      "Data privacy",
+                      "Scalability",
+                      " Skill gap",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above",
+                    "userAnswer": "All of the above"
+                  },
+                  {
+                    "question": "Which tool is a framework for distributed processing of large datasets?",
+                    "choices": [
+                      "Hadoop",
+                      "Excel",
+                      "Apache NiFi",
+                      "Tableau"
+                    ],
+                    "answer": "Hadoop"
+                  },
+                  {
+                    "question": "What is HDFS designed for?",
+                    "choices": [
+                      "Managing real-time analytics",
+                      "Storing vast amounts of data with high throughput",
+                      "Performing machine learning",
+                      "Visualizing data"
+                    ],
+                    "answer": "Storing vast amounts of data with high throughput"
+                  },
+                  {
+                    "question": "Which component of Hadoop is responsible for job scheduling?",
+                    "choices": [
+                      "HDFS",
+                      "YARN",
+                      "Spark Core",
+                      "NoSQL"
+                    ],
+                    "answer": "YARN"
+                  },
+                  {
+                    "question": "Spark is primarily known for which feature?",
+                    "choices": [
+                      "Disk-based processing",
+                      "In-memory computing",
+                      "Database integration",
+                      "Data visualization"
+                    ],
+                    "answer": "In-memory computing"
+                  },
+                  {
+                    "question": "What does RDD stand for in Apache Spark?",
+                    "choices": [
+                      "Relational Data Descriptor",
+                      "Resilient Distributed Dataset",
+                      "Resource Data Driver",
+                      "Remote Dataset Directory"
+                    ],
+                    "answer": "Resilient Distributed Dataset"
+                  },
+                  {
+                    "question": "Which tool supports both batch and real-time data processing?",
+                    "choices": [
+                      "Hadoop",
+                      "Spark",
+                      "Apache NiFi",
+                      "Cassandra"
+                    ],
+                    "answer": "Spark"
+                  },
+                  {
+                    "question": "What type of database is MongoDB?",
+                    "choices": [
+                      "Relational",
+                      "NoSQL",
+                      "In-memory",
+                      "Analytical"
+                    ],
+                    "answer": "NoSQL"
+                  },
+                  {
+                    "question": "Which NoSQL database is known for high performance and scalability?",
+                    "choices": [
+                      "Cassandra",
+                      "MySQL",
+                      "PostgreSQL",
+                      "Oracle"
+                    ],
+                    "answer": "Cassandra"
+                  },
+                  {
+                    "question": "Which cloud-based data warehouse offers serverless architecture?",
+                    "choices": [
+                      "Amazon Redshift",
+                      "Google BigQuery",
+                      " Snowflake",
+                      "Microsoft Azure"
+                    ],
+                    "answer": "Google BigQuery"
+                  },
+                  {
+                    "question": "Which feature is central to HDFS?",
+                    "choices": [
+                      "Data encryption",
+                      "Fault tolerance",
+                      "Low latency",
+                      "Data compression"
+                    ],
+                    "answer": "Fault tolerance"
+                  },
+                  {
+                    "question": "What does Snowflake provide?",
+                    "choices": [
+                      "Only data lakes",
+                      "A cloud platform for data warehousing and sharing",
+                      "Machine learning tools",
+                      "A visualization dashboard"
+                    ],
+                    "answer": "A cloud platform for data warehousing and sharing"
+                  },
+                  {
+                    "question": "What distinguishes real-time processing from batch processing?",
+                    "choices": [
+                      "It handles only historical data",
+                      "It processes data as it arrives",
+                      "It uses Hadoop exclusively",
+                      "It supports offline analysis"
+                    ],
+                    "answer": "It processes data as it arrives"
+                  },
+                  {
+                    "question": "Which tool is used for real-time stream processing?",
+                    "choices": [
+                      "Apache Flink",
+                      "Tableau",
+                      "AWS S3",
+                      "Apache Sqoop"
+                    ],
+                    "answer": "Apache Flink"
+                  },
+                  {
+                    "question": "What is the purpose of Apache NiFi?",
+                    "choices": [
+                      "Data visualization",
+                      "Automating data flow between systems",
+                      "In-memory analytics",
+                      "Distributed storage"
+                    ],
+                    "answer": "Automating data flow between systems"
+                  },
+                  {
+                    "question": "What is MapReduce's primary function?",
+                    "choices": [
+                      "Data visualization",
+                      "Distributed data processing",
+                      "Real-time data ingestion",
+                      "Machine learning"
+                    ],
+                    "answer": "Distributed data processing"
+                  },
+                  {
+                    "question": "Which stage of MapReduce involves sorting and aggregating data?",
+                    "choices": [
+                      "Map phase",
+                      "Shuffle and Sort phase",
+                      "Reduce phase",
+                      "Transformation phase"
+                    ],
+                    "answer": "Shuffle and Sort phase"
+                  },
+                  {
+                    "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+                    "choices": [
+                      "Dask",
+                      "Pandas",
+                      "PySpark",
+                      "NumPy"
+                    ],
+                    "answer": "PySpark"
+                  },
+                  {
+                    "question": "What is the main advantage of using Scala for Apache Spark?",
+                    "choices": [
+                      "Easier syntax than Python",
+                      "Default language for Spark with functional programming features",
+                      "Better visualization tools",
+                      "Compatibility with SQL databases"
+                    ],
+                    "answer": "Default language for Spark with functional programming features"
+                  },
+                  {
+                    "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+                    "choices": [
+                      "Presto",
+                      "Apache Hive",
+                      "Impala",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "What is the main purpose of MapReduce in Big Data processing?",
+                    "choices": [
+                      "Query optimization",
+                      "Converting input data into key-value pairs and aggregating them",
+                      "Creating machine learning models",
+                      "Generating data visualizations"
+                    ],
+                    "answer": "Converting input data into key-value pairs and aggregating them"
+                  },
+                  {
+                    "question": "What is the primary purpose of shell scripting in HDFS?",
+                    "choices": [
+                      "Automating data ingestion and managing directories",
+                      "Performing in-memory analytics",
+                      "Creating dashboards",
+                      "Writing machine learning algorithms"
+                    ],
+                    "answer": "Automating data ingestion and managing directories"
+                  },
+                  {
+                    "question": "What is Apache Sqoop used for in Big Data?",
+                    "choices": [
+                      "Transferring data between Hadoop and relational databases",
+                      "Real-time stream processing",
+                      "Data visualization",
+                      "Building machine learning models"
+                    ],
+                    "answer": "Transferring data between Hadoop and relational databases"
+                  },
+                  {
+                    "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+                    "choices": [
+                      "Apache Flume",
+                      "Kafka Connect",
+                      "Sqoop",
+                      "Spark Streaming"
+                    ],
+                    "answer": "Apache Flume"
+                  },
+                  {
+                    "question": "What type of API is typically used to fetch data dynamically from web services?",
+                    "choices": [
+                      "REST API",
+                      "SOAP API",
+                      "SQL API",
+                      "File API"
+                    ],
+                    "answer": "REST API"
+                  },
+                  {
+                    "question": "What is a key challenge in real-time data integration?",
+                    "choices": [
+                      "High throughput and scalability",
+                      "Data visualization",
+                      "Reducing cost",
+                      "Handling offline data"
+                    ],
+                    "answer": "High throughput and scalability"
+                  },
+                  {
+                    "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+                    "choices": [
+                      "Apache NiFi",
+                      "Apache Flink",
+                      "AWS Redshift",
+                      "Spark SQL"
+                    ],
+                    "answer": "Apache NiFi"
+                  }
+                ],
+                "startAt": "Tue Feb 11 2025 18:39:12 GMT+0530 (India Standard Time)",
+                "completionAt": "Tue Feb 11 2025 18:39:25 GMT+0530 (India Standard Time)"
+              }
+            },
+            {
+              "userId": "c40a",
+              "completionDate": "2025-02-11T21:36:34.790Z",
+              "assessmentData": {
+                "assessmentName": "End Assessment",
+                "createdAt": "2025-01-23T04:43:33.260Z",
+                "scheduledDetails": {
+                  "duration": 60
+                },
+                "totalQuestions": 30,
+                "questions": [
+                  {
+                    "question": "What is Big Data?",
+                    "choices": [
+                      "Small datasets with minimal complexity",
+                      "Large datasets that traditional tools can't handle",
+                      "Only structured data from databases",
+                      "A type of software for data processing"
+                    ],
+                    "answer": "Large datasets that traditional tools can't handle"
+                  },
+                  {
+                    "question": "Which of the following is NOT a characteristic of Big Data?",
+                    "choices": [
+                      "Volume",
+                      "Velocity",
+                      "Variety",
+                      "Simplicity"
+                    ],
+                    "answer": "Simplicity"
+                  },
+                  {
+                    "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+                    "choices": [
+                      "Healthcare",
+                      "Retail",
+                      "Finance",
+                      "Telecommunications"
+                    ],
+                    "answer": "Healthcare"
+                  },
+                  {
+                    "question": "What is a challenge in handling Big Data?",
+                    "choices": [
+                      "Data privacy",
+                      "Scalability",
+                      " Skill gap",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "Which tool is a framework for distributed processing of large datasets?",
+                    "choices": [
+                      "Hadoop",
+                      "Excel",
+                      "Apache NiFi",
+                      "Tableau"
+                    ],
+                    "answer": "Hadoop"
+                  },
+                  {
+                    "question": "What is HDFS designed for?",
+                    "choices": [
+                      "Managing real-time analytics",
+                      "Storing vast amounts of data with high throughput",
+                      "Performing machine learning",
+                      "Visualizing data"
+                    ],
+                    "answer": "Storing vast amounts of data with high throughput"
+                  },
+                  {
+                    "question": "Which component of Hadoop is responsible for job scheduling?",
+                    "choices": [
+                      "HDFS",
+                      "YARN",
+                      "Spark Core",
+                      "NoSQL"
+                    ],
+                    "answer": "YARN"
+                  },
+                  {
+                    "question": "Spark is primarily known for which feature?",
+                    "choices": [
+                      "Disk-based processing",
+                      "In-memory computing",
+                      "Database integration",
+                      "Data visualization"
+                    ],
+                    "answer": "In-memory computing"
+                  },
+                  {
+                    "question": "What does RDD stand for in Apache Spark?",
+                    "choices": [
+                      "Relational Data Descriptor",
+                      "Resilient Distributed Dataset",
+                      "Resource Data Driver",
+                      "Remote Dataset Directory"
+                    ],
+                    "answer": "Resilient Distributed Dataset"
+                  },
+                  {
+                    "question": "Which tool supports both batch and real-time data processing?",
+                    "choices": [
+                      "Hadoop",
+                      "Spark",
+                      "Apache NiFi",
+                      "Cassandra"
+                    ],
+                    "answer": "Spark"
+                  },
+                  {
+                    "question": "What type of database is MongoDB?",
+                    "choices": [
+                      "Relational",
+                      "NoSQL",
+                      "In-memory",
+                      "Analytical"
+                    ],
+                    "answer": "NoSQL"
+                  },
+                  {
+                    "question": "Which NoSQL database is known for high performance and scalability?",
+                    "choices": [
+                      "Cassandra",
+                      "MySQL",
+                      "PostgreSQL",
+                      "Oracle"
+                    ],
+                    "answer": "Cassandra"
+                  },
+                  {
+                    "question": "Which cloud-based data warehouse offers serverless architecture?",
+                    "choices": [
+                      "Amazon Redshift",
+                      "Google BigQuery",
+                      " Snowflake",
+                      "Microsoft Azure"
+                    ],
+                    "answer": "Google BigQuery"
+                  },
+                  {
+                    "question": "Which feature is central to HDFS?",
+                    "choices": [
+                      "Data encryption",
+                      "Fault tolerance",
+                      "Low latency",
+                      "Data compression"
+                    ],
+                    "answer": "Fault tolerance"
+                  },
+                  {
+                    "question": "What does Snowflake provide?",
+                    "choices": [
+                      "Only data lakes",
+                      "A cloud platform for data warehousing and sharing",
+                      "Machine learning tools",
+                      "A visualization dashboard"
+                    ],
+                    "answer": "A cloud platform for data warehousing and sharing"
+                  },
+                  {
+                    "question": "What distinguishes real-time processing from batch processing?",
+                    "choices": [
+                      "It handles only historical data",
+                      "It processes data as it arrives",
+                      "It uses Hadoop exclusively",
+                      "It supports offline analysis"
+                    ],
+                    "answer": "It processes data as it arrives"
+                  },
+                  {
+                    "question": "Which tool is used for real-time stream processing?",
+                    "choices": [
+                      "Apache Flink",
+                      "Tableau",
+                      "AWS S3",
+                      "Apache Sqoop"
+                    ],
+                    "answer": "Apache Flink"
+                  },
+                  {
+                    "question": "What is the purpose of Apache NiFi?",
+                    "choices": [
+                      "Data visualization",
+                      "Automating data flow between systems",
+                      "In-memory analytics",
+                      "Distributed storage"
+                    ],
+                    "answer": "Automating data flow between systems"
+                  },
+                  {
+                    "question": "What is MapReduce's primary function?",
+                    "choices": [
+                      "Data visualization",
+                      "Distributed data processing",
+                      "Real-time data ingestion",
+                      "Machine learning"
+                    ],
+                    "answer": "Distributed data processing"
+                  },
+                  {
+                    "question": "Which stage of MapReduce involves sorting and aggregating data?",
+                    "choices": [
+                      "Map phase",
+                      "Shuffle and Sort phase",
+                      "Reduce phase",
+                      "Transformation phase"
+                    ],
+                    "answer": "Shuffle and Sort phase"
+                  },
+                  {
+                    "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+                    "choices": [
+                      "Dask",
+                      "Pandas",
+                      "PySpark",
+                      "NumPy"
+                    ],
+                    "answer": "PySpark"
+                  },
+                  {
+                    "question": "What is the main advantage of using Scala for Apache Spark?",
+                    "choices": [
+                      "Easier syntax than Python",
+                      "Default language for Spark with functional programming features",
+                      "Better visualization tools",
+                      "Compatibility with SQL databases"
+                    ],
+                    "answer": "Default language for Spark with functional programming features"
+                  },
+                  {
+                    "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+                    "choices": [
+                      "Presto",
+                      "Apache Hive",
+                      "Impala",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "What is the main purpose of MapReduce in Big Data processing?",
+                    "choices": [
+                      "Query optimization",
+                      "Converting input data into key-value pairs and aggregating them",
+                      "Creating machine learning models",
+                      "Generating data visualizations"
+                    ],
+                    "answer": "Converting input data into key-value pairs and aggregating them"
+                  },
+                  {
+                    "question": "What is the primary purpose of shell scripting in HDFS?",
+                    "choices": [
+                      "Automating data ingestion and managing directories",
+                      "Performing in-memory analytics",
+                      "Creating dashboards",
+                      "Writing machine learning algorithms"
+                    ],
+                    "answer": "Automating data ingestion and managing directories"
+                  },
+                  {
+                    "question": "What is Apache Sqoop used for in Big Data?",
+                    "choices": [
+                      "Transferring data between Hadoop and relational databases",
+                      "Real-time stream processing",
+                      "Data visualization",
+                      "Building machine learning models"
+                    ],
+                    "answer": "Transferring data between Hadoop and relational databases"
+                  },
+                  {
+                    "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+                    "choices": [
+                      "Apache Flume",
+                      "Kafka Connect",
+                      "Sqoop",
+                      "Spark Streaming"
+                    ],
+                    "answer": "Apache Flume"
+                  },
+                  {
+                    "question": "What type of API is typically used to fetch data dynamically from web services?",
+                    "choices": [
+                      "REST API",
+                      "SOAP API",
+                      "SQL API",
+                      "File API"
+                    ],
+                    "answer": "REST API"
+                  },
+                  {
+                    "question": "What is a key challenge in real-time data integration?",
+                    "choices": [
+                      "High throughput and scalability",
+                      "Data visualization",
+                      "Reducing cost",
+                      "Handling offline data"
+                    ],
+                    "answer": "High throughput and scalability"
+                  },
+                  {
+                    "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+                    "choices": [
+                      "Apache NiFi",
+                      "Apache Flink",
+                      "AWS Redshift",
+                      "Spark SQL"
+                    ],
+                    "answer": "Apache NiFi"
+                  }
+                ],
+                "startAt": "Wed Feb 12 2025 03:06:16 GMT+0530 (India Standard Time)",
+                "completionAt": "Wed Feb 12 2025 03:06:34 GMT+0530 (India Standard Time)"
+              }
+            },
+            {
+              "userId": "c40a",
+              "completionDate": "2025-02-11T21:52:45.508Z",
+              "assessmentData": {
+                "assessmentName": "End Assessment",
+                "createdAt": "2025-01-23T04:43:33.260Z",
+                "scheduledDetails": {
+                  "duration": 60
+                },
+                "totalQuestions": 30,
+                "questions": [
+                  {
+                    "question": "What is Big Data?",
+                    "choices": [
+                      "Small datasets with minimal complexity",
+                      "Large datasets that traditional tools can't handle",
+                      "Only structured data from databases",
+                      "A type of software for data processing"
+                    ],
+                    "answer": "Large datasets that traditional tools can't handle",
+                    "userAnswer": "Small datasets with minimal complexity"
+                  },
+                  {
+                    "question": "Which of the following is NOT a characteristic of Big Data?",
+                    "choices": [
+                      "Volume",
+                      "Velocity",
+                      "Variety",
+                      "Simplicity"
+                    ],
+                    "answer": "Simplicity"
+                  },
+                  {
+                    "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+                    "choices": [
+                      "Healthcare",
+                      "Retail",
+                      "Finance",
+                      "Telecommunications"
+                    ],
+                    "answer": "Healthcare"
+                  },
+                  {
+                    "question": "What is a challenge in handling Big Data?",
+                    "choices": [
+                      "Data privacy",
+                      "Scalability",
+                      " Skill gap",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "Which tool is a framework for distributed processing of large datasets?",
+                    "choices": [
+                      "Hadoop",
+                      "Excel",
+                      "Apache NiFi",
+                      "Tableau"
+                    ],
+                    "answer": "Hadoop"
+                  },
+                  {
+                    "question": "What is HDFS designed for?",
+                    "choices": [
+                      "Managing real-time analytics",
+                      "Storing vast amounts of data with high throughput",
+                      "Performing machine learning",
+                      "Visualizing data"
+                    ],
+                    "answer": "Storing vast amounts of data with high throughput"
+                  },
+                  {
+                    "question": "Which component of Hadoop is responsible for job scheduling?",
+                    "choices": [
+                      "HDFS",
+                      "YARN",
+                      "Spark Core",
+                      "NoSQL"
+                    ],
+                    "answer": "YARN"
+                  },
+                  {
+                    "question": "Spark is primarily known for which feature?",
+                    "choices": [
+                      "Disk-based processing",
+                      "In-memory computing",
+                      "Database integration",
+                      "Data visualization"
+                    ],
+                    "answer": "In-memory computing"
+                  },
+                  {
+                    "question": "What does RDD stand for in Apache Spark?",
+                    "choices": [
+                      "Relational Data Descriptor",
+                      "Resilient Distributed Dataset",
+                      "Resource Data Driver",
+                      "Remote Dataset Directory"
+                    ],
+                    "answer": "Resilient Distributed Dataset"
+                  },
+                  {
+                    "question": "Which tool supports both batch and real-time data processing?",
+                    "choices": [
+                      "Hadoop",
+                      "Spark",
+                      "Apache NiFi",
+                      "Cassandra"
+                    ],
+                    "answer": "Spark"
+                  },
+                  {
+                    "question": "What type of database is MongoDB?",
+                    "choices": [
+                      "Relational",
+                      "NoSQL",
+                      "In-memory",
+                      "Analytical"
+                    ],
+                    "answer": "NoSQL"
+                  },
+                  {
+                    "question": "Which NoSQL database is known for high performance and scalability?",
+                    "choices": [
+                      "Cassandra",
+                      "MySQL",
+                      "PostgreSQL",
+                      "Oracle"
+                    ],
+                    "answer": "Cassandra"
+                  },
+                  {
+                    "question": "Which cloud-based data warehouse offers serverless architecture?",
+                    "choices": [
+                      "Amazon Redshift",
+                      "Google BigQuery",
+                      " Snowflake",
+                      "Microsoft Azure"
+                    ],
+                    "answer": "Google BigQuery"
+                  },
+                  {
+                    "question": "Which feature is central to HDFS?",
+                    "choices": [
+                      "Data encryption",
+                      "Fault tolerance",
+                      "Low latency",
+                      "Data compression"
+                    ],
+                    "answer": "Fault tolerance"
+                  },
+                  {
+                    "question": "What does Snowflake provide?",
+                    "choices": [
+                      "Only data lakes",
+                      "A cloud platform for data warehousing and sharing",
+                      "Machine learning tools",
+                      "A visualization dashboard"
+                    ],
+                    "answer": "A cloud platform for data warehousing and sharing"
+                  },
+                  {
+                    "question": "What distinguishes real-time processing from batch processing?",
+                    "choices": [
+                      "It handles only historical data",
+                      "It processes data as it arrives",
+                      "It uses Hadoop exclusively",
+                      "It supports offline analysis"
+                    ],
+                    "answer": "It processes data as it arrives"
+                  },
+                  {
+                    "question": "Which tool is used for real-time stream processing?",
+                    "choices": [
+                      "Apache Flink",
+                      "Tableau",
+                      "AWS S3",
+                      "Apache Sqoop"
+                    ],
+                    "answer": "Apache Flink"
+                  },
+                  {
+                    "question": "What is the purpose of Apache NiFi?",
+                    "choices": [
+                      "Data visualization",
+                      "Automating data flow between systems",
+                      "In-memory analytics",
+                      "Distributed storage"
+                    ],
+                    "answer": "Automating data flow between systems"
+                  },
+                  {
+                    "question": "What is MapReduce's primary function?",
+                    "choices": [
+                      "Data visualization",
+                      "Distributed data processing",
+                      "Real-time data ingestion",
+                      "Machine learning"
+                    ],
+                    "answer": "Distributed data processing"
+                  },
+                  {
+                    "question": "Which stage of MapReduce involves sorting and aggregating data?",
+                    "choices": [
+                      "Map phase",
+                      "Shuffle and Sort phase",
+                      "Reduce phase",
+                      "Transformation phase"
+                    ],
+                    "answer": "Shuffle and Sort phase"
+                  },
+                  {
+                    "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+                    "choices": [
+                      "Dask",
+                      "Pandas",
+                      "PySpark",
+                      "NumPy"
+                    ],
+                    "answer": "PySpark"
+                  },
+                  {
+                    "question": "What is the main advantage of using Scala for Apache Spark?",
+                    "choices": [
+                      "Easier syntax than Python",
+                      "Default language for Spark with functional programming features",
+                      "Better visualization tools",
+                      "Compatibility with SQL databases"
+                    ],
+                    "answer": "Default language for Spark with functional programming features"
+                  },
+                  {
+                    "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+                    "choices": [
+                      "Presto",
+                      "Apache Hive",
+                      "Impala",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "What is the main purpose of MapReduce in Big Data processing?",
+                    "choices": [
+                      "Query optimization",
+                      "Converting input data into key-value pairs and aggregating them",
+                      "Creating machine learning models",
+                      "Generating data visualizations"
+                    ],
+                    "answer": "Converting input data into key-value pairs and aggregating them"
+                  },
+                  {
+                    "question": "What is the primary purpose of shell scripting in HDFS?",
+                    "choices": [
+                      "Automating data ingestion and managing directories",
+                      "Performing in-memory analytics",
+                      "Creating dashboards",
+                      "Writing machine learning algorithms"
+                    ],
+                    "answer": "Automating data ingestion and managing directories"
+                  },
+                  {
+                    "question": "What is Apache Sqoop used for in Big Data?",
+                    "choices": [
+                      "Transferring data between Hadoop and relational databases",
+                      "Real-time stream processing",
+                      "Data visualization",
+                      "Building machine learning models"
+                    ],
+                    "answer": "Transferring data between Hadoop and relational databases"
+                  },
+                  {
+                    "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+                    "choices": [
+                      "Apache Flume",
+                      "Kafka Connect",
+                      "Sqoop",
+                      "Spark Streaming"
+                    ],
+                    "answer": "Apache Flume"
+                  },
+                  {
+                    "question": "What type of API is typically used to fetch data dynamically from web services?",
+                    "choices": [
+                      "REST API",
+                      "SOAP API",
+                      "SQL API",
+                      "File API"
+                    ],
+                    "answer": "REST API"
+                  },
+                  {
+                    "question": "What is a key challenge in real-time data integration?",
+                    "choices": [
+                      "High throughput and scalability",
+                      "Data visualization",
+                      "Reducing cost",
+                      "Handling offline data"
+                    ],
+                    "answer": "High throughput and scalability"
+                  },
+                  {
+                    "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+                    "choices": [
+                      "Apache NiFi",
+                      "Apache Flink",
+                      "AWS Redshift",
+                      "Spark SQL"
+                    ],
+                    "answer": "Apache NiFi"
+                  }
+                ],
+                "startAt": "Wed Feb 12 2025 03:22:21 GMT+0530 (India Standard Time)",
+                "completionAt": "Wed Feb 12 2025 03:22:45 GMT+0530 (India Standard Time)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "56945",
+      "courseId": "4",
+      "name": "Introduction to JavaScript",
+      "startDate": "2025-01-15",
+      "endDate": "2025-03-12",
+      "technology": "JavaScript",
+      "status": "Ongoing",
+      "instructor": "Jenny Wilson",
+      "modules": [
+        {
+          "id": "i1f3jt",
+          "name": "Introduction to JavaScript ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699407/w0avu8l987cpvmflyxiv.pdf",
+          "completed": false
+        },
+        {
+          "id": "w0x02h",
+          "name": "JavaScript Basics ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699465/ip65zx2yvrsm0gxqsscf.pdf",
+          "completed": false
+        },
+        {
+          "id": "swdamh",
+          "name": "Control Structures in JavaScript ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699547/ugogfz0x94ukyrh0t6gi.pdf",
+          "completed": false
+        },
+        {
+          "id": "thq8ml",
+          "name": "Functions in JavaScript ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699604/rpxedjwmkdba3pgyddov.pdf",
+          "completed": false
+        },
+        {
+          "id": "0sqmza",
+          "name": "Advanced JavaScript Concepts ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699700/hf6bwnztmjbkralyqg0b.pdf",
+          "completed": false
+        },
+        {
+          "id": "j6r9rm",
+          "name": "Object-Oriented Programming in JavaScript ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699794/yrjdsa1raesbzj3wxxyw.pdf",
+          "completed": false
+        },
+        {
+          "id": "p0bycp",
+          "name": "Error Handling and Debugging in JavaScript ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699858/p0fgvy4muxnoxjizakku.pdf",
+          "completed": false
+        },
+        {
+          "id": "ufswtn",
+          "name": "JavaScript Object-Oriented Programming (OOP) ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700268/qvatbxtnw6iv06ji0wbw.pdf",
+          "completed": false
+        },
+        {
+          "id": "brezi8",
+          "name": "Asynchronous JavaScript: Callbacks, Promises, and Async/Await ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700358/mleweajyvxb50r0usgco.pdf",
+          "completed": false
+        },
+        {
+          "id": "ykubbz",
+          "name": "JavaScript and the Browser: DOM Manipulation and Event Handling ",
+          "type": "pdf",
+          "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700414/yfvhlehqouadvmyuub9v.pdf",
+          "completed": false
+        }
+      ],
+      "thumbnail": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*LyZcwuLWv2FArOumCxobpA.png",
+      "avgRating": "",
+      "enrolledCandidates": [],
+      "instructorId": "0af1",
+      "assessment": [
+        {
+          "assessmentName": "JS end Assessment",
+          "questions": [
+            {
+              "question": "Which event is triggered when an HTML element loses focus?",
+              "choices": [
+                "onchange",
+                "onblur",
+                "onfocus",
+                "onlost"
+              ],
+              "answer": "onfocus"
+            },
+            {
+              "question": "Which built-in object can be used to store key-value pairs in JavaScript?",
+              "choices": [
+                "Array",
+                "Object",
+                "Set",
+                "Map"
+              ],
+              "answer": "Object"
+            },
+            {
+              "question": "Which JavaScript method is used to select an HTML element by its ID?",
+              "choices": [
+                "getElementById()",
+                "querySelector()",
+                "getElementByClass()",
+                "selectById()"
+              ],
+              "answer": "getElementById()"
+            },
+            {
+              "question": "What does ECMAScript (ES) refer to?",
+              "choices": [
+                "A JavaScript framework",
+                "A JavaScript library",
+                "The standard for JavaScript",
+                "A database query language"
+              ],
+              "answer": "The standard for JavaScript"
+            },
+            {
+              "question": "Which operator is used for optional chaining in JavaScript?",
+              "choices": [
+                ".?",
+                "??",
+                "=>",
+                "::"
+              ],
+              "answer": "??"
+            },
+            {
+              "question": "Which of the following is NOT a JavaScript data type?",
+              "choices": [
+                "String",
+                "Boolean",
+                "Integer",
+                "Undefined"
+              ],
+              "answer": "Integer"
+            },
+            {
+              "question": "Which symbol is used for single-line comments in JavaScript?",
+              "choices": [
+                "//",
+                "/*",
+                "#",
+                "<!--"
+              ],
+              "answer": "//"
+            },
+            {
+              "question": "What is the default return value of a function that does not explicitly return anything?",
+              "choices": [
+                "null",
+                "0",
+                "undefined",
+                "false"
+              ],
+              "answer": "undefined"
+            },
+            {
+              "question": "Which statement is true about arrow functions in JavaScript?",
+              "choices": [
+                "They always have their own 'this' context",
+                "They inherit 'this' from their surrounding scope",
+                "They cannot take parameters",
+                "They must always have a return statement"
+              ],
+              "answer": "They inherit 'this' from their surrounding scope"
+            },
+            {
+              "question": "Which year was JavaScript created?",
+              "choices": [
+                "1991",
+                "1995",
+                "2000",
+                "2005"
+              ],
+              "answer": "1995"
+            },
+            {
+              "question": "Which method is used to remove the last element from an array?",
+              "choices": [
+                "pop()",
+                "remove()",
+                "delete()",
+                "shift()"
+              ],
+              "answer": "pop()"
+            },
+            {
+              "question": "What is the output of 'typeof null' in JavaScript?",
+              "choices": [
+                "null",
+                "object",
+                "undefined",
+                "string"
+              ],
+              "answer": "object"
+            },
+            {
+              "question": "Which keyword is used to handle exceptions in JavaScript?",
+              "choices": [
+                "catch",
+                "throw",
+                "try",
+                "error"
+              ],
+              "answer": "try"
+            },
+            {
+              "question": "Which keyword is used to define a function in JavaScript?",
+              "choices": [
+                "function",
+                "def",
+                "method",
+                "fun"
+              ],
+              "answer": "function"
+            },
+            {
+              "question": "Which function is used to print something in the browser console?",
+              "choices": [
+                "console.log()",
+                "print()",
+                "log()",
+                "display()"
+              ],
+              "answer": "console.log()"
+            },
+            {
+              "question": "Which keyword is used to declare a constant variable in JavaScript?",
+              "choices": [
+                "var",
+                "let",
+                "const",
+                "static"
+              ],
+              "answer": "const"
+            },
+            {
+              "question": "What is JavaScript primarily used for?",
+              "choices": [
+                "Styling web pages",
+                "Adding interactivity to web pages",
+                "Creating database schemas",
+                "Managing server configurations"
+              ],
+              "answer": "Adding interactivity to web pages"
+            },
+            {
+              "question": "Which of the following is NOT a falsy value in JavaScript?",
+              "choices": [
+                "0",
+                "''",
+                "null",
+                "'false'"
+              ],
+              "answer": "'false'"
+            },
+            {
+              "question": "Which method is used to check if a string contains a specific substring?",
+              "choices": [
+                "includes()",
+                "contains()",
+                "search()",
+                "find()"
+              ],
+              "answer": "includes()"
+            },
+            {
+              "question": "Which of the following loops does NOT exist in JavaScript?",
+              "choices": [
+                "for",
+                "while",
+                "foreach",
+                "repeat"
+              ],
+              "answer": "repeat"
+            },
+            {
+              "question": "Which object represents the global scope in a browser environment?",
+              "choices": [
+                "window",
+                "global",
+                "document",
+                "navigator"
+              ],
+              "answer": "window"
+            },
+            {
+              "question": "What will '5' + 3 evaluate to in JavaScript?",
+              "choices": [
+                "8",
+                "53",
+                "Error",
+                "None"
+              ],
+              "answer": "53"
+            },
+            {
+              "question": "Which method is used to add an element to the end of an array?",
+              "choices": [
+                "push()",
+                "append()",
+                "add()",
+                "insert()"
+              ],
+              "answer": "push()"
+            },
+            {
+              "question": "How do you check if a variable is an array in JavaScript?",
+              "choices": [
+                "typeof var === 'array'",
+                "var.isArray()",
+                "Array.isArray(var)",
+                "instanceof Array"
+              ],
+              "answer": "Array.isArray(var)"
+            },
+            {
+              "question": "Which operator is used to compare values AND types in JavaScript?",
+              "choices": [
+                "==",
+                "===",
+                "!=",
+                "<>"
+              ],
+              "answer": "==="
+            },
+            {
+              "question": "Which function is used to execute a function after a specified delay?",
+              "choices": [
+                "setInterval()",
+                "setTimeout()",
+                "delay()",
+                "wait()"
+              ],
+              "answer": "setTimeout()"
+            },
+            {
+              "question": "Who created JavaScript?",
+              "choices": [
+                "Tim Berners-Lee",
+                "Brendan Eich",
+                "Dennis Ritchie",
+                "Guido van Rossum"
+              ],
+              "answer": "Brendan Eich"
+            },
+            {
+              "question": "What is the purpose of the JSON.stringify() method?",
+              "choices": [
+                "To parse a JSON string",
+                "To convert an object to a JSON string",
+                "To validate JSON",
+                "To compress JSON"
+              ],
+              "answer": "To convert an object to a JSON string"
+            },
+            {
+              "question": "Which method is used to convert a string to an integer in JavaScript?",
+              "choices": [
+                "parseInt()",
+                "toInteger()",
+                "int()",
+                "Number()"
+              ],
+              "answer": "parseInt()"
+            },
+            {
+              "question": "What does the 'this' keyword refer to in JavaScript?",
+              "choices": [
+                "The previous function",
+                "The global object",
+                "The current object",
+                "A new instance of an object"
+              ],
+              "answer": "The current object"
+            }
+          ],
+          "assessmentID": "7f3b92c8-1d6a-4e5f-a8c2-9d71b4f3e6a7",
+          "createdAt": "2025-01-28T15:21:11.120Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 45
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ]
+    },
+    {
+      "id": "7080",
+      "courseId": "6",
+      "name": "Operating Systems",
+      "startDate": "2025-02-28",
+      "endDate": "2025-03-26",
+      "technology": "OS",
+      "status": "Upcoming",
+      "instructor": "",
+      "instructorId": "",
+      "enrolledCandidates": [],
+      "thumbnail": "https://media.licdn.com/dms/image/v2/D5612AQHtZPSHvUUXpQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1681723080465?e=1744243200&v=beta&t=Lf6gkobJ9FKtH-4h96m4HVKTIPi2X8A1m4DGlJQqjbE",
+      "feedback": [],
+      "avgRating": "",
+      "isEnrolled": false,
+      "userProgress": {},
+      "assessment": []
+    },
+    {
+      "id": "0325",
+      "courseId": "7",
+      "name": "Computer Networks",
+      "startDate": "2025-02-28",
+      "endDate": "2025-03-26",
+      "technology": "CN",
+      "status": "Upcoming",
+      "instructor": "",
+      "instructorId": "",
+      "enrolledCandidates": [],
+      "avgRating": "",
+      "assessment": [],
+      "thumbnail": "https://img.freepik.com/free-vector/flat-isometric-internet-network-concept_126523-1731.jpg?t=st=1738758472~exp=1738762072~hmac=cca25955155ac5da5756431d4629ab470e32478d3309dcaf25db043dee68aba7&w=740",
+      "userProgress": {}
+    },
+    {
+      "id": "fd26",
+      "courseId": "8",
+      "name": "CyberSecurity",
+      "startDate": "2025-02-28",
+      "endDate": "2025-03-26",
+      "technology": "CS",
+      "status": "Upcoming",
+      "instructor": "",
+      "instructorId": "",
+      "enrolledCandidates": [],
+      "thumbnail": "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,q_auto,f_auto/v1591634442/1591634440.jpg",
+      "feedback": [],
+      "avgRating": "",
+      "isEnrolled": false,
+      "userProgress": {},
+      "assessment": []
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "1uepcnkto",
+      "userId": "user123",
+      "courseId": "5695",
+      "courseRating": 4,
+      "instructorRating": 4,
+      "suggestions": "Good course"
+    }
+  ],
+  "applicantDetails": [],
+  "instructorDetails": [
+    {
+      "id": "d569",
+      "fullName": "Esther Howard",
+      "email": "estherhoward@gmail.com",
+      "teachingDomain": "Web Development",
+      "upcoming_courses": "Angular Complete Guide",
+      "start_date": "24-12-23",
+      "end_date": "24-10-14",
+      "candidateEnrolled": 47,
+      "instructorRating": 4.5,
+      "assignedCourses": [
+        {
+          "id": "5693",
+          "courseId": "1",
+          "name": "React Basics",
+          "startDate": "2024-12-21",
+          "endDate": "2025-12-29",
+          "technology": "Web Development",
+          "status": "Ongoing",
+          "instructor": "",
+          "modules": [
+            {
+              "id": "4fmxhg",
+              "name": "Deep Dive into React Hooks ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702033/huh92uiglegqq3yjgs7s.pdf",
+              "completed": false
+            },
+            {
+              "id": "tzllpr",
+              "name": "State Management Beyond use State ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702191/hridarawxqadudyniz5p.pdf",
+              "completed": false
+            },
+            {
+              "id": "8dkg5e7",
+              "name": "Performance Optimization in React",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702300/bakthohssvrdz7rdrnvi.pdf",
+              "completed": false
+            },
+            {
+              "id": "6ilnt",
+              "name": "Advanced Component Patterns",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702407/cl3a14svgltl0n9pylci.pdf",
+              "completed": false
+            },
+            {
+              "id": "eunwc8",
+              "name": "Server-Side Rendering (SSR) and Static Site Generation (SSG) ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702541/iik971urlzr7uatumsa0.pdf",
+              "completed": false
+            },
+            {
+              "id": "8ud9b",
+              "name": "React Testing and Debugging ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702598/irtiifjls5cxxyb698jg.pdf",
+              "completed": false
+            },
+            {
+              "id": "3rmogu",
+              "name": "React with TypeScript 7",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702669/gaenqpjcxfx9pgl9fjbv.pdf",
+              "completed": false
+            },
+            {
+              "id": "t4ugqw",
+              "name": "Integrating React with Backend Services ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738702789/xuwficxgwnkud5ro7qvw.pdf",
+              "completed": false
+            },
+            {
+              "id": "ax726o",
+              "name": "Building Scalable and Maintainable React Apps ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738722885/yirj9ya8ix9lwioqikj4.pdf",
+              "completed": false
+            },
+            {
+              "id": "nsw2x",
+              "name": "Building a Full-Stack React Project ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738722948/wvgkpnbphrxd7clqajyy.pdf",
+              "completed": false
+            }
+          ],
+          "thumbnail": "https://kinsta.com/wp-content/uploads/2023/04/react-must-be-in-scope-when-using-jsx.jpg",
+          "assessment": [
+            {
+              "assessmentName": "React Basics End Assessment",
+              "questions": [
+                {
+                  "question": "What is JavaScript primarily used for?",
+                  "choices": [
+                    "Styling web pages",
+                    "Adding interactivity to web pages",
+                    "Creating database schemas",
+                    "Managing server configurations"
+                  ],
+                  "answer": "Adding interactivity to web pages"
+                },
+                {
+                  "question": "Who created JavaScript?",
+                  "choices": [
+                    "Tim Berners-Lee",
+                    "Brendan Eich",
+                    "Dennis Ritchie",
+                    "Guido van Rossum"
+                  ],
+                  "answer": "Brendan Eich"
+                },
+                {
+                  "question": "Which year was JavaScript created?",
+                  "choices": [
+                    "1991",
+                    "1995",
+                    "2000",
+                    "2005"
+                  ],
+                  "answer": "1995"
+                },
+                {
+                  "question": "What does ECMAScript (ES) refer to?",
+                  "choices": [
+                    "A JavaScript framework",
+                    "A JavaScript library",
+                    "The standard for JavaScript",
+                    "A database query language"
+                  ],
+                  "answer": "The standard for JavaScript"
+                },
+                {
+                  "question": "Which keyword is used to declare a constant variable in JavaScript?",
+                  "choices": [
+                    "var",
+                    "let",
+                    "const",
+                    "static"
+                  ],
+                  "answer": "const"
+                },
+                {
+                  "question": "Which symbol is used for single-line comments in JavaScript?",
+                  "choices": [
+                    "//",
+                    "/*",
+                    "#",
+                    "<!--"
+                  ],
+                  "answer": "//"
+                },
+                {
+                  "question": "Which function is used to print something in the browser console?",
+                  "choices": [
+                    "console.log()",
+                    "print()",
+                    "log()",
+                    "display()"
+                  ],
+                  "answer": "console.log()"
+                },
+                {
+                  "question": "What is the output of 'typeof null' in JavaScript?",
+                  "choices": [
+                    "null",
+                    "object",
+                    "undefined",
+                    "string"
+                  ],
+                  "answer": "object"
+                },
+                {
+                  "question": "Which of the following is NOT a JavaScript data type?",
+                  "choices": [
+                    "String",
+                    "Boolean",
+                    "Integer",
+                    "Undefined"
+                  ],
+                  "answer": "Integer"
+                },
+                {
+                  "question": "Which JavaScript method is used to select an HTML element by its ID?",
+                  "choices": [
+                    "getElementById()",
+                    "querySelector()",
+                    "getElementByClass()",
+                    "selectById()"
+                  ],
+                  "answer": "getElementById()"
+                },
+                {
+                  "question": "What does the 'this' keyword refer to in JavaScript?",
+                  "choices": [
+                    "The previous function",
+                    "The global object",
+                    "The current object",
+                    "A new instance of an object"
+                  ],
+                  "answer": "The current object"
+                },
+                {
+                  "question": "Which method is used to convert a string to an integer in JavaScript?",
+                  "choices": [
+                    "parseInt()",
+                    "toInteger()",
+                    "int()",
+                    "Number()"
+                  ],
+                  "answer": "parseInt()"
+                },
+                {
+                  "question": "Which of the following loops does NOT exist in JavaScript?",
+                  "choices": [
+                    "for",
+                    "while",
+                    "foreach",
+                    "repeat"
+                  ],
+                  "answer": "repeat"
+                },
+                {
+                  "question": "Which operator is used to compare values AND types in JavaScript?",
+                  "choices": [
+                    "==",
+                    "===",
+                    "!=",
+                    "<>"
+                  ],
+                  "answer": "==="
+                },
+                {
+                  "question": "Which keyword is used to define a function in JavaScript?",
+                  "choices": [
+                    "function",
+                    "def",
+                    "method",
+                    "fun"
+                  ],
+                  "answer": "function"
+                },
+                {
+                  "question": "Which built-in object can be used to store key-value pairs in JavaScript?",
+                  "choices": [
+                    "Array",
+                    "Object",
+                    "Set",
+                    "Map"
+                  ],
+                  "answer": "Object"
+                },
+                {
+                  "question": "Which method is used to add an element to the end of an array?",
+                  "choices": [
+                    "push()",
+                    "append()",
+                    "add()",
+                    "insert()"
+                  ],
+                  "answer": "push()"
+                },
+                {
+                  "question": "What will '5' + 3 evaluate to in JavaScript?",
+                  "choices": [
+                    "8",
+                    "53",
+                    "Error",
+                    "None"
+                  ],
+                  "answer": "53"
+                },
+                {
+                  "question": "Which method is used to remove the last element from an array?",
+                  "choices": [
+                    "pop()",
+                    "remove()",
+                    "delete()",
+                    "shift()"
+                  ],
+                  "answer": "pop()"
+                },
+                {
+                  "question": "Which function is used to execute a function after a specified delay?",
+                  "choices": [
+                    "setInterval()",
+                    "setTimeout()",
+                    "delay()",
+                    "wait()"
+                  ],
+                  "answer": "setTimeout()"
+                },
+                {
+                  "question": "How do you check if a variable is an array in JavaScript?",
+                  "choices": [
+                    "typeof variable === 'array'",
+                    "variable.isArray()",
+                    "Array.isArray(variable)",
+                    "instanceof Array"
+                  ],
+                  "answer": "Array.isArray(variable)"
+                },
+                {
+                  "question": "What is the default return value of a function that does not explicitly return anything?",
+                  "choices": [
+                    "null",
+                    "0",
+                    "undefined",
+                    "false"
+                  ],
+                  "answer": "undefined"
+                },
+                {
+                  "question": "Which keyword is used to handle exceptions in JavaScript?",
+                  "choices": [
+                    "catch",
+                    "throw",
+                    "try",
+                    "error"
+                  ],
+                  "answer": "try"
+                },
+                {
+                  "question": "Which event is triggered when an HTML element loses focus?",
+                  "choices": [
+                    "onchange",
+                    "onblur",
+                    "onfocus",
+                    "onlost"
+                  ],
+                  "answer": "onblur"
+                },
+                {
+                  "question": "What is the purpose of the JSON.stringify() method?",
+                  "choices": [
+                    "To parse a JSON string",
+                    "To convert an object to a JSON string",
+                    "To validate JSON",
+                    "To compress JSON"
+                  ],
+                  "answer": "To convert an object to a JSON string"
+                },
+                {
+                  "question": "Which method is used to check if a string contains a specific substring?",
+                  "choices": [
+                    "includes()",
+                    "contains()",
+                    "search()",
+                    "find()"
+                  ],
+                  "answer": "includes()"
+                },
+                {
+                  "question": "Which object represents the global scope in a browser environment?",
+                  "choices": [
+                    "window",
+                    "global",
+                    "document",
+                    "navigator"
+                  ],
+                  "answer": "window"
+                },
+                {
+                  "question": "Which statement is true about arrow functions in JavaScript?",
+                  "choices": [
+                    "They always have their own 'this' context",
+                    "They inherit 'this' from their surrounding scope",
+                    "They cannot take parameters",
+                    "They must always have a return statement"
+                  ],
+                  "answer": "They inherit 'this' from their surrounding scope"
+                },
+                {
+                  "question": "Which of the following is NOT a falsy value in JavaScript?",
+                  "choices": [
+                    "0",
+                    "''",
+                    "null",
+                    "'false'"
+                  ],
+                  "answer": "'false'"
+                },
+                {
+                  "question": "Which operator is used for optional chaining in JavaScript?",
+                  "choices": [
+                    ".?",
+                    "??",
+                    "=>",
+                    "::"
+                  ],
+                  "answer": "?. (optional chaining)"
+                }
+              ],
+              "assessmentID": "a14d85f2-3b79-47c1-b5e9-2c60d8a3f4b1",
+              "createdAt": "2025-01-28T15:21:11.120Z",
+              "schedule": {
+                "isScheduled": true,
+                "scheduledDetails": {
+                  "duration": 60
+                }
+              },
+              "assessmentCompletions": []
+            }
+          ],
+          "feedback": [],
+          "avgRating": "",
+          "enrolledCandidates": [],
+          "isEnrolled": false
+        }
+      ],
+      "about": "As a Web Development instructor with over 10 years of experience, I am passionate about teaching and helping students build real-world applications. Graduating from MIT gave me a strong technical foundation, and over the years, I’ve honed my skills in both frontend and backend development. Living in New York, I stay updated with the latest web technologies and best practices to ensure my students receive top-tier education. My teaching style is hands-on and interactive because I believe the best way to learn is by building. I strive to inspire the next generation of developers to code with confidence, creativity, and purpose.",
+      "experience": 10,
+      "linkedin": "https://www.linkedin.com/",
+      "location": "New York",
+      "languages": "English",
+      "Graduated": "MIT",
+      "photoUrl": "../../../../assets/images/person6.jpeg",
+      "Ratings": 0
+    },
+    {
+      "fullName": "Jenny Wilson",
+      "email": "jennywilson@gmail.com",
+      "teachingDomain": "Web Development",
+      "upcoming_courses": "Angular Complete Guide",
+      "start_date": "24-12-23",
+      "end_date": "24-10-14",
+      "candidateEnrolled": 47,
+      "instructorRating": 4.5,
+      "assignedCourses": [
+        {
+          "id": "56945",
+          "courseId": "4",
+          "name": "Introduction to JavaScript",
+          "startDate": "2025-01-15",
+          "endDate": "2025-03-12",
+          "technology": "JavaScript",
+          "status": "Ongoing",
+          "instructor": "",
+          "modules": [
+            {
+              "id": "i1f3jt",
+              "name": "Introduction to JavaScript ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699407/w0avu8l987cpvmflyxiv.pdf",
+              "completed": false
+            },
+            {
+              "id": "w0x02h",
+              "name": "JavaScript Basics ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699465/ip65zx2yvrsm0gxqsscf.pdf",
+              "completed": false
+            },
+            {
+              "id": "swdamh",
+              "name": "Control Structures in JavaScript ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699547/ugogfz0x94ukyrh0t6gi.pdf",
+              "completed": false
+            },
+            {
+              "id": "thq8ml",
+              "name": "Functions in JavaScript ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699604/rpxedjwmkdba3pgyddov.pdf",
+              "completed": false
+            },
+            {
+              "id": "0sqmza",
+              "name": "Advanced JavaScript Concepts ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699700/hf6bwnztmjbkralyqg0b.pdf",
+              "completed": false
+            },
+            {
+              "id": "j6r9rm",
+              "name": "Object-Oriented Programming in JavaScript ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699794/yrjdsa1raesbzj3wxxyw.pdf",
+              "completed": false
+            },
+            {
+              "id": "p0bycp",
+              "name": "Error Handling and Debugging in JavaScript ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738699858/p0fgvy4muxnoxjizakku.pdf",
+              "completed": false
+            },
+            {
+              "id": "ufswtn",
+              "name": "JavaScript Object-Oriented Programming (OOP) ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700268/qvatbxtnw6iv06ji0wbw.pdf",
+              "completed": false
+            },
+            {
+              "id": "brezi8",
+              "name": "Asynchronous JavaScript: Callbacks, Promises, and Async/Await ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700358/mleweajyvxb50r0usgco.pdf",
+              "completed": false
+            },
+            {
+              "id": "ykubbz",
+              "name": "JavaScript and the Browser: DOM Manipulation and Event Handling ",
+              "type": "pdf",
+              "contentUrl": "https://res.cloudinary.com/skillhivec/image/upload/v1738700414/yfvhlehqouadvmyuub9v.pdf",
+              "completed": false
+            }
+          ],
+          "thumbnail": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*LyZcwuLWv2FArOumCxobpA.png",
+          "avgRating": "",
+          "enrolledCandidates": []
+        }
+      ],
+      "about": "As a seasoned Web Development instructor with over 15 years of industry experience, I am passionate about equipping students with the skills they need to thrive in the tech world. My journey began at MIT, where I built a strong foundation in both front-end and back-end development. Now based in London, I take pride in delivering dynamic, student-centered instruction that simplifies complex technical concepts into practical, real-world applications. From guiding beginners through the fundamentals of HTML, CSS, and JavaScript to diving into advanced topics like full-stack development, database management, and cloud integration, my goal is to provide hands-on learning that prepares students for success. I stay ahead of industry trends to ensure my curriculum remains relevant and engaging. Beyond teaching, I foster a supportive learning environment where collaboration and innovation thrive. Seeing my students grow into skilled developers and launch successful careers is the most rewarding part of my work. For me, web development isn’t just about coding—it’s about solving problems, creating impact, and shaping the future of technology.",
+      "experience": 15,
+      "Graduated": "MIT",
+      "languages": "English",
+      "linkedin": "https://www.linkedin.com/",
+      "location": "London",
+      "photoUrl": "../../../../assets/images/person4.png",
+      "Ratings": 0,
+      "id": "0af1"
+    },
+    {
+      "fullName": "Jane Copper",
+      "email": "janecopper@gmail.com",
+      "teachingDomain": "DevOps",
+      "upcoming_courses": "Angular Complete Guide",
+      "start_date": "24-12-23",
+      "end_date": "24-10-14",
+      "candidateEnrolled": 47,
+      "instructorRating": 4.5,
+      "assignedCourses": [
+        {
+          "id": "5695",
+          "courseId": "3",
+          "name": "big data",
+          "startDate": "2024-12-21",
+          "endDate": "2024-12-28",
+          "technology": "TypeScript",
+          "status": "Upcoming",
+          "instructor": "",
+          "avgRating": ""
+        }
+      ],
+      "about": "I’m Jane Cooper, a DevOps instructor with 20 years of experience in the tech industry. I graduated from MIT, and over the years, I’ve honed my expertise in cloud computing, automation, CI/CD, and infrastructure as code. Based in New York, I have trained and mentored professionals worldwide, helping them master tools like Docker, Kubernetes, Terraform, and Jenkins. My teaching philosophy is rooted in practicality—I believe in learning by doing. Whether guiding individuals or enterprise teams, I focus on real-world applications that enhance efficiency, scalability, and security. Fluent in English, I strive to make complex DevOps concepts accessible and actionable for engineers at all levels. Beyond teaching, I am a firm advocate for automation, continuous improvement, and fostering a DevOps culture that bridges the gap between development and operations. My mission is to equip teams with the knowledge and mindset to build resilient, high-performing software systems.",
+      "experience": 20,
+      "Graduated": "MIT",
+      "languages": "English",
+      "linkedin": "https://www.linkedin.com/",
+      "location": "New York",
+      "photoUrl": "../../../../assets/images/person1.jpeg",
+      "Ratings": 0,
+      "id": "9b25"
+    }
+  ],
+  "additionalDetails_Candidates": [
+    {
+      "id": "c40a",
+      "email": "bhanusinghpcm09@gmail.com",
+      "phoneNumber": "9876543210",
+      "location": "Noida",
+      "companyName": "Dr. Abc Colleage",
+      "status": "Studying",
+      "specialization": "Full Stack Development",
+      "gender": "Male",
+      "profilePicture": "",
+      "enrolledCourses": [
+        {
+          "title": "React Basics",
+          "createdAt": "2025-02-11",
+          "instructorId": "d569",
+          "courseId": "5693",
+          "entrolled": "",
+          "completionPercentage": 0,
+          "assessmentStatus": false,
+          "assessmentData": []
+        },
+        {
+          "title": "Angular Basics",
+          "createdAt": "2025-02-11",
+          "instructorId": "d569",
+          "courseId": "5692",
+          "entrolled": "",
+          "completionPercentage": 0,
+          "assessmentStatus": false,
+          "assessmentData": []
+        },
+        {
+          "title": "Big data",
+          "createdAt": "2025-02-11",
+          "instructorId": "9b25",
+          "courseId": "5695",
+          "entrolled": "",
+          "completionPercentage": 0,
+          "assessmentStatus": true,
+          "assessmentData": [
+            {
+              "assessmentID": "146e7dc8-4357-42e9-8a2a-9f08957d0e7c",
+              "completionDate": "2025-02-11T21:52:45.508Z",
+              "assessmentData": {
+                "assessmentName": "End Assessment",
+                "createdAt": "2025-01-23T04:43:33.260Z",
+                "scheduledDetails": {
+                  "duration": 60
+                },
+                "totalQuestions": 30,
+                "questions": [
+                  {
+                    "question": "What is Big Data?",
+                    "choices": [
+                      "Small datasets with minimal complexity",
+                      "Large datasets that traditional tools can't handle",
+                      "Only structured data from databases",
+                      "A type of software for data processing"
+                    ],
+                    "answer": "Large datasets that traditional tools can't handle",
+                    "userAnswer": "Small datasets with minimal complexity"
+                  },
+                  {
+                    "question": "Which of the following is NOT a characteristic of Big Data?",
+                    "choices": [
+                      "Volume",
+                      "Velocity",
+                      "Variety",
+                      "Simplicity"
+                    ],
+                    "answer": "Simplicity"
+                  },
+                  {
+                    "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+                    "choices": [
+                      "Healthcare",
+                      "Retail",
+                      "Finance",
+                      "Telecommunications"
+                    ],
+                    "answer": "Healthcare"
+                  },
+                  {
+                    "question": "What is a challenge in handling Big Data?",
+                    "choices": [
+                      "Data privacy",
+                      "Scalability",
+                      " Skill gap",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "Which tool is a framework for distributed processing of large datasets?",
+                    "choices": [
+                      "Hadoop",
+                      "Excel",
+                      "Apache NiFi",
+                      "Tableau"
+                    ],
+                    "answer": "Hadoop"
+                  },
+                  {
+                    "question": "What is HDFS designed for?",
+                    "choices": [
+                      "Managing real-time analytics",
+                      "Storing vast amounts of data with high throughput",
+                      "Performing machine learning",
+                      "Visualizing data"
+                    ],
+                    "answer": "Storing vast amounts of data with high throughput"
+                  },
+                  {
+                    "question": "Which component of Hadoop is responsible for job scheduling?",
+                    "choices": [
+                      "HDFS",
+                      "YARN",
+                      "Spark Core",
+                      "NoSQL"
+                    ],
+                    "answer": "YARN"
+                  },
+                  {
+                    "question": "Spark is primarily known for which feature?",
+                    "choices": [
+                      "Disk-based processing",
+                      "In-memory computing",
+                      "Database integration",
+                      "Data visualization"
+                    ],
+                    "answer": "In-memory computing"
+                  },
+                  {
+                    "question": "What does RDD stand for in Apache Spark?",
+                    "choices": [
+                      "Relational Data Descriptor",
+                      "Resilient Distributed Dataset",
+                      "Resource Data Driver",
+                      "Remote Dataset Directory"
+                    ],
+                    "answer": "Resilient Distributed Dataset"
+                  },
+                  {
+                    "question": "Which tool supports both batch and real-time data processing?",
+                    "choices": [
+                      "Hadoop",
+                      "Spark",
+                      "Apache NiFi",
+                      "Cassandra"
+                    ],
+                    "answer": "Spark"
+                  },
+                  {
+                    "question": "What type of database is MongoDB?",
+                    "choices": [
+                      "Relational",
+                      "NoSQL",
+                      "In-memory",
+                      "Analytical"
+                    ],
+                    "answer": "NoSQL"
+                  },
+                  {
+                    "question": "Which NoSQL database is known for high performance and scalability?",
+                    "choices": [
+                      "Cassandra",
+                      "MySQL",
+                      "PostgreSQL",
+                      "Oracle"
+                    ],
+                    "answer": "Cassandra"
+                  },
+                  {
+                    "question": "Which cloud-based data warehouse offers serverless architecture?",
+                    "choices": [
+                      "Amazon Redshift",
+                      "Google BigQuery",
+                      " Snowflake",
+                      "Microsoft Azure"
+                    ],
+                    "answer": "Google BigQuery"
+                  },
+                  {
+                    "question": "Which feature is central to HDFS?",
+                    "choices": [
+                      "Data encryption",
+                      "Fault tolerance",
+                      "Low latency",
+                      "Data compression"
+                    ],
+                    "answer": "Fault tolerance"
+                  },
+                  {
+                    "question": "What does Snowflake provide?",
+                    "choices": [
+                      "Only data lakes",
+                      "A cloud platform for data warehousing and sharing",
+                      "Machine learning tools",
+                      "A visualization dashboard"
+                    ],
+                    "answer": "A cloud platform for data warehousing and sharing"
+                  },
+                  {
+                    "question": "What distinguishes real-time processing from batch processing?",
+                    "choices": [
+                      "It handles only historical data",
+                      "It processes data as it arrives",
+                      "It uses Hadoop exclusively",
+                      "It supports offline analysis"
+                    ],
+                    "answer": "It processes data as it arrives"
+                  },
+                  {
+                    "question": "Which tool is used for real-time stream processing?",
+                    "choices": [
+                      "Apache Flink",
+                      "Tableau",
+                      "AWS S3",
+                      "Apache Sqoop"
+                    ],
+                    "answer": "Apache Flink"
+                  },
+                  {
+                    "question": "What is the purpose of Apache NiFi?",
+                    "choices": [
+                      "Data visualization",
+                      "Automating data flow between systems",
+                      "In-memory analytics",
+                      "Distributed storage"
+                    ],
+                    "answer": "Automating data flow between systems"
+                  },
+                  {
+                    "question": "What is MapReduce's primary function?",
+                    "choices": [
+                      "Data visualization",
+                      "Distributed data processing",
+                      "Real-time data ingestion",
+                      "Machine learning"
+                    ],
+                    "answer": "Distributed data processing"
+                  },
+                  {
+                    "question": "Which stage of MapReduce involves sorting and aggregating data?",
+                    "choices": [
+                      "Map phase",
+                      "Shuffle and Sort phase",
+                      "Reduce phase",
+                      "Transformation phase"
+                    ],
+                    "answer": "Shuffle and Sort phase"
+                  },
+                  {
+                    "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+                    "choices": [
+                      "Dask",
+                      "Pandas",
+                      "PySpark",
+                      "NumPy"
+                    ],
+                    "answer": "PySpark"
+                  },
+                  {
+                    "question": "What is the main advantage of using Scala for Apache Spark?",
+                    "choices": [
+                      "Easier syntax than Python",
+                      "Default language for Spark with functional programming features",
+                      "Better visualization tools",
+                      "Compatibility with SQL databases"
+                    ],
+                    "answer": "Default language for Spark with functional programming features"
+                  },
+                  {
+                    "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+                    "choices": [
+                      "Presto",
+                      "Apache Hive",
+                      "Impala",
+                      "All of the above"
+                    ],
+                    "answer": "All of the above"
+                  },
+                  {
+                    "question": "What is the main purpose of MapReduce in Big Data processing?",
+                    "choices": [
+                      "Query optimization",
+                      "Converting input data into key-value pairs and aggregating them",
+                      "Creating machine learning models",
+                      "Generating data visualizations"
+                    ],
+                    "answer": "Converting input data into key-value pairs and aggregating them"
+                  },
+                  {
+                    "question": "What is the primary purpose of shell scripting in HDFS?",
+                    "choices": [
+                      "Automating data ingestion and managing directories",
+                      "Performing in-memory analytics",
+                      "Creating dashboards",
+                      "Writing machine learning algorithms"
+                    ],
+                    "answer": "Automating data ingestion and managing directories"
+                  },
+                  {
+                    "question": "What is Apache Sqoop used for in Big Data?",
+                    "choices": [
+                      "Transferring data between Hadoop and relational databases",
+                      "Real-time stream processing",
+                      "Data visualization",
+                      "Building machine learning models"
+                    ],
+                    "answer": "Transferring data between Hadoop and relational databases"
+                  },
+                  {
+                    "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+                    "choices": [
+                      "Apache Flume",
+                      "Kafka Connect",
+                      "Sqoop",
+                      "Spark Streaming"
+                    ],
+                    "answer": "Apache Flume"
+                  },
+                  {
+                    "question": "What type of API is typically used to fetch data dynamically from web services?",
+                    "choices": [
+                      "REST API",
+                      "SOAP API",
+                      "SQL API",
+                      "File API"
+                    ],
+                    "answer": "REST API"
+                  },
+                  {
+                    "question": "What is a key challenge in real-time data integration?",
+                    "choices": [
+                      "High throughput and scalability",
+                      "Data visualization",
+                      "Reducing cost",
+                      "Handling offline data"
+                    ],
+                    "answer": "High throughput and scalability"
+                  },
+                  {
+                    "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+                    "choices": [
+                      "Apache NiFi",
+                      "Apache Flink",
+                      "AWS Redshift",
+                      "Spark SQL"
+                    ],
+                    "answer": "Apache NiFi"
+                  }
+                ],
+                "startAt": "Wed Feb 12 2025 03:22:21 GMT+0530 (India Standard Time)",
+                "completionAt": "Wed Feb 12 2025 03:22:45 GMT+0530 (India Standard Time)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "test_course": [
+    {
+      "title": "Introduction to BigData",
+      "createdAt": "10-12-24",
+      "instructorId": 123,
+      "courseId": 542,
+      "entrolledCandidates": [],
+      "assessment": [
+        {
+          "assessmentName": "new 3",
+          "questions": [
+            {
+              "question": "weq",
+              "choices": [
+                "weqw",
+                "eqwe",
+                "qweqw",
+                "weqwqwe"
+              ],
+              "answer": "weqw"
+            }
+          ],
+          "assessmentID": "bd9df788-97e1-42d3-b918-1aeba025179d",
+          "createdAt": "2024-12-22T10:42:52.370Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "assessmentDate": "2024-12-25",
+              "startTime": "09:02",
+              "endTime": "23:59"
+            }
+          },
+          "assessmentCompletions": []
+        },
+        {
+          "assessmentName": "new 4",
+          "questions": [
+            {
+              "question": "q",
+              "choices": [
+                "ab",
+                "cc",
+                "f",
+                "t"
+              ],
+              "answer": "cc"
+            },
+            {
+              "question": "er",
+              "choices": [
+                "w",
+                "re",
+                "ee",
+                "r"
+              ],
+              "answer": "ee"
+            }
+          ],
+          "assessmentID": "14ceb3ec-b6fa-4120-bc80-6b872444af88",
+          "createdAt": "2024-12-24T12:47:04.983Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "assessmentDate": "2024-12-28",
+              "startTime": "09:21",
+              "endTime": "21:25"
+            }
+          },
+          "assessmentCompletions": []
+        },
+        {
+          "assessmentName": "new 5",
+          "questions": [
+            {
+              "question": "weer",
+              "choices": [
+                "ewrwer",
+                "wer",
+                "werwer",
+                "werwer"
+              ],
+              "answer": "werwer"
+            },
+            {
+              "question": "werwer",
+              "choices": [
+                "rwerrerwe",
+                "rwer",
+                "werwer",
+                "werwerwerwer"
+              ],
+              "answer": "werwerwerwer"
+            }
+          ],
+          "assessmentID": "9ff16807-7108-43b8-8b8d-4f86a7b39d4f",
+          "createdAt": "2024-12-24T15:49:58.070Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "assessmentDate": "2024-12-24",
+              "startTime": "22:14",
+              "endTime": "23:25"
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "id": "8cd5"
+    },
+    {
+      "title": "DevOps for Beginners",
+      "createdAt": "12-12-24",
+      "instructorId": 123,
+      "courseId": 543,
+      "assessment": [
+        {
+          "assessmentName": "assessment 1 in DevOps for Beginners",
+          "questions": [
+            {
+              "question": "wew ? ",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "answer": "a"
+            }
+          ],
+          "assessmentID": "d473516c-1381-40cf-947d-8e510ad39395",
+          "createdAt": "2024-12-21T17:09:42.415Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "assessmentDate": "2024-12-24",
+              "startTime": "15:00",
+              "endTime": "16:00"
+            }
+          },
+          "assessmentCompletions": []
+        },
+        {
+          "assessmentName": "new 2 in dev",
+          "questions": [
+            {
+              "question": "werwer",
+              "choices": [
+                "werwer",
+                "werwe",
+                "rewr",
+                "werewrewr"
+              ],
+              "answer": "werewrewr"
+            },
+            {
+              "question": "werer",
+              "choices": [
+                "rwer",
+                "er",
+                "wer",
+                "rr"
+              ],
+              "answer": "rr"
+            }
+          ],
+          "assessmentID": "4376138a-47b8-4f43-930d-9d5b81086a06",
+          "createdAt": "2024-12-24T15:50:55.517Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "assessmentDate": "2024-12-26",
+              "startTime": "21:22",
+              "endTime": "21:26"
+            }
+          },
+          "assessmentCompletions": []
+        },
+        {
+          "assessmentName": "new 3 in dev",
+          "questions": [
+            {
+              "question": "wewe",
+              "choices": [
+                "r",
+                "t",
+                "y",
+                "u"
+              ],
+              "answer": "y"
+            }
+          ],
+          "assessmentID": "9d3e78f5-e806-4190-8a39-78ec715e7924",
+          "createdAt": "2024-12-24T15:51:10.312Z",
+          "schedule": {
+            "isScheduled": false,
+            "scheduledDetails": ""
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "id": "1099"
+    }
+  ],
+  "test_candidates": [
+    {
+      "name": "sihabutheen",
+      "userId": 1231243,
+      "entrolledCourses": [
+        {
+          "title": "Introduction to BigData",
+          "createdAt": "10-12-24",
+          "instructorId": 123,
+          "courseId": 542,
+          "entrolled": "12-12-24",
+          "assessmentData": [
+            {
+              "assessmentID": "bd9df788-97e1-42d3-b918-1aeba025179d",
+              "completionDate": "2024-12-25T17:39:19.158Z",
+              "assessmentData": {
+                "assessmentName": "new 3",
+                "createdAt": "2024-12-22T10:42:52.370Z",
+                "scheduledDetails": {
+                  "assessmentDate": "2024-12-25",
+                  "startTime": "09:02",
+                  "endTime": "23:59"
+                },
+                "totalQuestions": 1,
+                "questions": [
+                  {
+                    "question": "weq",
+                    "choices": [
+                      "weqw",
+                      "eqwe",
+                      "qweqw",
+                      "weqwqwe"
+                    ],
+                    "answer": "weqw",
+                    "userAnswer": "weqwqwe"
+                  }
+                ],
+                "startAt": "2024-12-25T17:39:09.086Z",
+                "completionAt": "2024-12-25T17:39:19.158Z"
+              }
+            }
+          ]
+        },
+        {
+          "title": "DevOps for Beginners",
+          "createdAt": "12-12-24",
+          "instructorId": 123542,
+          "entrolled": "12-12-24",
+          "courseId": 543
+        }
+      ],
+      "id": "e74c"
+    },
+    {
+      "name": "pratham",
+      "userId": 126446243,
+      "entrolledCourses": [
+        {
+          "title": "DevOps for Beginners",
+          "createdAt": "12-12-24",
+          "instructorId": 123542,
+          "entrolled": "25-12-24",
+          "courseId": 543
+        }
+      ],
+      "id": "6c62"
+    }
+  ],
+  "course": [
+    {
+      "title": "Introduction to BigData",
+      "createdAt": "10-12-24",
+      "instructorId": 123,
+      "courseId": 542,
+      "entrolledCandidates": [],
+      "assessment": [
+        {
+          "assessmentName": "End Assessment",
+          "questions": [
+            {
+              "question": "What is Big Data?",
+              "choices": [
+                "Small datasets with minimal complexity",
+                "Large datasets that traditional tools can't handle",
+                "Only structured data from databases",
+                "A type of software for data processing"
+              ],
+              "answer": "Large datasets that traditional tools can't handle"
+            },
+            {
+              "question": "Which of the following is NOT a characteristic of Big Data?",
+              "choices": [
+                "Volume",
+                "Velocity",
+                "Variety",
+                "Simplicity"
+              ],
+              "answer": "Simplicity"
+            },
+            {
+              "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+              "choices": [
+                "Healthcare",
+                "Retail",
+                "Finance",
+                "Telecommunications"
+              ],
+              "answer": "Healthcare"
+            },
+            {
+              "question": "What is a challenge in handling Big Data?",
+              "choices": [
+                "Data privacy",
+                "Scalability",
+                " Skill gap",
+                "All of the above"
+              ],
+              "answer": "All of the above"
+            },
+            {
+              "question": "Which tool is a framework for distributed processing of large datasets?",
+              "choices": [
+                "Hadoop",
+                "Excel",
+                "Apache NiFi",
+                "Tableau"
+              ],
+              "answer": "Hadoop"
+            },
+            {
+              "question": "What is HDFS designed for?",
+              "choices": [
+                "Managing real-time analytics",
+                "Storing vast amounts of data with high throughput",
+                "Performing machine learning",
+                "Visualizing data"
+              ],
+              "answer": "Storing vast amounts of data with high throughput"
+            },
+            {
+              "question": "Which component of Hadoop is responsible for job scheduling?",
+              "choices": [
+                "HDFS",
+                "YARN",
+                "Spark Core",
+                "NoSQL"
+              ],
+              "answer": "YARN"
+            },
+            {
+              "question": "Spark is primarily known for which feature?",
+              "choices": [
+                "Disk-based processing",
+                "In-memory computing",
+                "Database integration",
+                "Data visualization"
+              ],
+              "answer": "In-memory computing"
+            },
+            {
+              "question": "What does RDD stand for in Apache Spark?",
+              "choices": [
+                "Relational Data Descriptor",
+                "Resilient Distributed Dataset",
+                "Resource Data Driver",
+                "Remote Dataset Directory"
+              ],
+              "answer": "Resilient Distributed Dataset"
+            },
+            {
+              "question": "Which tool supports both batch and real-time data processing?",
+              "choices": [
+                "Hadoop",
+                "Spark",
+                "Apache NiFi",
+                "Cassandra"
+              ],
+              "answer": "Spark"
+            },
+            {
+              "question": "What type of database is MongoDB?",
+              "choices": [
+                "Relational",
+                "NoSQL",
+                "In-memory",
+                "Analytical"
+              ],
+              "answer": "NoSQL"
+            },
+            {
+              "question": "Which NoSQL database is known for high performance and scalability?",
+              "choices": [
+                "Cassandra",
+                "MySQL",
+                "PostgreSQL",
+                "Oracle"
+              ],
+              "answer": "Cassandra"
+            },
+            {
+              "question": "Which cloud-based data warehouse offers serverless architecture?",
+              "choices": [
+                "Amazon Redshift",
+                "Google BigQuery",
+                " Snowflake",
+                "Microsoft Azure"
+              ],
+              "answer": "Google BigQuery"
+            },
+            {
+              "question": "Which feature is central to HDFS?",
+              "choices": [
+                "Data encryption",
+                "Fault tolerance",
+                "Low latency",
+                "Data compression"
+              ],
+              "answer": "Fault tolerance"
+            },
+            {
+              "question": "What does Snowflake provide?",
+              "choices": [
+                "Only data lakes",
+                "A cloud platform for data warehousing and sharing",
+                "Machine learning tools",
+                "A visualization dashboard"
+              ],
+              "answer": "A cloud platform for data warehousing and sharing"
+            },
+            {
+              "question": "What distinguishes real-time processing from batch processing?",
+              "choices": [
+                "It handles only historical data",
+                "It processes data as it arrives",
+                "It uses Hadoop exclusively",
+                "It supports offline analysis"
+              ],
+              "answer": "It processes data as it arrives"
+            },
+            {
+              "question": "Which tool is used for real-time stream processing?",
+              "choices": [
+                "Apache Flink",
+                "Tableau",
+                "AWS S3",
+                "Apache Sqoop"
+              ],
+              "answer": "Apache Flink"
+            },
+            {
+              "question": "What is the purpose of Apache NiFi?",
+              "choices": [
+                "Data visualization",
+                "Automating data flow between systems",
+                "In-memory analytics",
+                "Distributed storage"
+              ],
+              "answer": "Automating data flow between systems"
+            },
+            {
+              "question": "What is MapReduce's primary function?",
+              "choices": [
+                "Data visualization",
+                "Distributed data processing",
+                "Real-time data ingestion",
+                "Machine learning"
+              ],
+              "answer": "Distributed data processing"
+            },
+            {
+              "question": "Which stage of MapReduce involves sorting and aggregating data?",
+              "choices": [
+                "Map phase",
+                "Shuffle and Sort phase",
+                "Reduce phase",
+                "Transformation phase"
+              ],
+              "answer": "Shuffle and Sort phase"
+            },
+            {
+              "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+              "choices": [
+                "Dask",
+                "Pandas",
+                "PySpark",
+                "NumPy"
+              ],
+              "answer": "PySpark"
+            },
+            {
+              "question": "What is the main advantage of using Scala for Apache Spark?",
+              "choices": [
+                "Easier syntax than Python",
+                "Default language for Spark with functional programming features",
+                "Better visualization tools",
+                "Compatibility with SQL databases"
+              ],
+              "answer": "Default language for Spark with functional programming features"
+            },
+            {
+              "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+              "choices": [
+                "Presto",
+                "Apache Hive",
+                "Impala",
+                "All of the above"
+              ],
+              "answer": "All of the above"
+            },
+            {
+              "question": "What is the main purpose of MapReduce in Big Data processing?",
+              "choices": [
+                "Query optimization",
+                "Converting input data into key-value pairs and aggregating them",
+                "Creating machine learning models",
+                "Generating data visualizations"
+              ],
+              "answer": "Converting input data into key-value pairs and aggregating them"
+            },
+            {
+              "question": "What is the primary purpose of shell scripting in HDFS?",
+              "choices": [
+                "Automating data ingestion and managing directories",
+                "Performing in-memory analytics",
+                "Creating dashboards",
+                "Writing machine learning algorithms"
+              ],
+              "answer": "Automating data ingestion and managing directories"
+            },
+            {
+              "question": "What is Apache Sqoop used for in Big Data?",
+              "choices": [
+                "Transferring data between Hadoop and relational databases",
+                "Real-time stream processing",
+                "Data visualization",
+                "Building machine learning models"
+              ],
+              "answer": "Transferring data between Hadoop and relational databases"
+            },
+            {
+              "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+              "choices": [
+                "Apache Flume",
+                "Kafka Connect",
+                "Sqoop",
+                "Spark Streaming"
+              ],
+              "answer": "Apache Flume"
+            },
+            {
+              "question": "What type of API is typically used to fetch data dynamically from web services?",
+              "choices": [
+                "REST API",
+                "SOAP API",
+                "SQL API",
+                "File API"
+              ],
+              "answer": "REST API"
+            },
+            {
+              "question": "What is a key challenge in real-time data integration?",
+              "choices": [
+                "High throughput and scalability",
+                "Data visualization",
+                "Reducing cost",
+                "Handling offline data"
+              ],
+              "answer": "High throughput and scalability"
+            },
+            {
+              "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+              "choices": [
+                "Apache NiFi",
+                "Apache Flink",
+                "AWS Redshift",
+                "Spark SQL"
+              ],
+              "answer": "Apache NiFi"
+            }
+          ],
+          "assessmentID": "146e7dc8-4357-42e9-8a2a-9f08957d0e7c",
+          "createdAt": "2025-01-23T04:43:33.260Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 60
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "id": "8cd5"
+    },
+    {
+      "title": "DevOps for Beginners",
+      "createdAt": "12-12-24",
+      "instructorId": 123,
+      "courseId": 543,
+      "assessment": [
+        {
+          "assessmentName": "test - 2",
+          "questions": [
+            {
+              "question": "a",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "answer": "a"
+            },
+            {
+              "question": "b",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "answer": "b"
+            },
+            {
+              "question": "c",
+              "choices": [
+                "a",
+                "b",
+                "c",
+                "d"
+              ],
+              "answer": "c"
+            }
+          ],
+          "assessmentID": "32a4bcf1-055d-41c3-bfb1-3b83f0a154da",
+          "createdAt": "2025-01-28T15:21:11.120Z",
+          "schedule": {
+            "isScheduled": true,
+            "scheduledDetails": {
+              "duration": 30
+            }
+          },
+          "assessmentCompletions": []
+        }
+      ],
+      "id": "1099"
+    }
+  ],
+  "Participants": [
+    {
+      "name": "sihabutheen",
+      "userId": 1231243,
+      "additionalDetails": {
+        "entrolledCourses": [
+          {
+            "title": "Introduction to BigData",
+            "createdAt": "10-12-24",
+            "instructorId": 123,
+            "courseId": 3,
+            "entrolled": "12-12-24",
+            "completionPercentage": 100,
+            "assessmentStatus": true,
+            "assessmentData": [
+              {
+                "assessmentID": "146e7dc8-4357-42e9-8a2a-9f08957d0e7c",
+                "completionDate": "2025-02-04T12:52:24.003Z",
+                "assessmentData": {
+                  "assessmentName": "End Assessment",
+                  "createdAt": "2025-01-23T04:43:33.260Z",
+                  "scheduledDetails": {
+                    "duration": 60
+                  },
+                  "totalQuestions": 30,
+                  "questions": [
+                    {
+                      "question": "What is Big Data?",
+                      "choices": [
+                        "Small datasets with minimal complexity",
+                        "Large datasets that traditional tools can't handle",
+                        "Only structured data from databases",
+                        "A type of software for data processing"
+                      ],
+                      "answer": "Large datasets that traditional tools can't handle",
+                      "userAnswer": "Small datasets with minimal complexity"
+                    },
+                    {
+                      "question": "Which of the following is NOT a characteristic of Big Data?",
+                      "choices": [
+                        "Volume",
+                        "Velocity",
+                        "Variety",
+                        "Simplicity"
+                      ],
+                      "answer": "Simplicity"
+                    },
+                    {
+                      "question": "What industry uses Big Data for predictive analytics and patient care improvement?",
+                      "choices": [
+                        "Healthcare",
+                        "Retail",
+                        "Finance",
+                        "Telecommunications"
+                      ],
+                      "answer": "Healthcare"
+                    },
+                    {
+                      "question": "What is a challenge in handling Big Data?",
+                      "choices": [
+                        "Data privacy",
+                        "Scalability",
+                        " Skill gap",
+                        "All of the above"
+                      ],
+                      "answer": "All of the above"
+                    },
+                    {
+                      "question": "Which tool is a framework for distributed processing of large datasets?",
+                      "choices": [
+                        "Hadoop",
+                        "Excel",
+                        "Apache NiFi",
+                        "Tableau"
+                      ],
+                      "answer": "Hadoop"
+                    },
+                    {
+                      "question": "What is HDFS designed for?",
+                      "choices": [
+                        "Managing real-time analytics",
+                        "Storing vast amounts of data with high throughput",
+                        "Performing machine learning",
+                        "Visualizing data"
+                      ],
+                      "answer": "Storing vast amounts of data with high throughput"
+                    },
+                    {
+                      "question": "Which component of Hadoop is responsible for job scheduling?",
+                      "choices": [
+                        "HDFS",
+                        "YARN",
+                        "Spark Core",
+                        "NoSQL"
+                      ],
+                      "answer": "YARN"
+                    },
+                    {
+                      "question": "Spark is primarily known for which feature?",
+                      "choices": [
+                        "Disk-based processing",
+                        "In-memory computing",
+                        "Database integration",
+                        "Data visualization"
+                      ],
+                      "answer": "In-memory computing"
+                    },
+                    {
+                      "question": "What does RDD stand for in Apache Spark?",
+                      "choices": [
+                        "Relational Data Descriptor",
+                        "Resilient Distributed Dataset",
+                        "Resource Data Driver",
+                        "Remote Dataset Directory"
+                      ],
+                      "answer": "Resilient Distributed Dataset"
+                    },
+                    {
+                      "question": "Which tool supports both batch and real-time data processing?",
+                      "choices": [
+                        "Hadoop",
+                        "Spark",
+                        "Apache NiFi",
+                        "Cassandra"
+                      ],
+                      "answer": "Spark"
+                    },
+                    {
+                      "question": "What type of database is MongoDB?",
+                      "choices": [
+                        "Relational",
+                        "NoSQL",
+                        "In-memory",
+                        "Analytical"
+                      ],
+                      "answer": "NoSQL"
+                    },
+                    {
+                      "question": "Which NoSQL database is known for high performance and scalability?",
+                      "choices": [
+                        "Cassandra",
+                        "MySQL",
+                        "PostgreSQL",
+                        "Oracle"
+                      ],
+                      "answer": "Cassandra"
+                    },
+                    {
+                      "question": "Which cloud-based data warehouse offers serverless architecture?",
+                      "choices": [
+                        "Amazon Redshift",
+                        "Google BigQuery",
+                        " Snowflake",
+                        "Microsoft Azure"
+                      ],
+                      "answer": "Google BigQuery"
+                    },
+                    {
+                      "question": "Which feature is central to HDFS?",
+                      "choices": [
+                        "Data encryption",
+                        "Fault tolerance",
+                        "Low latency",
+                        "Data compression"
+                      ],
+                      "answer": "Fault tolerance"
+                    },
+                    {
+                      "question": "What does Snowflake provide?",
+                      "choices": [
+                        "Only data lakes",
+                        "A cloud platform for data warehousing and sharing",
+                        "Machine learning tools",
+                        "A visualization dashboard"
+                      ],
+                      "answer": "A cloud platform for data warehousing and sharing"
+                    },
+                    {
+                      "question": "What distinguishes real-time processing from batch processing?",
+                      "choices": [
+                        "It handles only historical data",
+                        "It processes data as it arrives",
+                        "It uses Hadoop exclusively",
+                        "It supports offline analysis"
+                      ],
+                      "answer": "It processes data as it arrives"
+                    },
+                    {
+                      "question": "Which tool is used for real-time stream processing?",
+                      "choices": [
+                        "Apache Flink",
+                        "Tableau",
+                        "AWS S3",
+                        "Apache Sqoop"
+                      ],
+                      "answer": "Apache Flink"
+                    },
+                    {
+                      "question": "What is the purpose of Apache NiFi?",
+                      "choices": [
+                        "Data visualization",
+                        "Automating data flow between systems",
+                        "In-memory analytics",
+                        "Distributed storage"
+                      ],
+                      "answer": "Automating data flow between systems"
+                    },
+                    {
+                      "question": "What is MapReduce's primary function?",
+                      "choices": [
+                        "Data visualization",
+                        "Distributed data processing",
+                        "Real-time data ingestion",
+                        "Machine learning"
+                      ],
+                      "answer": "Distributed data processing"
+                    },
+                    {
+                      "question": "Which stage of MapReduce involves sorting and aggregating data?",
+                      "choices": [
+                        "Map phase",
+                        "Shuffle and Sort phase",
+                        "Reduce phase",
+                        "Transformation phase"
+                      ],
+                      "answer": "Shuffle and Sort phase"
+                    },
+                    {
+                      "question": "Which Python library is specifically designed for Big Data processing in Apache Spark?",
+                      "choices": [
+                        "Dask",
+                        "Pandas",
+                        "PySpark",
+                        "NumPy"
+                      ],
+                      "answer": "PySpark"
+                    },
+                    {
+                      "question": "What is the main advantage of using Scala for Apache Spark?",
+                      "choices": [
+                        "Easier syntax than Python",
+                        "Default language for Spark with functional programming features",
+                        "Better visualization tools",
+                        "Compatibility with SQL databases"
+                      ],
+                      "answer": "Default language for Spark with functional programming features"
+                    },
+                    {
+                      "question": "Which SQL-like tool is used for querying data stored in HDFS?",
+                      "choices": [
+                        "Presto",
+                        "Apache Hive",
+                        "Impala",
+                        "All of the above"
+                      ],
+                      "answer": "All of the above"
+                    },
+                    {
+                      "question": "What is the main purpose of MapReduce in Big Data processing?",
+                      "choices": [
+                        "Query optimization",
+                        "Converting input data into key-value pairs and aggregating them",
+                        "Creating machine learning models",
+                        "Generating data visualizations"
+                      ],
+                      "answer": "Converting input data into key-value pairs and aggregating them"
+                    },
+                    {
+                      "question": "What is the primary purpose of shell scripting in HDFS?",
+                      "choices": [
+                        "Automating data ingestion and managing directories",
+                        "Performing in-memory analytics",
+                        "Creating dashboards",
+                        "Writing machine learning algorithms"
+                      ],
+                      "answer": "Automating data ingestion and managing directories"
+                    },
+                    {
+                      "question": "What is Apache Sqoop used for in Big Data?",
+                      "choices": [
+                        "Transferring data between Hadoop and relational databases",
+                        "Real-time stream processing",
+                        "Data visualization",
+                        "Building machine learning models"
+                      ],
+                      "answer": "Transferring data between Hadoop and relational databases"
+                    },
+                    {
+                      "question": "Which tool is designed for streaming log data into HDFS or HBase?",
+                      "choices": [
+                        "Apache Flume",
+                        "Kafka Connect",
+                        "Sqoop",
+                        "Spark Streaming"
+                      ],
+                      "answer": "Apache Flume"
+                    },
+                    {
+                      "question": "What type of API is typically used to fetch data dynamically from web services?",
+                      "choices": [
+                        "REST API",
+                        "SOAP API",
+                        "SQL API",
+                        "File API"
+                      ],
+                      "answer": "REST API"
+                    },
+                    {
+                      "question": "What is a key challenge in real-time data integration?",
+                      "choices": [
+                        "High throughput and scalability",
+                        "Data visualization",
+                        "Reducing cost",
+                        "Handling offline data"
+                      ],
+                      "answer": "High throughput and scalability"
+                    },
+                    {
+                      "question": "Which tool supports real-time data pipeline automation with a drag-and-drop interface?",
+                      "choices": [
+                        "Apache NiFi",
+                        "Apache Flink",
+                        "AWS Redshift",
+                        "Spark SQL"
+                      ],
+                      "answer": "Apache NiFi"
+                    }
+                  ],
+                  "startAt": "Tue Feb 04 2025 18:22:19 GMT+0530 (India Standard Time)",
+                  "completionAt": "Tue Feb 04 2025 18:22:24 GMT+0530 (India Standard Time)"
+                }
+              }
+            ]
+          },
+          {
+            "title": "DevOps for Beginners",
+            "createdAt": "12-12-24",
+            "instructorId": 123,
+            "entrolled": "12-12-24",
+            "courseId": 543,
+            "completionPercentage": 100,
+            "assessmentStatus": true,
+            "assessmentData": [
+              {
+                "assessmentID": "d9da3ab2-cb4e-487b-86ca-228ee2d57723",
+                "completionDate": "2025-02-05T13:36:02.917Z",
+                "assessmentData": {
+                  "assessmentName": "Angular Basics End Assessment",
+                  "createdAt": "2025-02-04T15:08:14.606Z",
+                  "scheduledDetails": {
+                    "duration": 30
+                  },
+                  "totalQuestions": 30,
+                  "questions": [
+                    {
+                      "question": "What is Angular?",
+                      "choices": [
+                        "A front-end web framework",
+                        "A database management system",
+                        "A programming language",
+                        "A server-side framework"
+                      ],
+                      "answer": "A front-end web framework",
+                      "userAnswer": "A front-end web framework"
+                    },
+                    {
+                      "question": "Which command is used to create a new Angular project using Angular CLI?",
+                      "choices": [
+                        "ng new",
+                        "ng create",
+                        "ng generate",
+                        "ng init"
+                      ],
+                      "answer": "ng new"
+                    },
+                    {
+                      "question": "Which decorator is used to define an Angular component?",
+                      "choices": [
+                        "@NgModule",
+                        "@Component",
+                        "@Injectable",
+                        "@Directive"
+                      ],
+                      "answer": "@Component"
+                    },
+                    {
+                      "question": "What is a module in Angular?",
+                      "choices": [
+                        "A container for a group of components, directives, and services",
+                        "A file that contains HTML templates",
+                        "A type of service",
+                        "A routing configuration"
+                      ],
+                      "answer": "A container for a group of components, directives, and services"
+                    },
+                    {
+                      "question": "How does Angular support two-way data binding?",
+                      "choices": [
+                        "Using the [(ngModel)] syntax",
+                        "Using [data] binding only",
+                        "Using event binding only",
+                        "Using service injection"
+                      ],
+                      "answer": "Using the [(ngModel)] syntax"
+                    },
+                    {
+                      "question": "What is dependency injection in Angular?",
+                      "choices": [
+                        "A design pattern that allows classes to receive dependencies",
+                        "A way to inject HTML templates",
+                        "A method to connect with databases",
+                        "A technique for compiling code"
+                      ],
+                      "answer": "A design pattern that allows classes to receive dependencies"
+                    },
+                    {
+                      "question": "Which directive is used to iterate over a list in Angular templates?",
+                      "choices": [
+                        "*ngFor",
+                        "*ngIf",
+                        "*ngSwitch",
+                        "*ngRepeat"
+                      ],
+                      "answer": "*ngFor"
+                    },
+                    {
+                      "question": "Which lifecycle hook is called after Angular has initialized all data-bound properties of a directive?",
+                      "choices": [
+                        "ngOnInit",
+                        "ngAfterViewInit",
+                        "ngDoCheck",
+                        "ngAfterContentInit"
+                      ],
+                      "answer": "ngOnInit"
+                    },
+                    {
+                      "question": "What is the primary purpose of services in Angular?",
+                      "choices": [
+                        "To share data and logic across components",
+                        "To create UI components",
+                        "To define routing",
+                        "To style the application"
+                      ],
+                      "answer": "To share data and logic across components"
+                    },
+                    {
+                      "question": "How can you create a service in Angular?",
+                      "choices": [
+                        "Using the command 'ng generate service'",
+                        "Manually writing a function in a component",
+                        "Using a module decorator",
+                        "By adding it to the bootstrap array"
+                      ],
+                      "answer": "Using the command 'ng generate service'"
+                    },
+                    {
+                      "question": "What is the role of the RouterModule in Angular?",
+                      "choices": [
+                        "To enable routing and navigation between views",
+                        "To manage HTTP requests",
+                        "To provide dependency injection",
+                        "To create services"
+                      ],
+                      "answer": "To enable routing and navigation between views"
+                    },
+                    {
+                      "question": "Which Angular directive is used to conditionally display content?",
+                      "choices": [
+                        "*ngIf",
+                        "*ngFor",
+                        "*ngSwitch",
+                        "*ngShow"
+                      ],
+                      "answer": "*ngIf"
+                    },
+                    {
+                      "question": "What does the ngOnInit lifecycle hook do?",
+                      "choices": [
+                        "Initializes component properties",
+                        "Destroys the component",
+                        "Handles user input",
+                        "Compiles the component template"
+                      ],
+                      "answer": "Initializes component properties"
+                    },
+                    {
+                      "question": "How do you pass data from a parent component to a child component?",
+                      "choices": [
+                        "Using Input property binding",
+                        "Using Output event binding",
+                        "Using services",
+                        "Using routing parameters"
+                      ],
+                      "answer": "Using Input property binding"
+                    },
+                    {
+                      "question": "Which of the following is a valid Angular pipe?",
+                      "choices": [
+                        "date",
+                        "filter",
+                        "sort",
+                        "map"
+                      ],
+                      "answer": "date"
+                    },
+                    {
+                      "question": "How do you handle HTTP requests in Angular?",
+                      "choices": [
+                        "Using the HttpClient service",
+                        "Using JavaScript fetch API",
+                        "Using XMLHttpRequest",
+                        "Using Angular Router"
+                      ],
+                      "answer": "Using the HttpClient service"
+                    },
+                    {
+                      "question": "Which Angular module provides HTTP client functionality?",
+                      "choices": [
+                        "HttpClientModule",
+                        "BrowserModule",
+                        "FormsModule",
+                        "RouterModule"
+                      ],
+                      "answer": "HttpClientModule"
+                    },
+                    {
+                      "question": "What is the purpose of the Angular CLI command 'ng serve'?",
+                      "choices": [
+                        "To compile and serve the application locally",
+                        "To create a new component",
+                        "To generate a service",
+                        "To run unit tests"
+                      ],
+                      "answer": "To compile and serve the application locally"
+                    },
+                    {
+                      "question": "How do you add Angular Material to your project?",
+                      "choices": [
+                        "Using the command 'ng add @angular/material'",
+                        "By importing MaterialModule manually",
+                        "By downloading it from the website",
+                        "Using npm install angular-material only"
+                      ],
+                      "answer": "Using the command 'ng add @angular/material'"
+                    },
+                    {
+                      "question": "What is the use of the 'providers' array in an Angular module?",
+                      "choices": [
+                        "To register services for dependency injection",
+                        "To declare components",
+                        "To import modules",
+                        "To bootstrap the application"
+                      ],
+                      "answer": "To register services for dependency injection"
+                    },
+                    {
+                      "question": "What is the significance of the 'bootstrap' array in the Angular module?",
+                      "choices": [
+                        "It defines the entry component that Angular should bootstrap",
+                        "It lists all the components in the application",
+                        "It registers services",
+                        "It configures routing"
+                      ],
+                      "answer": "It defines the entry component that Angular should bootstrap"
+                    },
+                    {
+                      "question": "Which binding syntax is used for event binding in Angular?",
+                      "choices": [
+                        "()",
+                        "[]",
+                        "[()]",
+                        "{{}}"
+                      ],
+                      "answer": "()"
+                    },
+                    {
+                      "question": "How do you apply CSS styles to an Angular component?",
+                      "choices": [
+                        "Using the 'styles' or 'styleUrls' properties in the @Component decorator",
+                        "By linking a global CSS file",
+                        "Using inline HTML styles only",
+                        "By editing the index.html file"
+                      ],
+                      "answer": "Using the 'styles' or 'styleUrls' properties in the @Component decorator"
+                    },
+                    {
+                      "question": "Which file typically contains global styles in an Angular project?",
+                      "choices": [
+                        "styles.css",
+                        "app.component.css",
+                        "main.css",
+                        "index.css"
+                      ],
+                      "answer": "styles.css"
+                    },
+                    {
+                      "question": "What is the purpose of the Angular Router outlet?",
+                      "choices": [
+                        "To display routed components",
+                        "To serve static files",
+                        "To handle dependency injection",
+                        "To compile templates"
+                      ],
+                      "answer": "To display routed components"
+                    },
+                    {
+                      "question": "How do you guard routes in Angular?",
+                      "choices": [
+                        "Using route guards like CanActivate",
+                        "By disabling the router",
+                        "Using services only",
+                        "Using CSS classes"
+                      ],
+                      "answer": "Using route guards like CanActivate"
+                    },
+                    {
+                      "question": "Which Angular decorator is used to create a directive?",
+                      "choices": [
+                        "@Directive",
+                        "@Component",
+                        "@Pipe",
+                        "@Injectable"
+                      ],
+                      "answer": "@Directive"
+                    },
+                    {
+                      "question": "What is lazy loading in Angular?",
+                      "choices": [
+                        "A design pattern to load modules on demand",
+                        "A technique to delay component initialization",
+                        "A method for styling components",
+                        "A feature for handling HTTP requests"
+                      ],
+                      "answer": "A design pattern to load modules on demand"
+                    },
+                    {
+                      "question": "How do you share data between sibling components in Angular?",
+                      "choices": [
+                        "Using a shared service",
+                        "Using Input properties",
+                        "Using Output events",
+                        "By directly accessing each other’s variables"
+                      ],
+                      "answer": "Using a shared service"
+                    },
+                    {
+                      "question": "What is the function of the RxJS library in Angular?",
+                      "choices": [
+                        "To handle asynchronous operations and event streams",
+                        "To compile Angular templates",
+                        "To perform dependency injection",
+                        "To manage component styling"
+                      ],
+                      "answer": "To handle asynchronous operations and event streams"
+                    }
+                  ],
+                  "startAt": "Wed Feb 05 2025 19:05:59 GMT+0530 (India Standard Time)",
+                  "completionAt": "Wed Feb 05 2025 19:06:02 GMT+0530 (India Standard Time)"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Introduction to JavaScript",
+            "createdAt": "12-12-24",
+            "instructorId": 123,
+            "entrolled": "12-12-24",
+            "courseId": 4,
+            "completionPercentage": 90,
+            "assessmentStatus": false,
+            "assessmentData": []
+          }
+        ]
+      },
+      "id": "e74c"
+    },
+    {
+      "name": "pratham",
+      "userId": 126446243,
+      "entrolledCourses": [
+        {
+          "title": "DevOps for Beginners",
+          "createdAt": "12-12-24",
+          "instructorId": 123542,
+          "entrolled": "25-12-24",
+          "courseId": 543,
+          "completionPercentage": 100,
+          "assessmentStatus": false
+        }
+      ],
+      "id": "6c62"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<div class="side-menu" [class.show]="isVisible">
+  <!-- Top Menu Items -->
+  <div class="menu-items">
+    <div 
+      class="menu-item" 
+      [routerLink]="['/course/admin-create-course']" 
+      [class.active]="isActive('/course/admin-create-course')"
+    >
+      <img src="../../assets/icons/home-outline.svg" alt="">
+      <span>Create Course</span>
+    </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/course/admin-view-courses']" 
+      [class.active]="isActive('/course/admin-view-courses')"
+    >
+      <img src="../../assets/icons/podium-outline.svg" alt="">
+      <span>View All Courses</span>
+    </div>
+    <div 
+    class="menu-item" 
+    [routerLink]="['/candidate/all-courses']" 
+    [class.active]="isActive('/candidate/all-courses')"
+  >
+    <img src="../../assets/icons/analytics-outline.svg" alt="">
+    <span>Candidate View</span>
+  </div>
+
+    <div 
+      class="menu-item" 
+      [routerLink]="['/course/instructor-view-courses']" 
+      [class.active]="isActive('/course/instructor-view-courses')"
+    >
+      <img src="../../assets/icons/calendar-outline.svg" alt="">
+      <span>Instructor View</span>
+    </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/course/candidate-filter-courses']" 
+      [class.active]="isActive('/course/candidate-filter-courses')"
+    >
+      <img src="../../assets/icons/ribbon-outline.svg" alt="">
+      <span>Candidate Filter</span>
+    </div>
+    <div 
+    class="menu-item" 
+    [routerLink]="['/course/course-content-viewer/:courseId']" 
+    [class.active]="isActive('/course/course-content-viewer/:courseId')"
+  >
+    <img src="../../assets/icons/person-outline.svg" alt=""/>
+    <span>Course Content View</span>
+  </div>
+  </div>
+</div>

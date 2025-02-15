@@ -1,0 +1,144 @@
+.newsletter-section {
+  position: relative;
+  background-color: #10182f; /* Previous background retained */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 100px; /* Adjust spacing between elements */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.side-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circle-img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Retaining original positions */
+.top-left {
+  top: 10%;
+  left: 15%;
+}
+
+.middle-left {
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+}
+
+.bottom-left {
+  bottom: 10%;
+  left: 15%;
+}
+
+.top-right {
+  top: 10%;
+  right: 18%;
+}
+
+.middle-right {
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+
+.bottom-right {
+  bottom: 10%;
+  right: 18%;
+}
+
+.newsletter-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.newsletter-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.submitBtn:disabled {
+  cursor: not-allowed !important;
+}
+
+.searchFormContainer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: flex-start;
+}
+
+.emailError{
+  color: #f44336;
+}
+.searchInputContainer {
+  display: flex;
+  flex-direction: column;
+  padding-right: 12px;
+}
+
+.newsletter-form input {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: none;
+  width: 300px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  background-color: #6c3ad4;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-form button:hover {
+  background-color: #5930b3;
+  transform: scale(1.1);
+}

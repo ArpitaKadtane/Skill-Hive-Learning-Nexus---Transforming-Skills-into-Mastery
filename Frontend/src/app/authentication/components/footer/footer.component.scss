@@ -1,0 +1,170 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer {
+  background: #10182f;
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 40px 20px 0px;
+  }
+
+  .footer-col {
+    .basicInfo {
+      margin-top: 30px;
+
+      p {
+        margin: 0px !important;
+        color: #bfbfbf;
+      }
+
+      .socialMediaLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 150px;
+        margin-bottom: 30px;
+      }
+
+      .registrationInfo {
+        margin-top: 20px;
+      }
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+
+      .productName {
+        margin: 0px;
+        padding: 3px;
+      }
+    }
+  }
+}
+
+.footer-col .footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.newsletterInfo {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.newsLetterForm {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+
+  mat-label {
+    color: #ccc;
+  }
+
+  input {
+    color: #fff;
+  }
+
+  ::ng-deep {
+    .mat-mdc-text-field-wrapper {
+      background: none;
+      border-radius: 6px;
+      width: 100%;
+      outline: none;
+      border: 1px solid #7489c6;
+      padding-left: 10px;
+    }
+
+    .mdc-line-ripple::after {
+      border-bottom-color: #7489c6;
+    }
+
+    button {
+      background: #fff;
+      outline: none;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      background: #cecccc;
+    }
+  }
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}

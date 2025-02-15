@@ -1,0 +1,62 @@
+.containers {
+  padding: 20px;
+  width: 1000px;
+  margin: 0 auto;
+  width: 85vw;
+  background-color: #f8f8f8; /* Matches the overall page background */
+}
+
+.filter{
+  float: right;
+  margin-bottom: 20px;
+}
+
+.instructor-table {
+  /* margin :80px; */
+  margin: 0 auto;
+  width: 75vw;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visibility */
+}
+
+.instructor-table th,
+.instructor-table td {
+  border: 1px solid #ddd; 
+  padding: 12px 16px; /* Provides consistent spacing */
+  text-align: center;
+  color: #2b2b2b; 
+}
+
+.instructor-table th {
+  background-color: #ffe3e3; /* Matches the light pink for headers */
+  font-weight: bold;
+  border-radius: 5px; /* Adds subtle rounded corners */
+}
+
+.instructor-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternating row background */
+}
+
+.instructor-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.add-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #7511b3; /* Vivid purple for a prominent button */
+  color: #fff; /* White text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #5d0f91; /* Darker purple for hover effect */
+}
+
+.Instructor-Profiles{
+  text-decoration: none;
+}

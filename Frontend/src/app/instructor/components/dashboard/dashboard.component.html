@@ -1,0 +1,87 @@
+<div class="side-menu" [class.show]="isHidden">
+  <!-- Top Menu Items -->
+  <div class="menu-items">
+    <div
+      class="menu-item"
+      [routerLink]="['/instructor-profile', instructorid]"
+      [class.active]="isActive('/candidate/all-courses')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="https://img.icons8.com/color/48/book.png" alt="" />
+      <span> Assigned Courses</span>
+    </div>
+    <!-- <div 
+    class="menu-item" 
+    [routerLink]="['/candidate/track-my-learning']" 
+    [class.active]="isActive('/candidate/track-my-learning')"
+  >
+    <img src="https://img.icons8.com/color/48/calendar.png" alt="">
+    <span> Class Schedule</span>
+  </div> -->
+    <div
+      class="menu-item"
+      [routerLink]="['/instructor-profile', instructorid]"
+      [class.active]="isActive('/instructor-profile')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="https://img.icons8.com/color/48/upload.png" alt="" />
+      <span> Upload Content</span>
+    </div>
+    <!-- <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/upcoming-Assessments']" 
+      [class.active]="isActive('/candidate/upcoming-Assessments')"
+    >
+      <img src="../../assets/icons/calendar-outline.svg" alt="">
+      <span>Upcoming Assessments Upcoming Assessments</span>
+    </div> -->
+    <!-- <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/enrolled-courses']" 
+      [class.active]="isActive('/candidate/enrolled-courses')"
+    >
+      <img src="../../assets/icons/ribbon-outline.svg" alt="">
+      <span>Certifications</span>
+    </div> -->
+    <div
+      class="menu-item"
+      [routerLink]="['/profile', instructorid]"
+      [class.active]="isActive('/candidate/update-profile')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="https://img.icons8.com/color/48/settings.png" alt="" />
+      <span> Profile</span>
+    </div>
+
+    <div class="menu-item" [routerLink]="['/profile-setting', instructorid]"  (click)="sideMenuClicked()">
+      <img src="https://img.icons8.com/color/48/settings.png" alt="" />
+      <span>Profile settings</span>
+    </div>
+    <div class="menu-item" [routerLink]="['/course', instructorid]"  (click)="sideMenuClicked()">
+      <img src="https://img.icons8.com/ios/50/test--v1.png" alt="" />
+      <span>Take Assessments</span>
+    </div>
+    <!-- <div 
+  class="menu-item" 
+  [routerLink]="['/profile', instructorid]"
+  [class.active]="isActive('/candidate/update-profile')"
+>
+  <img src="https://img.icons8.com/color/48/settings.png" alt=""/>
+  <span> Profile</span>
+</div> -->
+    <!-- <div 
+      class="menu-item" 
+      [routerLink]="['/register']" 
+      [class.active]="isActive('/register')"
+    >
+      <img src="https://img.icons8.com/color/48/home.png" alt="">
+      <span>      Home</span>
+    </div> -->
+  </div>
+
+  <!-- Logout Button -->
+  <button class="logout-button" (click)="logout()">
+    <img src="../../assets/icons/log-out-outline.svg" alt="" />
+    <span>Logout</span>
+  </button>
+</div>

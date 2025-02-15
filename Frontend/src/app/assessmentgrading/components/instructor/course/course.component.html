@@ -1,0 +1,86 @@
+
+<div class="flex">
+
+    <div class="child w-64 border-r-2 border-gray-700">
+      
+       <div class="border-b-2 border-gray-300 flex justify-center items-center py-2 font-medium">
+        Courses
+       </div>
+
+       <div 
+       class="p-1 px-2 border-b py-2 hover:bg-gray-300" 
+       *ngFor="let course of courses"
+       [ngClass]="{'bg-gray-200' :course.courseId === selectedCourse?.courseId}"
+       (click)="courseSelected(course)"
+       >
+        {{course.title}}
+       </div>
+
+    </div>
+
+    <div class="child w-full">
+        <div class="flex items-center justify-center text-lg py-3 font-medium border-b-2">
+          {{selectedCourse?.title}}
+        </div>
+        <div class="flex justify-end">
+          <div class="flex border-b-2 border-r-2 w-fit border-l-2">
+            <div class="border-r-2 py-1 px-3">
+              created date
+            </div>
+            <div class="py-1 px-2">
+              12-12-12
+            </div>
+          </div>
+
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Assessment Name</th>
+                <th>Created Date</th>
+                <th>Schedule</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let assessment of selectedCourse?.assessment" class="">
+                <td>{{assessment.assessmentName}}</td>
+                <td>{{assessment.createdAt | date: 'dd-MM-yyyy'}}</td>
+                <td>
+                  <button
+                  (click)="openDialog(assessment.assessmentName , assessment.createdAt , assessment.assessmentID , assessment.questions.length , assessment.schedule.isScheduled , assessment.schedule.scheduledDetails)"
+                  class="rounded-lg bg-green-400 px-3 py-1 text-white hover:bg-green-500"
+                  [ngClass]="{'bg-green-400 hover:bg-green-500'  : !assessment.schedule?.isScheduled,'bg-blue-400 hover:bg-blue-500' : assessment.schedule?.isScheduled}"
+                  >
+                    {{isScheduled(assessment)}}
+                  </button>
+                </td>
+                <td>
+                  <button
+                  class="rounded-lg bg-red-400 px-3 py-1 text-white hover:bg-red-500"
+                  (click)="delAssessment(assessment.assessmentID)"
+                  >
+                    delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="w-full flex justify-center">
+          <button
+          (click)="goToAssessment()"
+           class=" my-4 bg-green-400 rounded-full py-1 px-3 text-white hover:bg-green-500">
+            New Assessment
+        </button>
+        </div>
+    </div>
+
+  
+</div>
+
+
+
+

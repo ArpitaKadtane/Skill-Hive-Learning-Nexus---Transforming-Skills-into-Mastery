@@ -1,0 +1,157 @@
+<!-- <div class="header_bar">
+  <div class="pattern1"><img src="assets/images/pattern2.png" alt=""></div>
+  <div class="pattern2"><img id="pattern_bottom" src="assets/images/pattern2.png" alt=""></div>
+  
+  <img id="instructor_profile" src="assets/images/person1.jpeg" alt="#profilepicofinstructor">
+</div>
+
+<div class="instructor_details">
+  <div class="name_instructor">Alex Johnson</div>
+  <div class="text_instructor">Senior Language Instructor <br>
+  Location: New York, USA </div>
+</div>
+
+Delete Instructor Button
+<button id="deleteShortlistedInstructor" (click)="deleteInstructor(instructorId)">Delete the instructor</button>
+
+Courses Container Section
+<div class="courses-container">
+  <h3>Assign Courses</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Course Name</th>
+        <th>Course Code</th>
+        <th>Schedule</th>
+        <th>Status</th>
+        <th>Enrolled</th> New column for Enrolled Students
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of alreadyAssginedCourses">
+        <td>
+          <input *ngIf="course.editing" [(ngModel)]="course.courseName" />
+          <span *ngIf="!course.editing">{{ course.courseName }}</span>
+        </td>
+        <td>
+          <input *ngIf="course.editing" [(ngModel)]="course.courseCode" />
+          <span *ngIf="!course.editing">{{ course.courseCode }}</span>
+        </td>
+        <td>
+          <input *ngIf="course.editing" [(ngModel)]="course.schedule" />
+          <span *ngIf="!course.editing">{{ course.schedule }}</span>
+        </td>
+        <td>
+          <input *ngIf="course.editing" [(ngModel)]="course.status" />
+          <span *ngIf="!course.editing">{{ course.status }}</span>
+        </td>
+        <td>
+          Display the number of enrolled students
+          <span>{{ course.enrolled }}</span>
+        </td>
+        
+        <td>
+          Edit and Save/Cancel buttons
+          <button *ngIf="!course.editing" (click)="editCourse(course)" style="color: rgb(13, 159, 244);">Edit</button>
+          <button *ngIf="course.editing" (click)="saveCourse(course)" style="color: green;">Save</button>
+          <button *ngIf="course.editing" (click)="cancelEdit(course)" style="color: grey;">Cancel</button>
+          <button (click)="deleteCourse(course.id)" style="color: red;">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="add-new" (click)="addCourse()">+ Add New</button>
+</div> 
+ -->
+ @if (instructorProfileDetails) {
+  <div class="header_bar">
+    <!-- <div class="pattern1">
+      <img src="assets/images/patter.png" alt="Pattern 1">
+    </div> -->
+    <!-- <div class="pattern2">
+      <img id="pattern_bottom" src="assets/images/pattern2.png" alt="Pattern 2">
+    </div> -->
+    <img id="instructor_profile" [src]="instructorProfileDetails.photoUrl" alt="Instructor Profile Picture">
+  </div>
+}
+
+@if (instructorProfileDetails) {
+  <div class="instructor_details">
+    <div class="name_instructor">{{ instructorProfileDetails.fullName }}</div>
+    <div class="text_instructor">
+      {{ instructorProfileDetails.teachingDomain || 'Instructor' }}<br>
+    </div>
+    
+    @if(isAdmin){
+      <button id="deleteShortlistedInstructor" class="delete-instructor" (click)="deleteInstructor(instructorId)">
+        <img src="assets/images/delete.png" alt="Delete" class="delete-icon"> Delete Instructor
+      </button>
+    }
+  </div>
+}
+
+<div class="courses-container">
+  <h3>Assigned Courses</h3>
+  
+  <!-- Assigned Courses Table -->
+  @if (alreadyAssginedCourses.length) {
+    <table  > 
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Code</th>
+          <th>Status</th>
+          <th> StartDate</th>
+          <th>Enddate</th>
+          <!-- <th>Enrolled</th> -->
+           @if(isAdmin){
+             <th>Actions</th>
+           }
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of alreadyAssginedCourses " [routerLink]="['/manage-course', course.id]">
+          <td>{{ course.name }}</td>
+          <td>{{ course.id }}</td>
+          <td>{{ course.status }}</td>
+          <td>{{ course.startDate }}</td>
+          <td>{{ course.endDate }}</td>
+          <!-- <td>{{ course. || 0 }}</td> -->
+           @if(isAdmin){
+             <td class="actions">
+               <button (click)="deleteCourse(course.id)" class="delete-btn">Delete</button>
+             </td>
+           }
+        </tr>
+      </tbody>
+    </table>
+  }
+
+  @if (alreadyAssginedCourses.length === 0) {
+    <div  class="no-courses">
+      No courses assigned yet
+    </div>
+  }
+
+  <!-- Assign New Course Section -->
+   @if(isAdmin){
+     <div class="assign-course-section">
+       <label for="select">Assign new course</label>
+       <select 
+         [(ngModel)]="selectedCourseId"
+         (change)="assignCourse()"
+         class="course-select">
+         <option value="">Select a course to assign</option>
+         @for(course of unassignedCourses; track $index){
+           <option 
+             [value]="course.id">
+             {{ course.name }}
+           </option>
+         }
+   
+       </select>
+     </div>
+   }
+</div>

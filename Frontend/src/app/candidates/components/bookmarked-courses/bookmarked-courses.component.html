@@ -1,0 +1,27 @@
+<div class="bookmarked-courses">
+  <h2>Your Bookmarked Courses</h2>
+  <br /><br />
+  <div
+    *ngIf="bookmarkedCourses.length > 0; else noBookmarks"
+    class="course-container"
+  >
+    <div class="course-card" *ngFor="let course of bookmarkedCourses">
+      <img [src]="course.thumbnail" [alt]="course.name" class="course-image" />
+      <h3>{{ course.name }}</h3>
+      <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+      <!-- <p>
+        <strong>Duration:</strong>
+        {{ calculateDuration(course.startDate, course.endDate) }}
+      </p> -->
+      <!-- Remove button -->
+      <button class="remove-button" (click)="removeBookmark(course.id)">
+        Remove
+      </button>
+      <span class="bookmark-icon">🔖</span>
+    </div>
+  </div>
+
+  <ng-template #noBookmarks>
+    <p>No courses bookmarked yet.</p>
+  </ng-template>
+</div>

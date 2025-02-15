@@ -1,0 +1,74 @@
+<div *ngIf="course.modules.length">
+  <div class="progress-container">
+    <div class="progress-bar">
+      <div class="progress-fill" [style.width.%]="progress"></div>
+    </div>
+  </div>
+
+  <div class="course-viewer">
+    <div class="sidebar">
+      <h3>Modules</h3>
+      <ul>
+        <li
+          *ngFor="let module of course?.modules; let i = index"
+          [class.active]="i === currentModuleIndex"
+          (click)="selectModule(i)"
+        >
+          {{ module.name }} <span *ngIf="isModuleCompleted(module.id)">✔️</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>{{ course?.modules[currentModuleIndex]?.name }}</h2>
+
+      <ng-container *ngIf="course?.modules[currentModuleIndex]?.type === 'video'">
+        <video controls width="100%" height="500px">
+          <source [src]="safeVideoUrl" type="video/mp4" />
+        </video>
+      </ng-container>
+
+      <ng-container *ngIf="course?.modules[currentModuleIndex]?.type === 'pdf'">
+        <iframe [src]="safePdfUrl" width="100%" height="100vh"></iframe>
+      </ng-container>
+
+      <div class="actions">
+        <button
+          *ngIf="!isModuleCompleted(course.modules[currentModuleIndex].id)"
+          class="complete-btn"
+          (click)="markAsCompleted()"
+        >
+          Mark as Completed
+        </button>
+
+        <button *ngIf="currentModuleIndex > 0" (click)="previousModule()">
+          Previous
+        </button>
+
+        <button style="background-color: #9c4df4;" *ngIf="currentModuleIndex < course.modules.length - 1" (click)="nextModule()">
+          Next
+        </button>
+
+        <button
+          *ngIf="(currentModuleIndex === course.modules.length - 1 && progress === 100) && !showCompletionPopup"
+          (click)="navigateToAssessment()"
+        >
+          Take Assessment
+        </button>
+      </div>    
+    </div>
+  </div>
+
+  <div *ngIf="showCompletionPopup" class="completion-popup">
+    <div class="popup-content">
+      <h3>🎉 Congratulations, you have completed the course successfully!</h3>
+      <p>Now you're eligible to take up the assessment.</p>
+      <button class="assessment-btn" (click)="navigateToAssessment()">Go to Assessment</button>
+      <button class="close-btn" (click)="closePopup()">Close</button>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!course.modules.length">
+  <h3 style="padding: 50px 0px;text-align: center;">Modules Not Found</h3>
+</div>

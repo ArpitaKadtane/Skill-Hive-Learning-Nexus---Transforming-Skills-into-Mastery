@@ -1,0 +1,22 @@
+<header>
+  <div class="left">
+  <img (click)="toggleSideMenu()" [src]="isMenuOpen ? './../../assets/ham.png' : './../../assets/ham.png'" alt="">
+  <div class="logo">
+    <h1>Skillhive <span style="color: #ff532f;">Nexus</span></h1>
+  </div>
+  </div>
+  
+    <nav>
+      <ul class="nav-links">
+        <li><a routerLink="/home">Help</a></li>
+        <li><a routerLink="/courses">About</a></li>
+        <li><a routerLink="/assessment">Support</a></li>
+        <li><a routerLink="/feedback">Contact Us</a></li>
+        <li><a routerLink="/profile">FAQs</a></li>
+      </ul>
+      <div class="header-right-botm">
+        <input type="text" placeholder="Search here...">
+      </div>
+    </nav>
+</header>
+  

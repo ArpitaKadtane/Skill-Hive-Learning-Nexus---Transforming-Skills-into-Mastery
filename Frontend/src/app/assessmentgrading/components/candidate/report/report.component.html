@@ -1,0 +1,150 @@
+<div class="layout">
+  <div class="body">
+    <aside *ngIf="isMenuVisible" class="side-menu">
+      <app-side-menu [isVisible]="isMenuVisible"></app-side-menu>
+    </aside>
+
+    <main class="content">
+      <div>
+        <div class="child w-full">
+          <div
+            class="flex items-center justify-center text-lg py-3 font-medium border-b-2"
+          >
+            {{ courseName }} &nbsp; &nbsp; | &nbsp; &nbsp;
+            {{ assessmentData.assessmentName }} &nbsp; &nbsp; | &nbsp; &nbsp;
+            Report
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="w-full">
+          <div
+            class="max-w-lg mx-auto bg-white shadow-md rounded-lg overflow-hidden my-3"
+          >
+            <table class="min-w-full text-sm text-left text-gray-500">
+              <tbody>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Name
+                  </th>
+                  <td class="px-4 py-2">{{ userName }}</td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Course Name
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ courseName }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Assessment Name
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ assessmentData.assessmentName }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Completed At
+                  </th>
+                  <td class="px-4 py-2">
+                    {{
+                      assessmentData.completionAt
+                        | date : "dd MMMM yyyy, HH:mm:ss"
+                    }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Time taken
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ timeTaken }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Total Questions
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ assessmentData.totalQuestions }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Answered Questions
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ answeredQuestions }}
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Marks (in percentage)
+                  </th>
+                  <td class="px-4 py-2">
+                    {{ marksInPercentage | number : "2.0-2" }} %
+                  </td>
+                </tr>
+                <tr class="border-b border-gray-300">
+                  <th
+                    scope="row"
+                    class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5"
+                  >
+                    Take review
+                  </th>
+                  <td class="px-4 py-2">
+                    <button
+                      style="
+                        background-color: #9c4df4;
+                        padding: 5px;
+                        color: white;
+                        border-radius: 2px;
+                      "
+                      (click)="goToAssessmentReview()"
+                    >
+                      review
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-cont">
+        <button (click)="certificate()">Get Certificate</button>
+        <button (click)="feedback()">Give Feedback</button>
+        <button (click)="home()">Back to Home</button>
+      </div>
+    </main>
+  </div>
+</div>

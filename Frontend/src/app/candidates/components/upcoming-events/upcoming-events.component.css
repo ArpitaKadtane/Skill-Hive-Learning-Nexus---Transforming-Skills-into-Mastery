@@ -1,0 +1,134 @@
+main {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+  align-items: flex-start;
+  gap: 20px; /* Added spacing between items */
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Task List Styling */
+.task-list {
+  flex: 1;
+  min-width: 300px; /* Ensures minimum size for smaller screens */
+  padding: 20px;
+  background-color: #ffe5e1;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.task-list h3 {
+  margin-bottom: 10px;
+  color: #9C4DF4; /* Consistent color theme */
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+/* Calendar Styling */
+.calendar {
+  flex: 0 0 350px; /* Fixed width for the calendar */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #9C4DF4;
+  color: #fff;
+  border-radius: 4px 4px 0 0; /* Rounded corners at the top */
+}
+
+.month-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+
+.month-header button:hover {
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  padding: 10px;
+}
+
+.weekdays span {
+  font-weight: bold;
+  color: #555;
+}
+
+.days span {
+  padding: 8px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%; /* Circle-shaped dates */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.days span:hover {
+  background-color: #fce4ec;
+}
+
+.days span.selected {
+  background-color: #9C4DF4;
+  color: #fff !important;
+}
+
+.days span.has-events {
+  color: #ff532f;
+}
+
+.days span.has-events:hover {
+  background-color: #9C4DF4;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacks the task list and calendar */
+  }
+
+  .calendar {
+    width: 100%; /* Make it stretch for smaller screens */
+  }
+
+  .task-list {
+    width: 100%;
+  }
+}

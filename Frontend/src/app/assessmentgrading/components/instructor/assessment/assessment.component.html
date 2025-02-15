@@ -1,0 +1,80 @@
+<div class="mt-3">
+    
+    <div class="flex justify-center">
+        <div class="bg-green-500 rounded-full text-center shadow-md p-2 px-4">
+        <div class="text-white font-medium">
+            {{courseTitle}} | new Assessment
+        </div>
+        </div>
+
+    </div>
+
+    <div class=" ml-10 border-2 border-gray-500 flex p-2 gap-3 w-fit rounded-lg">
+        <div
+         class="mt-1 font-medium ">
+            Assessment Name 
+        </div>
+        <input
+        [(ngModel)]="assessmentName"
+        class="px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"  
+         type="text" />
+    </div>
+    
+
+    <hr class="mt-2 mb-2 border-black">
+
+ 
+    <div class="mx-24 bg-gray-100 rounded-3xl py-5">
+        <div class="mt-3 px-10" *ngFor="let question of questions; let i = index ; trackBy: trackByFn">
+        
+            <div class="font-medium">
+                {{i+1}} . <input type="text" [(ngModel)]="question.question" class="mt-1 w-[90%] px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button 
+                (click)="deleteQuestion(i)"
+                class=" ml-2 bg-red-500 text-white font-medium  rounded-lg px-3 py-1.5 hover:bg-red-600 transition-all">
+                Delete
+                </button>
+    
+            </div>
+            <div class="flex flex-col pl-3 pt-2" *ngFor="let choice of question.choices; let j = index ; trackBy: trackByFn">
+                <div class="flex gap-4 pb-1" >
+                    <input type="radio"
+                    [name]="'question' + i"
+                    [value]="choice" 
+                     [(ngModel)]="question.answer">
+                     <input [(ngModel)]="question.choices[j]" type="text" class="mt-1 w-[50%] px-2 py-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+    
+            <hr class="mt-2 mb-2">
+        </div>
+
+        <div class="mt-2 ml-7 flex justify-center gap-3">
+            <button
+            (click)="backToCourse()"
+             class="bg-red-500 text-white font-medium text-lg rounded-full p-1 px-3 hover:bg-red-700">
+                cancel
+            </button>
+            <button 
+            (click)="addQuestion()"
+            class="bg-green-500 text-white font-bold text-lg  rounded-full px-3 py-1 hover:bg-green-700">
+                +
+            </button>
+            
+            <button 
+            (click)="submitData()"
+            class="bg-green-500 text-white font-medium text-lg rounded-full p-1 px-3 hover:bg-green-700">
+                submit
+            </button>
+        </div> 
+    </div>
+
+    <hr class="mt-6 mb-2 border-black">
+
+
+    <div *ngIf="submittedData">
+        <h3>Submitted Data:</h3>
+        <pre>{{ submittedData | json }}</pre>
+      </div>
+
+</div>

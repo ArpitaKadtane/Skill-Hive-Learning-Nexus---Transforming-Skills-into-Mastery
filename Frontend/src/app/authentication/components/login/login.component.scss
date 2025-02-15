@@ -1,0 +1,93 @@
+app-recoverpassword{
+  border-radius: 10px;
+}
+
+.loginCard {
+  width: 420px;
+  border: 0px;
+  margin: 83px 0px 50px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .formSubTitle {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+
+  .formTitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+
+    ::ng-deep {
+      .mat-mdc-text-field-wrapper {
+        border-radius: 8px;
+        background-color: white;
+        border: 1px solid #d4d4d4;
+      }
+
+      .mdc-line-ripple::after {
+        border-bottom-color: black;
+      }
+    }
+
+    .passwordField {
+      ::ng-deep {
+        .mat-mdc-form-field-infix {
+          display: flex;
+        }
+      }
+
+      .hideIcon:hover{
+        cursor: pointer;
+      }
+    }
+
+    .recoverPasssword {
+      color: #d93f21;
+      margin-bottom: 8px;
+      text-align: end;
+    }
+
+    .recoverPasssword:hover{
+      cursor: pointer;
+    }
+
+    .loginBtn {
+      color: #ffffff;
+      background: #20dc49;
+      border: 1px solid #3bf64d;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+        box-shadow 0.2s;
+      border-radius: 6px;
+      outline-color: transparent;
+      height: 42px;
+    }
+
+    .loginBtn:disabled {
+      background-color: #bff5bc;
+    }
+  }
+
+  .signupRedirect {
+    font-weight: normal;
+    height: 20px;
+    margin-left: 10px;
+
+    a {
+      color: #05a205;
+    }
+  }
+}

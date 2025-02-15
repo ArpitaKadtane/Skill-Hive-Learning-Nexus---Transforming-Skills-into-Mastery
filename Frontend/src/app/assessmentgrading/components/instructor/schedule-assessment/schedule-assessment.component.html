@@ -1,0 +1,144 @@
+<div>
+    <!-- <div class=" m-3 flex gap-3 border-2 border-gray-400 rounded-3xl w-fit py-1 px-3">
+        <div class="border-2 border-gray-500 rounded-full px-3 hover:bg-gray-200">
+            pending
+        </div>
+        <div class="border-2 border-gray-500 rounded-full px-3 hover:bg-gray-200">
+            scheduled
+        </div>
+    </div> -->
+
+    <!-- <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Assessment Name</th>
+              <th>created Date</th>
+              <th>Schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let course of courses">
+              <td>{{course.title}}</td>
+              <td>assessment name
+        
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                <button class="schedule-btn" >
+                    Create Assessment
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> -->
+
+     <div class="flex justify-center items-center py-3 text-blue-900 font-medium text-lg border-b-2 border-gray-200">
+        {{data.title}}
+     </div>
+
+     <div class="max-w-md mx-auto bg-white shadow-md rounded-lg overflow-hidden my-3">
+        <table class="min-w-full text-sm text-left text-gray-500">
+          <tbody>
+            <tr class="border-b border-gray-300">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200 w-2/5">Assessment Name</th>
+              <td class="px-4 py-2">{{data.assessmentName}}</td>
+            </tr>
+            <tr class="border-b border-gray-300">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Created Date</th>
+              <td class="px-4 py-2">{{ data.createdAt | date: 'dd-MM-yyyy'}}</td>
+            </tr>
+            <tr class="border-b border-gray-300">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Total Questions</th>
+              <td class="px-4 py-2">{{data.totalQuestions}}</td>
+            </tr>
+            <tr class="border-b border-gray-300" *ngIf="data.isScheduled">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Previous duration</th>
+              <td class="px-4 py-2">{{data.scheduledDetails.duration}}</td>
+            </tr>
+            <tr class="border-b border-gray-300">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Duration (in minutes )</th>
+              <td class="px-4 py-2">
+                <input 
+                [(ngModel)]="userData.duration"
+                type="number"
+                min="1"
+                class="w-40 h-6 text-sm p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="minutes"
+                />
+              </td>
+            </tr>
+            <!-- <tr class="border-b border-gray-300" *ngIf="data.isScheduled">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Previous Start Time</th>
+              <td class="px-4 py-2">{{data.scheduledDetails.startTime}}</td>
+            </tr>
+            <tr class="border-b border-gray-300" *ngIf="data.isScheduled">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Previous Start End</th>
+              <td class="px-4 py-2">{{data.scheduledDetails.endTime}}</td>
+            </tr>
+            <tr class="border-b border-gray-300" *ngIf="data.isScheduled">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Previous Date</th>
+              <td class="px-4 py-2">{{data.scheduledDetails.assessmentDate}}</td>
+            </tr>
+            <tr class="border-b border-gray-300">
+              <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Start time</th>
+              <td class="px-4 py-2">
+                <input 
+                [(ngModel)]="userData.startTime"
+                type="time"  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              </td>
+            </tr>
+            <tr class="border-b border-gray-300">
+                <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">End time</th>
+                <td class="px-4 py-2">
+                  <input
+                  [(ngModel)]="userData.endTime"
+                  type="time"  class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                </td>
+            </tr>
+            <tr>
+              <th scope="row" class="border-b border-gray-300 px-4 py-2 font-medium text-gray-900 bg-gray-200">Assessment Date</th>
+              <td class="px-4 py-2 border-b border-gray-300">
+                <input
+                [(ngModel)]="userData.assessmentDate"
+                type="date" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+              </td>
+          </tr> -->
+
+          <tr class="border-b border-gray-300">
+            <th scope="row" class="px-4 py-2 font-medium text-gray-900 bg-gray-200">Update Questions</th>
+            <td class="px-4 py-2 flex justify-center">
+              <button 
+              (click)="updateAssessment()"
+              class="bg-green-400 rounded-md hover:bg-green-500 text-white font-medium py-1 px-3">
+                Update
+              </button>
+            </td>
+        </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="flex justify-evenly my-5">
+        <button
+        (click)="onCancel()"
+        class="bg-red-400 hover:bg-red-500 rounded-3xl text-white font-medium py-1 px-3">
+            close
+        </button>
+
+        <button 
+        (click)="onSubmit()"
+        class="bg-green-400 hover:bg-green-500 rounded-3xl text-white font-medium py-1 px-3">
+            submit
+        </button>
+      </div>
+
+      
+      
+</div>

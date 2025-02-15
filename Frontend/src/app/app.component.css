@@ -1,0 +1,24 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  
+  .body {
+    display: flex;
+    flex: 1;
+  }
+  
+  .side-menu {
+    width: 250px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .content {
+    flex: 1;
+    padding:15px 20px;
+    overflow-y: auto;
+  }

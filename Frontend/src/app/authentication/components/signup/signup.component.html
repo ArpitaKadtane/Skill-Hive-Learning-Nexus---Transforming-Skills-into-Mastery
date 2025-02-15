@@ -1,0 +1,107 @@
+<mat-card class="signupCard" appearance="outlined">
+  <mat-card-header class="formHeader">
+    <mat-card-title class="formTitle"
+      >Get Started With SKILL HIVE</mat-card-title
+    >
+    <div><h5 class="formSubTitle">Getting started is easy</h5></div>
+  </mat-card-header>
+  <mat-card-content>
+    <form
+      class="signupForm"
+      [formGroup]="signupForm"
+      (ngSubmit)="OnFormSubmit()"
+    >
+      <mat-form-field>
+        <mat-label>User</mat-label>
+        <mat-select formControlName="user">
+          <mat-option value="users">Candidate</mat-option>
+          <mat-option value="instructors">Instructor</mat-option>
+        </mat-select>
+        @if (signupForm.get('user').hasError('required')) {
+        <mat-error>User type is required</mat-error>
+        }
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input type="text" matInput formControlName="fullName" />
+        @if (signupForm.get('fullName').hasError('required')) {
+        <mat-error>Full Name is required</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          formControlName="email"
+          placeholder="Ex. abc@email.com"
+        />
+        @if (signupForm.get('email').hasError('email') &&
+        !signupForm.get('email').hasError('required')) {
+        <mat-error>Please enter a valid email address</mat-error>
+        } @if (signupForm.get('email').hasError('required')) {
+        <mat-error>Email is required</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field class="passwordField">
+        <mat-label>Enter your password</mat-label>
+        <input
+          matInput
+          [type]="hidePassword() ? 'password' : 'text'"
+          formControlName="password"
+        />
+        <mat-icon (click)="passwordClick($event)" class="hideIcon">{{
+          hidePassword() ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </mat-form-field>
+      <div class="errorsContainer">
+        @if (signupForm.get('password').hasError('required') &&
+        signupForm.get('password').touched) {
+        <div class="confirmPasswordErrors">Password is required</div>
+        } @if (signupForm.get('password').hasError('pattern')&&
+        signupForm.get('password').touched) {
+        <div class="confirmPasswordErrors">
+          Password must have 8+ chars, 1 uppercase, 1 lowercase, 1 number & 1
+          special char
+        </div>
+        }
+      </div>
+
+      <mat-form-field class="confirmPasswordField">
+        <mat-label>Confirm your password</mat-label>
+        <input
+          matInput
+          [type]="hideConfirmPassword() ? 'password' : 'text'"
+          formControlName="confirmPassword"
+        />
+        <mat-icon (click)="confirmPasswordClick($event)" class="hideIcon">{{
+          hideConfirmPassword() ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </mat-form-field>
+      @if (signupForm.get('confirmPassword').valid &&
+      signupForm.get('password').valid &&
+      signupForm.hasError('PasswordNoMatch')) {
+      <div class="confirmPasswordErrors">Password mismatch</div>
+      } @if (signupForm.get('confirmPassword').hasError('required') &&
+      signupForm.get('confirmPassword').touched) {
+      <div class="confirmPasswordErrors">Confirm Password is required</div>
+      }
+      <button
+        mat-flat-button
+        type="submit"
+        [disabled]="signupForm.invalid"
+        class="signupBtn"
+      >
+        Sign up
+      </button>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div class="loginRedirect">
+      Already a member? <a routerLink="/login" class="">Sign in</a>
+    </div>
+  </mat-card-actions>
+</mat-card>

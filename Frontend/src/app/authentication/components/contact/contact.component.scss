@@ -1,0 +1,88 @@
+.contactUs {
+  background-color: white;
+  padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 48px 0px 45px 0px;
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h2 {
+      color: #20b486;
+    }
+  }
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .formContainer {
+      padding-left: 15px;
+      margin-right: 60px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+      width: 422px;
+
+      ::ng-deep {
+        .mat-mdc-text-field-wrapper {
+          background-color: white;
+          border: 1px solid #d4d4d4;
+        }
+
+        .mdc-line-ripple::after {
+          border-bottom-color: rgb(37, 36, 36);
+        }
+      }
+
+      .submitBtn {
+        color: #ffffff;
+        background: #20dc49;
+        border: 1px solid #3bf64d;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+          box-shadow 0.2s;
+        outline-color: transparent;
+        height: 42px;
+      }
+
+      .submitBtn:disabled {
+        background-color: #bff5bc;
+      }
+    }
+
+    .contactDetails {
+      margin: 40px 30px;
+
+      .contactInfo {
+        margin-bottom: 20px;
+
+        h4 {
+          margin-bottom: 5px !important;
+        }
+
+        .socialMediaLinks {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 150px;
+        }
+
+        p {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

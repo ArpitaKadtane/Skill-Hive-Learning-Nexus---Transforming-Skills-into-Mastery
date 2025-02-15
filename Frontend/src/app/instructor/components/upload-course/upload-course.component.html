@@ -1,0 +1,61 @@
+
+
+<app-afterapply-banner></app-afterapply-banner>
+
+<div class="container-instructor-form">
+
+  <h2>Upload Lecture</h2>
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="teaching-domain">Course Name</label>
+      <select id="teaching-domain" formControlName="teachingDomain" required>
+        <option value="">Select Course Name</option>
+        <option value="Big Data">Big Data</option>
+        <option value="Introduction To JavaScript">Introduction To JavaScript</option>
+        <option value="React Advanced">React Advanced</option>
+        <option value="MongoDb">MongoDb</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="lecture-title">Lecture Title</label>
+      <input id="lecture-title" formControlName="lecturetitle" placeholder="Enter Lecture Title" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lecture-number">Lecture Number</label>
+      <input id="lecture-number" type="number" formControlName="lecturenumber" placeholder="Enter Lecture Number" required  min="0">
+    </div>
+ 
+    <div class="form-group">
+      <label for="module-duration">Module Duration</label>
+      <input id="module-duration" formControlName="moduleduration" placeholder="Enter hours/minutes" required>
+    </div>
+
+    <div class="form-group" class="file-upload">
+    
+        <ngx-dropzone   (change)="onSelect($event)" >
+          <ngx-dropzone-label> Drag and drop your files</ngx-dropzone-label>
+          @for(file of files; track $index){
+            <ngx-dropzone-preview [file]="file" [removable]="true" (onRemove)="onRemove(file)">
+              <ngx-dropzone-label > {{file.name}} {{file.type}}</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+          } 
+        </ngx-dropzone>
+    </div>    
+
+    <div class="form-group button-group">
+      <button type="button" class="btn cancel-btn" (click)="onCancel()">Cancel</button>
+      <button type="submit" class="btn submit-btn">Upload</button>
+    </div>    
+
+
+  </form>
+  <!-- <h3>View PDFs</h3>
+  <div *ngFor="let pdfUrl of uploadedFiles">
+    <iframe [src]="pdfUrl" width="100%" height="500px"></iframe>
+  </div> -->
+
+</div>
+<app-footer></app-footer>

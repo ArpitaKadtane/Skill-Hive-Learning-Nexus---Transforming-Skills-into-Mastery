@@ -1,0 +1,51 @@
+<h2>View Courses</h2>
+<div class="filter-container">
+  <label for="filterInstructor">Filter by Instructor:</label>
+  <input
+    id="filterInstructor"
+    [(ngModel)]="filterInstructor"
+    placeholder="Enter instructor name"
+  />
+
+  <label for="filterTechnology">Filter by Technology:</label>
+  <input
+    id="filterTechnology"
+    [(ngModel)]="filterTechnology"
+    placeholder="Enter technology"
+  />
+
+  <label for="filterStatus">Filter by Status:</label>
+  <select id="filterStatus" [(ngModel)]="filterStatus">
+    <option value="">All</option>
+    <option value="Ongoing">Ongoing</option>
+    <option value="Upcoming">Upcoming</option>
+    <option value="Past">Past</option>
+  </select>
+</div>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Course Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Technology</th>
+        <th>Status</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of filteredCourses()">
+        <td>{{ course.name }}</td>
+        <td>{{ course.startDate }}</td>
+        <td>{{ course.endDate }}</td>
+        <td>{{ course.technology }}</td>
+        <td class="status {{ course.status.toLowerCase() }}">
+          {{ course.status }}
+        </td>
+        <td>{{ course.instructor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

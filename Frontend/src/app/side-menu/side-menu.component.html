@@ -1,0 +1,99 @@
+<div class="side-menu" [class.show]="isVisible">
+  <!-- Top Menu Items -->
+  <div class="menu-items">
+    <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/dashboard']" 
+      [class.active]="isActive('/candidate/dashboard')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/home-outline.svg" alt="">
+      <span>Dashboard</span>
+    </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/all-courses']" 
+      [class.active]="isActive('/candidate/all-courses')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/podium-outline.svg" alt="">
+      <span>View All Courses</span>
+    </div>
+    <div 
+    class="menu-item" 
+    [routerLink]="['/candidate/track-my-learning']" 
+    [class.active]="isActive('/candidate/track-my-learning')"
+    (click)="sideMenuClicked()"
+  >
+    <img src="../../assets/icons/analytics-outline.svg" alt="">
+    <span>Track Learning</span>
+  </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/bookmarked-courses']" 
+      [class.active]="isActive('/candidate/bookmarked-courses')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/bookmark-outline.svg" alt="">
+      <span>Bookmarked Courses</span>
+    </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/assessmentdash']" 
+      [class.active]="isActive('/candidate/assessmentdash')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/reader-outline.svg" alt="">
+      <span>Assessments</span>
+    </div>
+    <!-- <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/upcoming-Assessments']" 
+      [class.active]="isActive('/candidate/upcoming-Assessments')"
+    >
+      <img src="../../assets/icons/calendar-outline.svg" alt="">
+      <span>Upcoming Assessments</span>
+    </div> -->
+    <!-- <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/enrolled-courses']" 
+      [class.active]="isActive('/candidate/enrolled-courses')"
+    >
+      <img src="../../assets/icons/ribbon-outline.svg" alt="">
+      <span>Certifications</span>
+    </div> -->
+    <div 
+    class="menu-item" 
+    [routerLink]="['/candidate/update-profile']" 
+    [class.active]="isActive('/candidate/update-profile')"
+    (click)="sideMenuClicked()"
+  >
+    <img src="../../assets/icons/person-outline.svg" alt=""/>
+    <span>Update Profile</span>
+  </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/register']" 
+      [class.active]="isActive('/register')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/list-outline.svg" alt="">
+      <span>Additional Details</span>
+    </div>
+    <div 
+      class="menu-item" 
+      [routerLink]="['/candidate/change-password']" 
+      [class.active]="isActive('/candidate/change-password')"
+      (click)="sideMenuClicked()"
+    >
+      <img src="../../assets/icons/key-outline.svg" alt="">
+      <span>Change Password</span>
+    </div>
+  </div>
+
+  <!-- Logout Button -->
+  <button (click)="logout()" class="logout-button">
+    <img src="../../assets/icons/log-out-outline.svg" alt="">
+    <span>Logout</span>
+  </button>
+</div>

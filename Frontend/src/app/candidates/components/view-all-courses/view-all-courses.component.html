@@ -1,0 +1,165 @@
+<div class="view-all-courses">
+  <h2>All Courses</h2>
+  <div class="categories-scroll">
+    <button
+      *ngFor="let category of categories"
+      [class.active]="category === selectedCategory"
+      (click)="filterByCategory(category)"
+    >
+      {{ category }}
+    </button>
+  </div>
+
+  <div class="search-bar">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Search courses..."
+      (input)="search()"
+    />
+  </div>
+
+  <div class="content">
+    <aside class="filters">
+      <div class="filter-top">
+        <h3 style="color: #333">Filter</h3>
+        <img
+          src="../../../../assets/icons/options-outline.svg"
+          alt="Options Icon"
+        />
+      </div>
+
+      <div class="filter">
+        <h4>Difficulty</h4>
+        <label>
+          <input
+            type="checkbox"
+            (change)="toggleDifficultyFilter('Beginner')"
+          />
+          Beginner
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            (change)="toggleDifficultyFilter('Intermediate')"
+          />
+          Intermediate
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            (change)="toggleDifficultyFilter('Advanced')"
+          />
+          Advanced
+        </label>
+      </div>
+
+      <div class="filter">
+        <h4>Duration</h4>
+        <label>
+          <input type="checkbox" (change)="toggleDurationFilter('5 days')" />
+          Less than 5 days
+        </label>
+        <label>
+          <input type="checkbox" (change)="toggleDurationFilter('5-10 days')" />
+          5 - 10 days
+        </label>
+        <label>
+          <input type="checkbox" (change)="toggleDurationFilter('10+ days')" />
+          More than 10 days
+        </label>
+      </div>
+
+      <div class="filter">
+        <h4>Rating</h4>
+        <label>
+          <input
+            type="checkbox"
+            (change)="toggleRatingFilter('4.5 and above')"
+          />
+          4.5 and above
+        </label>
+        <label>
+          <input type="checkbox" (change)="toggleRatingFilter('4.0 - 4.5')" />
+          4.0 - 4.5
+        </label>
+        <label>
+          <input type="checkbox" (change)="toggleRatingFilter('3.5 - 4.0')" />
+          3.5 - 4.0
+        </label>
+        <label>
+          <input type="checkbox" (change)="toggleRatingFilter('Below 3.5')" />
+          Below 3.5
+        </label>
+      </div>
+    </aside>
+
+    <main *ngIf="courses.length" class="courses">
+      <div class="course-card" *ngFor="let course of filteredCourses">
+        <img [src]="course.thumbnail" [alt]="course.title" />
+        <h3 title="{{ course.name }}">
+          {{
+            course.name.length > 30
+              ? (course.name | slice : 0 : 27) + "..."
+              : course.name
+          }}
+        </h3>
+        <!-- <p class="description">
+          {{ course.description }}
+        </p> -->
+        <div class="rating">
+          <strong>Rating: </strong>
+          <span *ngIf="course.avgRating > 0">
+            {{ course.avgRating | number : "1.1-1" }} ⭐
+          </span>
+          <span *ngIf="course.avgRating === 0">No ratings yet</span>
+        </div>
+        <p>
+          <strong>Instructor:</strong>
+          <a
+            [routerLink]="['/profile', course.instructorId]"
+            *ngIf="course.instructor"
+          >
+            {{ course.instructor || "Not assigned" }}
+          </a>
+        </p>
+
+        <!-- <p>
+          <strong>Duration:</strong>
+          {{ getCourseDurationInDays(course.startDate, course.endDate) }} Days
+        </p> -->
+        <div class="actions">
+          <button
+            *ngIf="!isAlreadyEnrolled(course)"
+            (click)="enroll(course)"
+            class="enroll-button"
+          >
+            Enroll Now
+          </button>
+
+          <button
+            (click)="navigateCourse(course.id)"
+            *ngIf="isAlreadyEnrolled(course)"
+            class="enrolled-button"
+          >
+            View Course
+          </button>
+          <img
+            (click)="bookmark_course(course)"
+            [src]="
+              '../../../../assets/icons/' +
+              (isBookmarked(course) ? 'bookmark.svg' : 'bookmark-outline.svg')
+            "
+            title="Add to Bookmarked Courses"
+            alt="Bookmark"
+          />
+        </div>
+      </div>
+      <p *ngIf="!filteredCourses.length">No filtered Course Available</p>
+    </main>
+
+    <div *ngIf="!courses.length" class="loader-cont">
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>

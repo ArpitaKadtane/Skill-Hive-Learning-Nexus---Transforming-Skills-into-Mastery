@@ -1,0 +1,26 @@
+@if (applicantProfileDetails) {
+  <div class="header_bar">
+    <!-- <div class="pattern1">
+      <img src="assets/images/patter.png" alt="Pattern 1">
+    </div> -->
+    <!-- <div class="pattern2">
+      <img id="pattern_bottom" src="assets/images/pattern2.png" alt="Pattern 2">
+    </div> -->
+  </div>
+}
+
+
+  <div class="instructor_details">
+    <div class="name_instructor">{{ applicantProfileDetails.fullName }}</div>
+    <div class="text_instructor">
+      {{ applicantProfileDetails.teachingDomain || 'Instructor' }}<br>
+    </div>
+
+    <div class="status-container">
+      <h2>Application Status</h2>
+      <p class="message"> your application is under review .</p>
+      <p class="info">Stay connected for futher updates.</p>
+  </div>   
+    
+   
+  </div>
